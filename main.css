@@ -1,0 +1,141 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+#backgroundWall {
+    background-color: rgb(221, 221, 131);
+    height: 60vh;
+    width: 100%;
+}
+
+
+/* table section and table animation starts form here  */
+
+
+#tableSection {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    perspective: 830px;
+
+    background-color: rgba(9, 207, 157, 0.786);
+}
+
+#table {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 8vh;
+    width: 70vw;
+    height: 35vh;
+    transform: rotateX(40deg); 
+    transform-origin: bottom;
+
+    background-color: rgb(16, 89, 20);
+
+    border-bottom: 10px solid rgb(58, 55, 55);
+}
+
+#tableBottom{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 3vh;
+    width: 70vw;
+    height: 5vh;
+    background-color: red;
+}
+
+#tableLegs{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 65vw;
+    height: 3vh;
+    background-color: rgba(174, 91, 91, 0.196);
+    display:flex;
+    justify-content: space-between;
+}
+
+.tableLeg{
+    width: 7vh;
+    height: 100%;
+    background-color: yellow;
+    border-radius: 20px;
+}
+
+
+/* file section and file animation starts form here  */
+
+#file{
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    width: 10vw;
+    height: 23vh;
+    background-color: rgba(255, 255, 0, 0.305);
+    border: 2px solid black;
+
+    transform: rotateX(40deg);
+    transform-origin: bottom;
+
+    /* for animation letter  */
+    transition: transform 500ms, scale 500ms;
+}
+
+#upperFile, #lowerFile{
+    width: 100%;
+    height: 100%; 
+    position: absolute; 
+    background-color: rgb(190, 134, 50);
+    left: 0;
+    top: 0;
+    border: 2px solid red;
+    border-left: none;
+    pointer-events: none;
+}
+
+#upperFile{
+    transform: rotateY(10deg);
+    transform-origin: right;
+    transform-style: preserve-3d;
+    z-index: 3;
+    
+}
+
+#joiningPart{
+    transform: rotateY(80deg);
+    transform-origin: left;
+    height: 100%;
+    width: 1vw;
+    background-color: rgb(71, 185, 223);
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+#file:hover{
+    
+    scale: 300%;
+    transform: rotateX(0deg) translateY(-2vh);
+    transform-origin: bottom;
+   
+}
