@@ -1,3 +1,8 @@
+:root {
+    --tableMainColor: yellow;
+    --tableSecondColor: red;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -21,10 +26,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    border: 2px solid yellow;
 
     perspective: 830px;
-
-    background-color: rgba(9, 207, 157, 0.786);
 }
 
 #table {
@@ -36,15 +40,18 @@ body {
     bottom: 8vh;
     width: 70vw;
     height: 35vh;
-    transform: rotateX(40deg); 
+    transform: rotateX(40deg);
     transform-origin: bottom;
 
-    background-color: rgb(16, 89, 20);
+    background-image: radial-gradient(circle, var(--tableMainColor), var(--tableSecondColor) 300%);
 
-    border-bottom: 10px solid rgb(58, 55, 55);
+    border-bottom: 10px solid rgb(94, 88, 88);
+
+    /* animation: tableColor 3s linear infinite ; */
 }
 
-#tableBottom{
+
+#tableBottom {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -56,7 +63,7 @@ body {
     background-color: red;
 }
 
-#tableLegs{
+#tableLegs {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -66,43 +73,71 @@ body {
     width: 65vw;
     height: 3vh;
     background-color: rgba(174, 91, 91, 0.196);
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
-.tableLeg{
+.tableLeg {
     width: 7vh;
     height: 100%;
     background-color: yellow;
     border-radius: 20px;
 }
 
+/* circle on hover the file animation here design   */
+/* 
+#floatingCircle{
+    position: absolute;
+    bottom: 18vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1vw;
+    height: 5vw;
+    border-top: 5px solid rgb(4, 245, 237);
+    transform: rotateX(40deg), rotate(90deg);
+    transform-origin: bottom;    
+    animation: fileLoad .2s infinite linear;
+    z-index: 0;
+}
+
+@keyframes fileLoad{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+ */
 
 /* file section and file animation starts form here  */
 
-#file{
+#file {
     position: absolute;
     bottom: 10vh;
     left: 0;
     right: 0;
     margin: auto;
-    
+    z-index: 1;
     width: 10vw;
     height: 23vh;
     background-color: rgba(255, 255, 0, 0.305);
     border: 2px solid black;
 
+    display: none;
     transform: rotateX(40deg);
     transform-origin: bottom;
 
-    /* for animation letter  */
-    transition: transform 500ms, scale 500ms;
+    transition: transform 900ms, scale 900ms;
 }
 
-#upperFile, #lowerFile{
+#upperFile,
+#lowerFile {
     width: 100%;
-    height: 100%; 
-    position: absolute; 
+    height: 100%;
+    position: absolute;
     background-color: rgb(190, 134, 50);
     left: 0;
     top: 0;
@@ -111,15 +146,15 @@ body {
     pointer-events: none;
 }
 
-#upperFile{
+#upperFile {
     transform: rotateY(10deg);
     transform-origin: right;
     transform-style: preserve-3d;
     z-index: 3;
-    
+
 }
 
-#joiningPart{
+#joiningPart {
     transform: rotateY(80deg);
     transform-origin: left;
     height: 100%;
@@ -132,10 +167,55 @@ body {
 }
 
 
-#file:hover{
-    
-    scale: 300%;
-    transform: rotateX(0deg) translateY(-2vh);
-    transform-origin: bottom;
-   
+#file:hover+#floatingCircle {
+
+    background-color: white;
+
+    animation: fileLoad 1s infinite linear;
+
 }
+
+#file:hover+#table {
+    animation: tableColor 1s infinite alternate;
+}
+
+@keyframes tableColor {
+
+    20% {
+        background-image: radial-gradient(circle, var(--tableMainColor), var(--tableSecondColor) 150%);
+
+    }
+
+    40% {
+        background-image: radial-gradient(circle, var(--tableMainColor), var(--tableSecondColor) 50%);
+
+    }
+
+    50% {
+        background-image: radial-gradient(circle, var(--tableMainColor), var(--tableSecondColor) 10%);
+
+    }
+
+
+
+    60% {
+        background-image: radial-gradient(circle, var(--tableSecondColor), var(--tableMainColor) 150%);
+
+    }
+
+    80% {
+        background-image: radial-gradient(circle, var(--tableSecondColor), var(--tableMainColor) 75%);
+    }
+
+    100% {
+
+        background-image: radial-gradient(circle, var(--tableSecondColor), var(--tableMainColor) 10%);
+    }
+}
+
+/* 
+#file:hover{
+    scale: 340%;
+    transform: rotateX(0deg) translateY(-2vh);
+    transform-origin: bottom; 
+} */
