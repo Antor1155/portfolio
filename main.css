@@ -84,35 +84,7 @@ body {
     border-radius: 20px;
 }
 
-/* circle on hover the file animation here design   */
-/* 
-#floatingCircle{
-    position: absolute;
-    bottom: 18vh;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 1vw;
-    height: 5vw;
-    border-top: 5px solid rgb(4, 245, 237);
-    transform: rotateX(40deg), rotate(90deg);
-    transform-origin: bottom;    
-    animation: fileLoad .2s infinite linear;
-    z-index: 0;
-}
 
-@keyframes fileLoad{
-    from{
-        transform:rotate(0deg);
-    }
-    to{
-        transform:rotate(360deg);
-    }
-}
-
- */
-
-/* file section and file animation starts form here  */
 
 #file {
     position: absolute;
@@ -165,57 +137,3 @@ body {
     left: 0;
     top: 0;
 }
-
-
-#file:hover+#floatingCircle {
-
-    background-color: white;
-
-    animation: fileLoad 1s infinite linear;
-
-}
-
-#file:hover+#table {
-    animation: tableColor 1s infinite alternate;
-}
-
-@keyframes tableColor {
-
-    20% {
-        background-image: radial-gradient(circle, var(--tableMainColor), var(--tableSecondColor) 150%);
-
-    }
-
-    40% {
-        background-image: radial-gradient(circle, var(--tableMainColor), var(--tableSecondColor) 50%);
-
-    }
-
-    50% {
-        background-image: radial-gradient(circle, var(--tableMainColor), var(--tableSecondColor) 10%);
-
-    }
-
-
-
-    60% {
-        background-image: radial-gradient(circle, var(--tableSecondColor), var(--tableMainColor) 150%);
-
-    }
-
-    80% {
-        background-image: radial-gradient(circle, var(--tableSecondColor), var(--tableMainColor) 75%);
-    }
-
-    100% {
-
-        background-image: radial-gradient(circle, var(--tableSecondColor), var(--tableMainColor) 10%);
-    }
-}
-
-/* 
-#file:hover{
-    scale: 340%;
-    transform: rotateX(0deg) translateY(-2vh);
-    transform-origin: bottom; 
-} */
