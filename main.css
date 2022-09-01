@@ -256,3 +256,51 @@ body {
     transition: transform 1s;
 
 }
+
+#lowerFile>div{
+    width: 9vw;
+    height:8vh;
+    overflow: visible;
+    position:absolute;
+    z-index: -1;
+    border-radius: 22px;
+    left: 0%;
+    background-color: #e57c7c;
+    border: 1.3px solid black;
+    text-align: end;
+    font-size: 3vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: left 700ms;
+}
+
+#lowerFile p{
+    padding-right: 10%; 
+    cursor: pointer;
+}
+
+#file.open #next{
+    background-color:#CFE8A9;
+    top: 15%;
+    left: 95%;
+}
+
+#file.open #previous{
+    background-color:#FFFDE3;
+    top: 30%;
+    left: 95%;
+    font-size: 3vh;
+
+    transition: left 700ms 150ms;
+}
+
+#file.open #close{
+    top: 50%;
+    left: 95%;
+
+    transition: left 700ms 300ms;
+}
