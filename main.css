@@ -173,6 +173,9 @@ body {
     transform-style: preserve-3d;
     z-index: 3;
 
+
+    overflow: hidden;
+
 }
 
 #joiningPart {
@@ -188,8 +191,41 @@ body {
     top: 0;
 }
 
+#fileShine{
+    position: absolute;
+    top:115%;
+    left: -110%;
+
+    width: 250%;
+    height: 20px ;
+    transform: rotate(40deg);
+    background-color: rgba(255, 235, 205, 0.884);
+
+   
+}
+
+@keyframes fileShineLight {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    85%{
+        background-color: aliceblue;
+    }
+    100%{
+        top: -1%;
+        left: 1%;
+    }
+}
+
 #file:hover{
  
     transform: scale(125%) rotateX(20deg) translateY(-3vh);
     box-shadow: 0px 3vh 3.2vh -1vh black;
+}
+
+#file:hover #fileShine{
+    animation: fileShineLight 900ms 1 ease-out;
 }
