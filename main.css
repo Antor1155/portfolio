@@ -268,33 +268,37 @@ body {
     background-color: #e57c7c;
     border: 1.3px solid black;
     text-align: end;
-    font-size: 3vh;
+    font-size: 1.5vw;
     display: flex;
     justify-content: end;
     align-items: center;
 
-    cursor: pointer;
-
+    pointer-events: none;
     transition: left 700ms;
 }
 
 #lowerFile p{
     padding-right: 10%; 
-    cursor: pointer;
+    pointer-events: none;
 }
 
+
+/* three buttons design here  */
 #file.open #next{
     background-color:#CFE8A9;
     top: 15%;
     left: 95%;
+    
+    /* if file is open only then pointer event is auto, or none  */
+    pointer-events: auto;
 }
 
 #file.open #previous{
     background-color:#FFFDE3;
     top: 30%;
     left: 95%;
-    font-size: 3vh;
 
+    pointer-events: auto;
     transition: left 700ms 150ms;
 }
 
@@ -302,5 +306,11 @@ body {
     top: 50%;
     left: 95%;
 
+    pointer-events: auto;
     transition: left 700ms 300ms;
+}
+
+
+#lowerFile > div:hover{
+    border:3.5px dotted ;
 }
