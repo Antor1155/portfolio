@@ -136,15 +136,18 @@ body {
     right: 0;
     margin: auto;
     width: 10vw;
-    height: 23vh;
+    height: 25vh;
+    cursor: pointer;
+
     background-color: rgba(255, 255, 0, 0.305);
     border: 2px solid black;
-
+    
     /* display: none; */
     transform: rotateX(40deg);
     transform-origin: bottom;
 
-    transition: transform 900ms, scale 900ms;
+    transition: transform 900ms, scale 900ms, box-shadow 900ms;
+
 }
 
 
@@ -183,4 +186,10 @@ body {
     position: absolute;
     left: 0;
     top: 0;
+}
+
+#file:hover{
+ 
+    transform: scale(125%) rotateX(20deg) translateY(-3vh);
+    box-shadow: 0px 3vh 3.2vh -1vh black;
 }
