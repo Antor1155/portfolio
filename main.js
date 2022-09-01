@@ -1,8 +1,8 @@
 
 // design to table circle animation for hovering over the file 
+fileElement = document.getElementById("file");
 
-
-document.getElementById("file").addEventListener("mouseout", function () {
+fileElement.addEventListener("mouseout", function () {
     document.querySelectorAll('.floatingCircle').forEach(circle => {
         circle.style.opacity = "0";
         setTimeout(() => {
@@ -12,8 +12,7 @@ document.getElementById("file").addEventListener("mouseout", function () {
     });
 })
 
-
-document.getElementById("file").addEventListener("mouseover", function () {
+fileElement.addEventListener("mouseover", function () {
     document.querySelectorAll('.floatingCircle').forEach(circle => {
         circle.style.opacity = "1";
 
@@ -30,3 +29,16 @@ document.getElementById("file").addEventListener("mouseover", function () {
     });
 })
 
+
+// design on file when clicked on the file 
+fileElement.addEventListener("click", function(){
+    fileElement.classList.add("open");
+
+    // when file opended, making blur all other section except the file 
+    document.querySelectorAll("div").forEach(element =>{
+        if(!element.closest("#file")){
+            element.style.filter = "blur(5px)"
+        }
+    })
+
+})
