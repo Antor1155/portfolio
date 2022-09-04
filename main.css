@@ -139,7 +139,7 @@ body {
     height: 25vh;
     cursor: pointer;
 
-    background-color: rgba(255, 255, 0, 0.305);
+    background-color: rgba(255, 255, 10, 0.305);
     
     /* display: none; */
     transform: rotateX(40deg);
@@ -169,14 +169,16 @@ body {
 }
 
 #upperFile {
-    transform: rotateY(2deg);
-    transform-origin: right;
+    transform: rotateY(-2deg);
     transform-style: preserve-3d;
     z-index: 3;
 
     box-shadow: 0px 2px 10px -2px black;
 
     overflow: hidden;
+
+    transform-origin: left;
+    transition: background-color 20ms 400ms, transform 1500ms;
 
 }
 
@@ -191,6 +193,8 @@ body {
     position: absolute;
     left: 0;
     top: 0;
+
+    transition: transform 1s;
 }
 
 #fileShine{
@@ -242,19 +246,13 @@ body {
 
 #file.open #upperFile{
     background-color: antiquewhite;
-    transform-origin: left;
     transform: rotateY(-150deg) translateX(2vw);
-
-    transition: background-color 20ms 400ms, transform 1500ms;
 }
 
 #file.open #joiningPart{
     transform: rotateY(-150deg);
     width: 2vw;
     border-radius: 10px;
-
-    transition: transform 1s;
-
 }
 
 #lowerFile>div{
@@ -265,7 +263,6 @@ body {
     z-index: -1;
     border-radius: 22px;
     left: 0%;
-    background-color: #e57c7c;
     border: 1.3px solid black;
     text-align: end;
     font-size: 1.5vw;
@@ -274,7 +271,8 @@ body {
     align-items: center;
 
     pointer-events: none;
-    transition: left 700ms;
+
+    transition: left 1000ms;
 }
 
 #lowerFile p{
@@ -284,32 +282,38 @@ body {
 
 
 /* three buttons design here  */
+#next{
+    top: 15%;
+}
 #file.open #next{
     background-color:#CFE8A9;
-    top: 15%;
     left: 95%;
-    
+    transition: left 700ms;
     /* if file is open only then pointer event is auto, or none  */
     pointer-events: auto;
 }
 
-#file.open #previous{
+
+#previous{
     background-color:#FFFDE3;
     top: 30%;
+}
+#file.open #previous{
     left: 95%;
-
     pointer-events: auto;
     transition: left 700ms 150ms;
 }
 
-#file.open #close{
-    top: 50%;
-    left: 95%;
 
+#closeBtn{
+    top: 50%;
+    background-color: #e57c7c;
+}
+#file.open #closeBtn{
+    left: 95%;
     pointer-events: auto;
     transition: left 700ms 300ms;
 }
-
 
 #lowerFile > div:hover{
     border:3.5px dotted ;

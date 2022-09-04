@@ -42,3 +42,16 @@ fileElement.addEventListener("click", function(){
     })
 
 })
+
+// closing the file 
+document.getElementById("closeBtn").addEventListener("click", e=>{
+    fileElement.classList.remove("open");
+    e.stopImmediatePropagation();
+    
+    document.querySelectorAll("div").forEach(element =>{
+        if(!element.closest("#file")){
+            element.style.filter = "none"
+        }
+    })
+
+})
