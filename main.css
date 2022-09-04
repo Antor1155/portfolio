@@ -250,7 +250,7 @@ body {
 }
 
 #file.open #joiningPart{
-    transform: rotateY(-150deg);
+    transform: rotateY(-149deg);
     width: 2vw;
     border-radius: 10px;
 }
