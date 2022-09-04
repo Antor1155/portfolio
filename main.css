@@ -184,17 +184,17 @@ body {
 
 #joiningPart {
     pointer-events: none;
-    transform: rotateY(80deg);
+    transform: rotateY(0deg);
     transform-origin: left;
     height: 100%;
-    width: 1vw;
+    width: 2vw;
     background-color: rgb(71, 185, 223);
     z-index: 2;
     position: absolute;
     left: 0;
     top: 0;
 
-    transition: transform 1s;
+    transition: transform 1.5s;
 }
 
 #fileShine{
