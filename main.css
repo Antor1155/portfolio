@@ -256,7 +256,7 @@ body {
 
  #nextBtn,  #previousBtn, #closeBtn{
     width: 9vw;
-    height:8vh;
+    height:6vh;
     overflow: visible;
     position:absolute;
     z-index: -1;
@@ -295,7 +295,7 @@ body {
 
  #previousBtn{
     background-color:#FFFDE3;
-    top: 30%;
+    top: 25%;
 }
 #file.open  #previousBtn{
     left: 95%;
@@ -305,7 +305,7 @@ body {
 
 
 #closeBtn{
-    top: 50%;
+    top: 40%;
     background-color: #e57c7c;
 }
 #file.open #closeBtn{

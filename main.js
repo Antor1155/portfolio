@@ -48,11 +48,15 @@ document.getElementById("closeBtn").addEventListener("click", e=>{
     fileElement.classList.remove("open");
     e.stopImmediatePropagation();
     
+    // giving focus back to all other elements 
     document.querySelectorAll("div").forEach(element =>{
         if(!element.closest("#file")){
             element.style.filter = "none"
         }
     })
+
+    // bringing all the previous pages to basic state 
+    document.querySelectorAll(".seenPage").forEach(element => element.classList.remove("seenPage"));
 
 })
 
