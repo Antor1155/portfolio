@@ -55,3 +55,25 @@ document.getElementById("closeBtn").addEventListener("click", e=>{
     })
 
 })
+
+// changing the file pages from unseen to seen side 
+document.getElementById("nextBtn").addEventListener("click", function(){
+    filePages = document.querySelectorAll("#filePages > div");
+ 
+    unseenPages = Array.from(filePages).filter(element => !element.matches(".seenPage"));
+
+    if(unseenPages.length > 0){
+        unseenPages[unseenPages.length-1].classList.add("seenPage");
+    }
+})
+
+// changing the file pages from seen to unseen side 
+document.getElementById("previousBtn").addEventListener("click", function(){
+    filePages = document.querySelectorAll(".seenPage");
+ 
+    seenPages = Array.from(filePages)
+
+    if(seenPages.length > 0){
+        seenPages[0].classList.remove("seenPage");
+    }
+})

@@ -189,13 +189,14 @@ body {
     height: 100%;
     width: 2vw;
     background-color: rgb(71, 185, 223);
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     left: 0;
     top: 0;
 
     transition: transform 1.5s;
 }
+
 
 #fileShine{
     position: absolute;
@@ -206,8 +207,6 @@ body {
     height: 20px ;
     transform: rotate(40deg);
     background-color: rgba(255, 235, 205, 0.884);
-
-   
 }
 
 @keyframes fileShineLight {
@@ -255,7 +254,7 @@ body {
     border-radius: 10px;
 }
 
-#lowerFile>div{
+ #nextBtn,  #previousBtn, #closeBtn{
     width: 9vw;
     height:8vh;
     overflow: visible;
@@ -282,10 +281,10 @@ body {
 
 
 /* three buttons design here  */
-#next{
+ #nextBtn{
     top: 15%;
 }
-#file.open #next{
+#file.open  #nextBtn{
     background-color:#CFE8A9;
     left: 95%;
     transition: left 700ms;
@@ -294,11 +293,11 @@ body {
 }
 
 
-#previous{
+ #previousBtn{
     background-color:#FFFDE3;
     top: 30%;
 }
-#file.open #previous{
+#file.open  #previousBtn{
     left: 95%;
     pointer-events: auto;
     transition: left 700ms 150ms;
@@ -317,4 +316,49 @@ body {
 
 #lowerFile > div:hover{
     border:3.5px dotted ;
+}
+
+
+/* file page decoration starts form here  */
+#filePages{
+    position: absolute;
+    top: 1%;
+    width: 100%;
+    height: 98%;
+    transform-style: preserve-3d;
+    z-index: 2;
+    background-color: rgb(157, 80, 80);
+   
+}
+#filePages > div{
+    box-sizing: border-box;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* transform: rotateY(0deg) ; */
+    transform-origin: left;
+    background-color: #CFE8A9;
+    border-left: 1vw solid rgba(88, 209, 66, 0.806);
+    left: 0;
+    
+    transition: left 500ms, transform 800ms;
+}
+/* translateX(2vw) */
+#file.open #filePages > div{
+    left: -.5vw;
+
+}
+
+#file.open #filePages > .seenPage{
+    left: 0;
+
+    transform: rotateY(-149deg) translateX(1.5vw);
+}
+
+.pageContent{
+    transition: opacity 1ms 300ms;
+}
+
+.seenPage .pageContent{
+    opacity: 0;
 }
