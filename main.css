@@ -7,6 +7,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: antiquewhite;
+    /* position: relative; */
 }
 
 #backgroundWall {
@@ -26,7 +27,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2px solid yellow;
 
     perspective: 830px;
 }
@@ -361,4 +361,28 @@ body {
 
 .seenPage .pageContent{
     opacity: 0;
+}
+
+
+/* character and chair section starts here  */
+#chair{
+    width: 25vw;
+    height: 42vh;
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 8vh;
+}
+#character{
+    position: absolute;
+    height: auto;
+    width: 20vw;
+    bottom: 20vh;
+
+    left: 34.5%;
+    /* background-color: #CFE8A9; */
+    /* right: 0; */
+    margin: auto;
 }
