@@ -3,6 +3,10 @@
     --tableSecondColor: red;
 }
 
+*{
+    transition: filter 400ms;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -383,7 +387,7 @@ body {
     width: 15vw;
     bottom: 20vh;
     right: 0;
-    left: 0%;
+    left: -40%;
     /* background-color: #CFE8A9; */
     margin: auto;
     display: flex;
@@ -442,6 +446,27 @@ body {
 
 #face{
     width: 100%;
+}
+
+#smile{
+    position: absolute;
+    left: 0;
+    right: 20%;
+    margin: auto;
+    bottom: 12%;
+    background-image: url("images/character/excited.svg");
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 26%;
+    height:9%;
+
+}
+
+
+#faceParts:hover #smile{
+    background-image: url("images/character/normalSmile.svg");
+    
 }
 
 #bodyParts{
