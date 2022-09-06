@@ -369,20 +369,78 @@ body {
     width: 25vw;
     height: 42vh;
     position: absolute;
-    /* top: 0; */
     left: 0;
     right: 0;
     margin: auto;
     bottom: 8vh;
 }
+
+
+
+/* charactere stablishment form here  */
 #character{
     position: absolute;
-    height: auto;
-    width: 20vw;
+    width: 15vw;
     bottom: 20vh;
-
-    left: 34.5%;
+    right: 0;
+    left: -40%;
     /* background-color: #CFE8A9; */
-    /* right: 0; */
     margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+#faceParts{
+    position: relative;
+    left: 6%;
+    right: 0;
+    margin: auto;
+    width: 65%; 
+    margin-bottom: -5vh;
+}
+
+
+.eyes{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+
+#hair{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+
+#face{
+    width: 100%;
+}
+
+#bodyParts{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* background-color: red; */
+}
+
+#body{
+    width: 100%;
+    /* background-color: #FFFDE3; */
+}
+
+#wools{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 22%;
+}
+
+.wool{
+    width: 10%;
+    display: block;
 }
