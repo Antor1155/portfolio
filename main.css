@@ -409,13 +409,31 @@ body {
     width: 4vw;
     height: 3vh;
     position: absolute;
-    top: 55%;
+    /* top: 55%; */
+    bottom: 33%;
     left: 0;
     right: 19%;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    animation: eyeClose 3s alternate infinite;
 }
+
+
+@keyframes eyeClose{
+    55%{
+        height: 3vh;
+    }
+    60%{
+        height: .3vh;
+        /* background-color: black; */
+    }
+    62%{
+        height: 3vh;
+    }
+}
+
 .eye{
     background-color: rgba(244, 234, 234, 0.413);
     width: 40%;
@@ -423,6 +441,8 @@ body {
     border-radius: 50%;
     /* border-top: 2px solid black; */
     position: relative;
+
+
     
 }
 
@@ -440,8 +460,25 @@ body {
 
 #hair{
     position: absolute;
-    top: 10%;
+    top: 0%;
     width: 100%;
+    animation: hairSwing 2s infinite alternate;
+    transform-origin: bottom;
+}
+@keyframes hairSwing{
+
+    20%{
+        transform: rotate(-10deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    90%{
+        transform: rotate(-3deg);
+    }
+    100%{
+        transform: rotate(-7deg);
+    }
 }
 
 #face{
@@ -454,6 +491,7 @@ body {
     right: 20%;
     margin: auto;
     bottom: 12%;
+    /* background-image: url("images/character/excited.svg"); */
     background-image: url("images/character/excited.svg");
    
     background-repeat: no-repeat;
@@ -494,4 +532,22 @@ body {
 .wool{
     width: 10%;
     display: block;
+    transform-origin: top;
+    animation: woolSwing 6s infinite alternate;
+    
+}
+@keyframes woolSwing{
+
+    20%{
+        transform: rotate(25deg);
+    }
+    60%{
+        transform: rotate(-5deg);
+    }
+    90%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
 }
