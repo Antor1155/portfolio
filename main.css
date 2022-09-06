@@ -383,7 +383,7 @@ body {
     width: 15vw;
     bottom: 20vh;
     right: 0;
-    left: -40%;
+    left: 0%;
     /* background-color: #CFE8A9; */
     margin: auto;
     display: flex;
@@ -417,7 +417,7 @@ body {
     width: 40%;
     height: 100%;
     border-radius: 50%;
-    border-top: 2px solid black;
+    /* border-top: 2px solid black; */
     position: relative;
     
 }
@@ -426,8 +426,8 @@ body {
     content: " ";
     position: absolute;
     top: 25%;
-    left:10%;
-    width: 50%;
+    left:15%;
+    width: 45%;
     height: 1.5vh;
     background-color: black;
     border-radius: 50%;
