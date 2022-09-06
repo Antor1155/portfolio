@@ -402,9 +402,35 @@ body {
 
 
 .eyes{
-    width: 100px;
-    height: 100px;
-    background-color: white;
+    width: 4vw;
+    height: 3vh;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    right: 19%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.eye{
+    background-color: rgba(244, 234, 234, 0.413);
+    width: 40%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: 2px solid black;
+    position: relative;
+    
+}
+
+.eye::before{
+    content: " ";
+    position: absolute;
+    top: 25%;
+    left:10%;
+    width: 50%;
+    height: 1.5vh;
+    background-color: black;
+    border-radius: 50%;
 }
 
 

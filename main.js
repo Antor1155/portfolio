@@ -81,3 +81,13 @@ document.getElementById("previousBtn").addEventListener("click", function(){
         seenPages[0].classList.remove("seenPage");
     }
 })
+
+
+// eye Animation 
+document.querySelector('body').addEventListener('mousemove', function(){
+    let eye = document.querySelectorAll(".eye");
+    eye.forEach(function(eye){
+        let x = (eye.getBoundingClientRect().left) + (eye.clientWidth/2);
+        let y = (eye.getBoundingClientRect().left) + (eye.clientHeight/2);
+    })
+})
