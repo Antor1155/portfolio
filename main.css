@@ -551,3 +551,24 @@ body {
         transform: rotate(10deg);
     }
 }
+
+
+/* airconditionar  section animation here  */
+
+.acContainer{
+    /* background-color: rgb(236, 126, 126); */
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 10vw;
+    overflow: hidden;
+    
+    
+    
+}
+
+@keyframes fanSwing{
+    to{
+        transform: rotate(360deg);
+    }
+}
