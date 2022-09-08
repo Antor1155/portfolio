@@ -387,7 +387,8 @@ body {
     width: 15vw;
     bottom: 20vh;
     right: 0;
-    left: -40%;
+    /* left: -40%; */
+    left: 0;
     /* background-color: #CFE8A9; */
     margin: auto;
     display: flex;
@@ -555,20 +556,42 @@ body {
 
 /* airconditionar  section animation here  */
 
-.acContainer{
+.middleRow{
     /* background-color: rgb(236, 126, 126); */
     position: absolute;
     bottom: 10%;
-    right: 0;
-    width: 10vw;
-    overflow: hidden;
-    
-    
-    
+    left: 0;
+    width: 100%;
+    background-color: #e57c7c;
+    /* overflow: hidden; */
 }
+
+#ac{
+    position: absolute;
+    right: 0;
+    /* width: 12vw; */
+    width: 20vw;
+    bottom: 0;
+}
+
+#ac img{
+    width: 100%;
+}
+
+#acVent{
+    position: absolute;
+    box-sizing: border-box;
+    left: 10%;
+    top: 10%;
+    width: 42%;
+    height: 17%;
+    background-color: #32b40b;
+    transform: skewY(6deg);
+}
+
 
 @keyframes fanSwing{
     to{
-        transform: rotate(360deg);
+        
     }
 }
