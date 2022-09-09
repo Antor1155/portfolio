@@ -143,16 +143,20 @@ body {
     height: 25vh;
     cursor: pointer;
 
-    background-color: rgba(255, 255, 10, 0.305);
+    background-color: rgba(240, 240, 230, 0.305);
     
     /* display: none; */
     transform: rotateX(40deg);
     transform-origin: bottom;
-
     transform-style: preserve-3d;
-
     transition: transform 900ms, scale 900ms, box-shadow 900ms, height 900ms, width 900ms;
 
+}
+
+
+#file:hover{
+    transform: scale(125%) rotateX(20deg) translateY(-1vh);
+    box-shadow: 0px 3vh 3.2vh -1vh black;
 }
 
 
@@ -229,11 +233,6 @@ body {
     }
 }
 
-#file:hover{
- 
-    transform: scale(125%) rotateX(20deg) translateY(-3vh);
-    box-shadow: 0px 3vh 3.2vh -1vh black;
-}
 
 #file:hover #fileShine{
     animation: fileShineLight 900ms 1 ease-out;
@@ -459,7 +458,7 @@ body {
 
 #hair{
     position: absolute;
-    top: 0%;
+    top: 0;
     width: 100%;
     animation: hairSwing 2s infinite alternate;
     transform-origin: bottom;
@@ -467,7 +466,7 @@ body {
 @keyframes hairSwing{
 
     20%{
-        transform: rotate(-10deg);
+        transform: rotate(-5deg);
     }
     60%{
         transform: rotate(0deg);
@@ -555,20 +554,19 @@ body {
 /* airconditionar  section animation here  */
 
 .middleRow{
-    /* background-color: rgb(236, 126, 126); */
     position: absolute;
     bottom: 10%;
     left: 0;
     width: 100%;
-    background-color: #e57c7c;
-    /* overflow: hidden; */
+    height: 90%;
+    /* background-color: #e57c7c; */
+    overflow: hidden;
 }
 
 #ac{
     position: absolute;
-    right: 0;
-    width: 12vw;
-    /* width: 20vw; */
+    right: -2%;
+    width: 13vw;
     bottom: 0;
 }
 
