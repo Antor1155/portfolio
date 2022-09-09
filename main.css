@@ -423,14 +423,13 @@ body {
 
 
 @keyframes eyeClose{
-    55%{
+    54%{
         height: 3vh;
     }
     60%{
         height: .3vh;
-        /* background-color: black; */
     }
-    62%{
+    63%{
         height: 3vh;
     }
 }
@@ -440,7 +439,6 @@ body {
     width: 40%;
     height: 100%;
     border-radius: 50%;
-    /* border-top: 2px solid black; */
     position: relative;
 
 
