@@ -1,6 +1,6 @@
 :root {
-    --tableMainColor: yellow;
-    --tableSecondColor: red;
+    --tableMainColor: rgb(208, 208, 58);
+    --tableSecondColor: rgb(227, 57, 57);
 }
 
 *{
@@ -62,7 +62,7 @@ body {
     bottom: 3vh;
     width: 70vw;
     height: 5vh;
-    background-color: red;
+    background-color: rgb(143, 16, 16);
 }
 
 #tableLegs {
@@ -82,7 +82,7 @@ body {
 .tableLeg {
     width: 7vh;
     height: 100%;
-    background-color: yellow;
+    background-color: rgb(197, 175, 13);
     border-radius: 20px;
 }
 
