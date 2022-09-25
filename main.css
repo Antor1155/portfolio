@@ -3,9 +3,9 @@
     --tableSecondColor: rgb(227, 57, 57);
 }
 
-*{
+/* *{
     transition: filter 400ms;
-}
+} */
 
 body {
     padding: 0;
