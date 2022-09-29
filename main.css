@@ -669,16 +669,26 @@ body {
     content: url(images/sittingWoman/MainImages-sittingOnSofaImages/hoveredMomOnSofa.svg);
 }
 
-#momDialogue{
+.dialogue{
     width: 15vw;
     height: 15vh;
-    background-color: rgba(255, 0, 0, 0.405);
     position: relative;
     background-image: url(images/dialogueBox/momDialogueBox.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    top:-28%;
+    background-size: cover;
+    top:-37%;
     left: 10%;
+    padding:0 0 0 1.5vw;
+    box-sizing: border-box;
+}
+
+.dialogue p{
+    font-size: 1.5vw;
+    padding-top: 2px;
+}
+
+.sisD{
+    top: -135%;
+    left: 52%;
 }
 
 
