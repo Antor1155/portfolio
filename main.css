@@ -556,7 +556,7 @@ body {
     left: 0;
     width: 100%;
     height: 90%;
-    background-color: #e57c7c;
+    /* background-color: #e57c7c; */
     overflow: hidden;
 }
 
@@ -647,11 +647,11 @@ body {
     bottom: 3%;
     right: 64%;
     width: 45vw;
-    height: 52vh;
+    /* height: 52vh; */
     background-color: aliceblue;
 }
 
-#momOnSofa{
+#momOnSofaImg{
     width: 100%;
     height: 100%;
 }
@@ -659,48 +659,49 @@ body {
 #momHoveringDiv{
     position: absolute;
     width: 12vw;
-    height: 50vh;
-    background-color: #92dd213e;
+    height:100%;
+    /* background-color: #92dd213e; */
     bottom: 0;
     left: 12vw;
 }
 
-#momHoveringDiv:hover ~ #momOnSofa{
+#momHoveringDiv:hover ~ #momOnSofaImg{
     content: url(images/sittingWoman/MainImages-sittingOnSofaImages/hoveredMomOnSofa.svg);
 }
 
 .dialogue{
     width: 15vw;
     height: 15vh;
-    position: relative;
+    position: absolute;
     background-image: url(images/dialogueBox/momDialogueBox.svg);
     background-size: cover;
-    top:-37%;
-    left: 10%;
+    top:-30%;
+
     padding:0 0 0 1.5vw;
     box-sizing: border-box;
 }
 
 .dialogue p{
     font-size: 1.5vw;
-    padding-top: 2px;
+    margin: 2%;
+
 }
 
 .sisD{
-    top: -135%;
     left: 52%;
+    /* display: none; */
+    
 }
 
 
 
-#sis{
+#sisImg{
     position: absolute;
     width: 9vw;
-    bottom: 4%;
     left: 54%;
 }
 
-#sis:hover{
+#sisImg:hover{
     content: url(images/sittingWoman/MainImages-sittingOnSofaImages/hoveredSis.svg);
     width: 13.8vw;
     bottom: 4%;
