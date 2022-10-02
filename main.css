@@ -776,8 +776,20 @@ body {
     border-color: #0F61FF;
 }
 
-.pennUniversityCertificate{
-    border-color:#f5410f;
+/* .certificate:nth-child(6) img{
+    border-color: red;
+} */
+
+.pennUniversityCertificate img{
+    border-color: white rgb(151, 28, 0);
+}
+
+.duekUniversityCertificate img{
+    border-color: white blue;
+}
+
+.deeplearningCertificate img{
+    border-color:#FE8B98;
 }
 
 .certificate:hover{
