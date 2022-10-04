@@ -748,10 +748,13 @@ body {
     margin-right: 1vw;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+    align-items: flex-start;
+    justify-items: center;
 }
 
 .certificate{
     width: var(--certificateFrameSize);
+    height: auto;
     margin:.3vw .5vw;
     background-color: var(--certificateFrameColor);
     display: inline-block; 
@@ -761,31 +764,34 @@ body {
 
 .certificate img{
     width: var(--certificateSize);
-    border: calc(var(--certificateSize)/16) double rgb(240, 234, 39);
+    border: calc(var(--certificateSize)/16) double rgb(216, 224, 56);
 }
 
-.certificate:nth-child(11){
-    grid-column-start: 2;
-}
 
 .certificate:nth-child(n+2):nth-child(-n+5) img{
     border-color:#0F9D58 #DB4437 #F4B400  #4285F4;
 }
 
 .certificate:nth-child(n+7):nth-child(-n+10) img{
-    border-color: #0F61FF;
+    border-color: #316feb;
 }
 
-/* .certificate:nth-child(6) img{
-    border-color: red;
-} */
 
 .pennUniversityCertificate img{
     border-color: white rgb(151, 28, 0);
 }
 
+.ielts img{
+    width: 5vw;
+    border-color: aliceblue;
+}
+
+.ielts{
+    width: 7vw;
+}
+
 .duekUniversityCertificate img{
-    border-color: white blue;
+    border-color: white rgb(59, 59, 237);
 }
 
 .deeplearningCertificate img{
@@ -795,8 +801,34 @@ body {
 .certificate:hover{
     transform: scale(2) translateY(1vh);
     cursor: pointer;
+    z-index: 1;
 }
 
-.certificate:nth-child(10):hover{
-    z-index: 1;
+
+/* academic section decoration starts form here  */
+#academicSection{
+    /* float: right; */
+    width: 20vw;
+    height: 100%;
+    /* background-color: #5786e4; */
+    perspective: 800px;
+}
+
+#academicPanel{
+    width: 90%;
+    height: 10%;
+    border-radius: 4px;
+    background-image: url(images/others/academicSection.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid black;
+    transform: rotateX(-20deg);
+    transform-style: preserve-3d;
+    margin: auto;
+    margin-bottom: 1vh;
+}
+
+#academicSection img{
+    width: 5vw;
+    border: 7px double rgb(191, 108, 0);
 }
