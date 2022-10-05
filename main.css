@@ -815,17 +815,19 @@ body {
 }
 
 #academicPanel{
-    width: 90%;
-    height: 10%;
+    width: 85%;
+    height: 8%;
+    margin: auto;
+    margin-bottom: 2vh;
     border-radius: 4px;
-    background-image: url(images/others/academicSection.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
     border-bottom: 2px solid black;
+
+    background-image: url(images/others/academicSection.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
     transform: rotateX(-20deg);
     transform-style: preserve-3d;
-    margin: auto;
-    margin-bottom: 1vh;
 }
 
 #academicSection img{
@@ -834,10 +836,9 @@ body {
 }
 
 #academicCertificates{
-    /* background-color: rgba(235, 239, 220, 0.57);  */
-    /* For browsers that do not support gradients */
     background-image:linear-gradient(45deg,rgba(128, 107, 0, 0.5), rgba(255, 255, 255, .2) 60%);
-
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
     padding: 1vh;
     width: 80%;
     margin: auto;
@@ -848,12 +849,35 @@ body {
     justify-content: center;
 }
 
+
+.glassHolder{
+    width: .4vw;
+    height: .4vw;
+    background-color: rgb(237, 236, 236);
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    margin: .4vw;
+}
+.glassHolder:nth-child(4){
+    right: 0%;
+    background-color: white;
+}
+.glassHolder:nth-child(5){
+    bottom: 0%;
+    background-color: rgb(244, 217, 200);
+}
+.glassHolder:nth-child(6){
+    bottom: 0%;
+    right: 0;
+    background-color: rgb(244, 217, 200);
+}
+
+
 #bscDegree{
     grid-column-start: 1;
     grid-column-end:3;
 }
-
-
 #bscDegree::before, #sscDegree::before, #hscDegree:before {
     content: "BSC.(ComputerScience)--avg:82%";
     font-size: .7vw;
