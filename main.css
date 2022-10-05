@@ -806,11 +806,11 @@ body {
 
 
 /* academic section decoration starts form here  */
+
 #academicSection{
-    /* float: right; */
     width: 20vw;
     height: 100%;
-    /* background-color: #5786e4; */
+    background-color: #5786e4;
     perspective: 800px;
 }
 
@@ -831,4 +831,59 @@ body {
 #academicSection img{
     width: 5vw;
     border: 7px double rgb(191, 108, 0);
+}
+
+#academicCertificates{
+    /* background-color: rgba(235, 239, 220, 0.57);  */
+    /* For browsers that do not support gradients */
+    background-image:linear-gradient(45deg,rgba(128, 107, 0, 0.5), rgba(255, 255, 255, .2) 60%);
+
+    padding: 1vh;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+#bscDegree{
+    grid-column-start: 1;
+    grid-column-end:3;
+}
+
+
+#bscDegree::before, #sscDegree::before, #hscDegree:before {
+    content: "BSC.(ComputerScience)--avg:82%";
+    font-size: .7vw;
+    text-align: center;
+    display: block;
+    border-radius: 3px;
+    background-color: rgb(50, 48, 46);
+    color: rgb(243, 241, 232);
+    margin-bottom: .3vh;
+    padding: 2px 0;
+
+}
+
+#sscDegree, #hscDegree{
+    position: relative;
+    margin-top: .5vh;
+    /* background-color: rgb(194, 114, 114); */
+}
+
+#hscDegree{
+    transform: translateX(-1vw);
+}
+#sscDegree{
+    transform: translateX(1vw);
+}
+
+#sscDegree::before{
+    content: "SSC-- GPA:5/5";
+}
+
+#hscDegree:before{
+    content: "HSC-- GPA:4.5/5";
 }
