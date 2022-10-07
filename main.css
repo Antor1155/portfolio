@@ -732,29 +732,33 @@ body {
 
 
 /* background section starts form here   */
+/* background section starts form here   */
 
 #backgroundWall {
     background-color:var(--backgroundWallColor);
     height: 67vh;
     width: 100%;
     overflow: hidden;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+
 }
 
 /* certificates part starts here  */
 #courseCertificates{
-    float: right;
-    /* background-color: #CFE8A9; */
-    width: 45%;
+    background-color: #cfe8a94e;
+    width: 45vw;
+    height: 80%;
     margin-right: 1vw;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    align-items: flex-start;
+    grid-template-columns:repeat(5, auto);
+    align-items: start;
     justify-items: center;
 }
 
 .certificate{
     width: var(--certificateFrameSize);
-    height: auto;
     margin:.3vw .5vw;
     background-color: var(--certificateFrameColor);
     display: inline-block; 
@@ -810,7 +814,7 @@ body {
 #academicSection{
     width: 20vw;
     height: 100%;
-    background-color: #5786e4;
+    background-color: #0c296346;
     perspective: 800px;
 }
 
@@ -910,4 +914,11 @@ body {
 
 #hscDegree:before{
     content: "HSC-- GPA:4.5/5";
+}
+
+/* madels section starts form here  */
+#madels{
+    width:34vw;
+    height: 100%;
+    background-color: #1800f435;
 }
