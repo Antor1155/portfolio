@@ -927,6 +927,7 @@ body {
     display: relative;
 }
 
+
 #competitiveCertificate>div:nth-child(1){
     margin: auto;
     margin-top: 1vh;
@@ -939,37 +940,31 @@ body {
 
 #competitiveCertificate div:nth-child(1) img{
     width: 5.7vw;
-    border: .2vw solid rgb(238, 155, 10);
+    border: .1vw solid rgb(162, 114, 30);
     border-radius: 5px;
     /* to remove below white space of an inline-block element  */
     margin-bottom: -4px;
     
     transform: rotateX(15deg);
-
     box-shadow: -2px 1px black;
 }
 
 
 #certificateHolder{
-    /* background-color: red; */
     width: 14vw;
+    height: 1.5vh;
+    background-image:url(images/others/wood.svg);
     margin: auto;
 }
 
-#certificateHolder div:first-child{
-    height: 1.5vh;
-    background-image:url(images/others/wood.svg);
-}
-
 #screw{
+    width: 14vw;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-
-    /* filter: brightness(65%); */
 }
 
 #screw img{
     width: 2vw;
     margin: 0 1vw;
-
 }
