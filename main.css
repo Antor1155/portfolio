@@ -923,6 +923,7 @@ body {
     width:32vw;
     height: 100%;
     background-color: #1800f435;
+    padding-top: 1vh;
 
     position: relative;
 }
@@ -970,11 +971,40 @@ body {
 }
 
 
-#swimmingMadels{
+    /* madels on hanger section starts form here  */
+.madelsOnHanger{
     width: 10vw;
     position: absolute;
+}
+ 
+#swimmingMadels,#caromMadels{
     top: 35%;
     left: 50%;
     transform:translate(-50%, -50%);
-    
+}
+#caromMadels{
+    top: 60%;
+}
+
+
+.SingleMadelsOnHanger{
+    width: 8vw;
+    position: absolute;
+}
+#cricketMadels{
+    top: 21%;
+    left:2%;
+}
+#soccerMadels{
+    top: 20%;
+    right:4%;
+}
+
+#volleyballMadels{
+    top: 41%;
+    left:6%;
+}
+#athleticsMadels{
+    top: 41%;
+    right:10%;
 }
