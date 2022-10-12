@@ -925,7 +925,11 @@ body {
 #madels{
     width:32vw;
     height: 100%;
-    /* background-color: #1800f435; */
+
+    filter: brightness(20%);
+    background-color: #000000e0;
+    /* hint for lighting up the scene like stage  */
+
     padding-top: 1vh;
 
     position: relative;
