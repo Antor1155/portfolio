@@ -924,7 +924,7 @@ body {
     height: 100%;
     background-color: #1800f435;
 
-    display: relative;
+    position: relative;
 }
 
 
@@ -967,4 +967,14 @@ body {
 #screw img{
     width: 2vw;
     margin: 0 1vw;
+}
+
+
+#swimmingMadels{
+    width: 10vw;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    
 }
