@@ -830,7 +830,7 @@ body {
     border-bottom: 2px solid black;
 
     background-image: url(images/others/academicSection.svg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 
     transform: rotateX(-20deg);
