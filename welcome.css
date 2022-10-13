@@ -1,12 +1,36 @@
 #welcomeSection {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(39, 6, 6, 0.789);
+    /* background-color: rgba(29, 79, 24, 0.246); */
+    background: rgb(213, 204, 204);
     position: absolute;
     top: 0;
+}
 
-    display: none;
+.mask1 {
+    -webkit-mask-image: url(images/others/Welcome.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 33vw;
 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* border: 2px solid red; */
+    /* mask-repeat: no-repeat;     */
 
-    
+}
+
+.mask1 img{
+    position: relative;
+    animation: move 2s infinite alternate linear; 
+    overflow: hidden;
+}
+
+@keyframes move{
+    from{
+        top: 10px;
+    }
+    to{
+        top: -300px;
+    }
 }
