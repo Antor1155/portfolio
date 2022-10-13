@@ -1,0 +1,12 @@
+#welcomeSection {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(39, 6, 6, 0.789);
+    position: absolute;
+    top: 0;
+
+    display: none;
+
+
+    
+}

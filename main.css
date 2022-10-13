@@ -25,10 +25,21 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: antiquewhite;
+
+
+    /* background:repeating-conic-gradient(rgb(119, 52, 52)0deg 100deg, rgb(38, 38, 82) 100deg 200deg);
+    background-size: 10px; */
     /* position: relative; */
 }
 
+#floor{
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    bottom: 0;
+
+    background: rgb(236, 223, 207);
+}
 
 
 /* table section and table animation starts form here  */
@@ -40,7 +51,7 @@ body {
     margin-right: auto;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -1vh;
 
     perspective: 830px;
 }
@@ -59,7 +70,7 @@ body {
     background-image: radial-gradient(circle, var(--tableMainColor), var(--tableSecondColor) 300%);
     border-bottom: 10px solid rgb(94, 88, 88);
 
-    box-shadow: 3vw 34vh 0 -2vw rgba(0, 0, 0, 0.131);
+    box-shadow: 5vw 29vh 0 -4vw rgba(0, 0, 0, 0.202);
 
     overflow: hidden;
 }
@@ -661,6 +672,9 @@ body {
     width: 45vw;
     /* height: 52vh; */
     /* background-color: blueviolet; */
+
+    box-shadow: -12vw 8vh rgba(0, 0, 0, 0.357);
+    border-radius: 50%;
 }
 
 #momOnSofaImg{
