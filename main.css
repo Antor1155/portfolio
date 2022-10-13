@@ -59,6 +59,8 @@ body {
     background-image: radial-gradient(circle, var(--tableMainColor), var(--tableSecondColor) 300%);
     border-bottom: 10px solid rgb(94, 88, 88);
 
+    box-shadow: 3vw 34vh 0 -2vw rgba(0, 0, 0, 0.131);
+
     overflow: hidden;
 }
 
@@ -746,6 +748,8 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
 
+    position: relative;
+
 }
 
 /* certificates part starts here  */
@@ -823,21 +827,18 @@ body {
 
 #academicPanel{
     width: 85%;
-    height: 8%;
+    /* height: 9%; */
+    display: block;
     margin: auto;
-    margin-bottom: 2vh;
-    border-radius: 4px;
-    border-bottom: 2px solid black;
-
-    background-image: url(images/others/academicSection.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    margin-bottom: 1.5vh;
+    border-bottom:2px solid black;
 
     transform: rotateX(-20deg);
     transform-style: preserve-3d;
+
 }
 
-#academicSection img{
+#academicCertificates img{
     width: 5vw;
     border: 7px double rgb(191, 108, 0);
 }
@@ -1013,4 +1014,17 @@ body {
 #athleticsMadels{
     top: 41%;
     right:10%;
+}
+
+
+#backWallJointPart{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 6vh;
+    background-color: rgba(54, 54, 203, .2);
+
+    border-top: .3vh solid rgb(55, 52, 50);
+    /* box-shadow: 0 .5vh 7px rgb(0, 0, 0); */
+ 
 }
