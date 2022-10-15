@@ -1,19 +1,26 @@
+:root{
+    --welcomeSectionBg: rgb(221, 213, 213);
+}
+
 #welcomeSection {
     width: 100vw;
     height: 100vh;
-    background: rgb(221, 213, 213);
+    background: var(--welcomeSectionBg);
     /* background: black; */
 
-    /* background: repeating-conic-gradient(rgb(204, 83, 83) 10deg 20deg, rgb(103, 103, 214) 20deg 30deg); */
     position: absolute;
     top: 0;
 
     overflow: hidden;
-    display: none;
-
     /* display: none; */
+    animation: backgroundBlack 1.5s 8s steps(5) forwards;
+}
 
-
+@keyframes backgroundBlack {
+    to{
+        background:black ;
+    }
+    
 }
 
 
@@ -189,12 +196,38 @@
 
 
 #CodedText {
-    width: 16%;
+    width: 6%;
     position: absolute;
     top: 70%;
-    left: 42%;
+    left: 47%;
 
-    /* background-color: white; */
    
     /* filter: invert(100%); */
+}
+
+.context{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100%;
+
+    position: absolute;
+    top: 0%;
+    left: 55%;
+    transform: translate(-50%);
+
+    color: var(--welcomeSectionBg);
+
+}
+
+.second{
+    flex-direction: column;
+
+    height: 100%;
+
+    left: 3%;
+    top: 55%;
+    transform: translateY(-50%);
+
 }
