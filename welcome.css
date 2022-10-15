@@ -13,7 +13,7 @@
 
     overflow: hidden;
     /* display: none; */
-    animation: backgroundBlack 1.5s 8s steps(5) forwards;
+    /* animation: backgroundBlack 1.5s 8.5s steps(5) forwards; */
 }
 
 @keyframes backgroundBlack {
@@ -205,7 +205,7 @@
     /* filter: invert(100%); */
 }
 
-.context{
+#context{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -213,21 +213,32 @@
     width: 100%;
 
     position: absolute;
-    top: 0%;
+    top: 20%;
     left: 55%;
     transform: translate(-50%);
 
-    color: var(--welcomeSectionBg);
+    /* color: var(--welcomeSectionBg); */
+    background-color: black;
 
 }
 
-.second{
+@keyframes positonBottom {
+    1%{
+        background-color: black;
+    }
+}
+
+#contextSecond{
+    display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
 
     height: 100%;
 
     left: 3%;
     top: 55%;
     transform: translateY(-50%);
+    /* color: var(--welcomeSectionBg); */
 
 }
