@@ -95,3 +95,20 @@ document.querySelector('body').addEventListener('mousemove', function(){
         eye.style.transform = "rotate(" + rot +"deg)"
     })
 })
+
+
+
+
+
+
+// from here the welcome section works 
+document.getElementById("codedImg").addEventListener("click", function(){
+    this.style.transform = "scale(100%)";
+    this.style.boxShadow="none";
+
+    document.getElementById("codedImgAlert").style.opacity=1;
+
+    navigator.clipboard.writeText("Hoop we meet soon !!");
+
+
+})
