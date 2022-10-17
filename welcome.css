@@ -221,46 +221,7 @@
 
 
 
-#context{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-    width: 100%;
-
-    position: absolute;
-    top: 0%;
-    left: 55%;
-    transform: translate(-50%);
-
-    color: var(--welcomeSectionBg);
-
-}
-
-#context > :first-child{
-    position: relative;
-    animation: goOutOfFrameX 2s 10s 1 linear forwards;
-}
-#context > :nth-child(2){
-    position: relative;
-    animation: goOutOfFrameX 2s 10.5s 1 linear forwards;
-}
-#context > :nth-child(3){
-    position: relative;
-    animation: goOutOfFrameX 2s 11s 1 linear forwards;
-}
-
-@keyframes goOutOfFrameX {
-    from{
-        top: 0;
-    }
-    to{
-        top: -12vw;
-    }
-}
-
-
-#contextSecond{
+#context, #contextSecond{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -269,30 +230,39 @@
     height: 100%;
 
     left: 3%;
-    top: 55%;
+    top: 50%;
     transform: translateY(-50%);
     color: var(--welcomeSectionBg);
+
+}
+
+
+#contextSecond{
+    color: black;
+    /* animation:goOutOfFrame .5s 6s step-end forwards ; */
+}
+@keyframes goOutOfFrame {
+    to{
+        left: -12vw;
+    }
 }
 
 
 #contextSecond > :first-child{
-    position: relative;
-    animation: goOutOfFrameY 2s 11.5s 1 linear forwards;
+    opacity: 0;
+    animation: visible 4.5s 2s step-start;
 }
 #contextSecond > :nth-child(2){
-    position: relative;
-    animation: goOutOfFrameY 2s 12s 1 linear forwards;
+    opacity: 0;
+    animation: visible 4s 2.5s step-start;
 }
 #contextSecond > :nth-child(3){
-    position: relative;
-    animation: goOutOfFrameY 2s 12.5s 1 linear forwards;
+    opacity: 0;
+    animation: visible 3.5s 3s step-start;
 }
 
-@keyframes goOutOfFrameY {
-    from{
-        left: 0;
-    }
+@keyframes visible {
     to{
-        left: -12vw;
-    }
+        opacity: 1;
+    }    
 }
