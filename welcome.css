@@ -7,13 +7,13 @@
     height: 100vh;
     background: var(--welcomeSectionBg);
     /* background: black; */
-    display: none;
+    /* display: none; */
 
     position: absolute;
     top: 0;
 
     overflow: hidden;
-    animation: backgroundBlack 1s 6s steps(4) forwards, rotateAndDisapear 4s 11.3s forwards;
+    animation: backgroundBlack 1s 6s steps(4) forwards, rotateAndDisapear 3s 11.3s ease-in forwards;
 
 }
 

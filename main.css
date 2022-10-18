@@ -18,7 +18,8 @@
     --certificateFrameSize:8vw;
     --certificateFrameColor:rgba(0, 0, 0, 0.677);
 
-    --darkroom: brightness(20%);
+    --darkroom: brightness(0%);
+    --darkRoomFilter: rgb(255, 0, 0);
 }
 
 /* *{
@@ -792,7 +793,7 @@ body {
 .sectionFilter{
     width: 100%;
     height: 150%;
-    background-color: black;
+    background-color: var(--darkRoomFilter);
     position: absolute;
     top: 0;
     left: 0;
