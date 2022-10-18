@@ -102,13 +102,35 @@ document.querySelector('body').addEventListener('mousemove', function(){
 
 
 // from here the welcome section works 
+// from here the welcome section works 
+// from here the welcome section works 
+
+
 document.getElementById("codedImg").addEventListener("click", function(){
     this.style.transform = "scale(100%)";
     this.style.boxShadow="none";
 
     document.getElementById("codedImgAlert").style.opacity=1;
 
-    navigator.clipboard.writeText("Hoop we meet soon !!");
-
-
+    navigator.clipboard.writeText("MD Antor : Hoop we meet soon !!");
 })
+
+
+// disabelignt the welcome section part when animation is done 
+
+
+ const timedWelcomeSection= window.setInterval(function(){
+    console.log( "coming form console log:: "+ getComputedStyle(document.getElementById("welcomeSection")).opacity);
+    if(getComputedStyle(document.getElementById("welcomeSection")).opacity == 0){
+        console.log("got inside the if block");
+        document.getElementById("welcomeSection").style.display = "none";
+
+        clearInterval(timedWelcomeSection);
+    }
+},200)
+
+
+// if(getComputedStyle(document.getElementById("welcomeSection")).opacity == 0){
+//             console.log("got inside the if block");
+//             document.getElementById("welcomeSection").style.display == "none";
+//         }
