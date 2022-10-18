@@ -9,13 +9,16 @@
     --fileBorder: 2px solid rgb(190, 29, 29);
 
     /* --backgroundWallColor: url(images/others/bricks.svg);  */
-    --backgroundWallColor: linear-gradient(to right,rgb(120, 152, 124), rgb(140, 170, 180), rgb(130, 160, 150));
     /* --backgroundWallColor: linear-gradient(red, blue); */
     /* --backgroundWallColor: rgba(221, 221, 131, 0.488);  */
+    --backgroundWallColor:  linear-gradient(to right,rgb(120, 152, 124), rgb(140, 170, 180), rgb(130, 160, 150));
+
 
     --certificateSize: 6vw;
     --certificateFrameSize:8vw;
     --certificateFrameColor:rgba(0, 0, 0, 0.677);
+
+    --darkroom: brightness(20%);
 }
 
 /* *{
@@ -42,6 +45,8 @@ body {
     bottom: 0;
 
     background: rgb(236, 223, 207);
+
+    filter: var(--darkroom);
 }
 
 
@@ -57,6 +62,10 @@ body {
     bottom: -1vh;
 
     perspective: 830px;
+}
+
+#table, #tableBottom, #tableLegs{
+    filter: var(--darkroom);
 }
 
 #table {
@@ -175,6 +184,7 @@ body {
     transform-style: preserve-3d;
     transition: transform 900ms, scale 900ms, box-shadow 900ms, height 900ms, width 900ms;
 
+    filter: var(--darkroom);
 }
 
 
@@ -389,19 +399,21 @@ body {
 
 
 /* character and chair section starts here  */
+/* character and chair section starts here  */
+/* character and chair section starts here  */
 #chair{
-    width: 25vw;
-    height: 42vh;
+    width: 29vw;
+    height: 45vh;
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
     bottom: 8vh;
+
+    filter: var(--darkroom);
+
 }
 
-
-
-/* charactere stablishment form here  */
 #character{
     position: absolute;
     width: 15vw;
@@ -413,6 +425,8 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column-reverse;
+
+    filter: var(--darkroom);
 
 }
 
@@ -572,7 +586,8 @@ body {
 }
 
 
-/* airconditionar  section animation here  */
+/* airconditionar and mom  section animation here  */
+/* airconditionar and mom  section animation here  */
 
 .middleRow{
     position: absolute;
@@ -583,6 +598,8 @@ body {
     /* background-color: #e57c7c; */
     overflow: hidden;
     pointer-events: none;
+
+    filter: var(--darkroom);
 }
 
 #ac{
@@ -666,7 +683,7 @@ body {
 }
 
 
-
+/* mom and sister sitting div starts here  */
 /* mom and sister sitting div starts here  */
 #momSisDiv{
     position: absolute;
@@ -754,6 +771,7 @@ body {
 
 /* background section starts form here   */
 /* background section starts form here   */
+/* background section starts form here   */
 
 #backgroundWall {
     background-image:var(--backgroundWallColor);
@@ -771,7 +789,6 @@ body {
 
 /* certificates part starts here  */
 #courseCertificates{
-    /* background-color: #cfe8a94e; */
     width: 45vw;
     height: 80%;
     margin-right: 1vw;
@@ -779,6 +796,7 @@ body {
     grid-template-columns:repeat(5, auto);
     align-items: start;
     justify-items: center;
+    /* filter: var(--darkroom); */
 }
 
 .certificate{
@@ -838,7 +856,6 @@ body {
 #academicSection{
     width: 20vw;
     height: 100%;
-    /* background-color: #0c296346; */
     perspective: 800px;
 }
 
@@ -852,7 +869,6 @@ body {
 
     transform: rotateX(-20deg);
     transform-style: preserve-3d;
-
 }
 
 #academicCertificates img{
@@ -943,13 +959,7 @@ body {
 #madels{
     width:32vw;
     height: 100%;
-
-    /* filter: brightness(20%);
-    background-color: #000000e0; */
-    /* hint for lighting up the scene like stage  */
-
     padding-top: 1vh;
-
     position: relative;
 }
 
