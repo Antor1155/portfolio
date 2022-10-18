@@ -7,6 +7,7 @@
     height: 100vh;
     background: var(--welcomeSectionBg);
     /* background: black; */
+    display: none;
 
     position: absolute;
     top: 0;
