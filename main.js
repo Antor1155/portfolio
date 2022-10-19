@@ -119,9 +119,6 @@ document.getElementById("codedImg").addEventListener("click", function () {
 // disabelignt the welcome section part when animation is done 
 // and doing animation part of the room section 
 
-function DisplayNone(element){
-    element.style.display = "none";
-}
 
 const timedWelcomeSection = window.setInterval(function () {
     if (getComputedStyle(document.getElementById("welcomeSection")).opacity == 0) {
@@ -133,22 +130,46 @@ const timedWelcomeSection = window.setInterval(function () {
 
         // doing animation part of the room seciton 
         // ********************************************
-        setTimeout(function () {
-            document.getElementById("file").style.filter = "none";
-        }, 1000);
+        // setTimeout(function () {
+        //     document.getElementById("file").style.filter = "none";
+        // }, 4000);
 
-            // manipulating backwall elements 
+        // manipulating backwall elements 
+        function DisplayNone(element) {
+            element.style.display = "none";
+        }
+        function FilterNone(id) {
+            element = document.querySelector(id);
+            element.style.filter = "none";
+        }
+
+        const ms = 700;
+
         const backWallElements = document.querySelectorAll(".sectionFilter");
+
         setTimeout(function () {
             backWallElements.forEach(e => {
                 e.style.backgroundColor = "black";
                 e.style.width = "105%";
             })
+
+            setTimeout(function () { DisplayNone(backWallElements[2]) }, ms);
+            setTimeout(function () { DisplayNone(backWallElements[1]) }, ms * 2);
+            setTimeout(function () { DisplayNone(backWallElements[0]) }, ms * 3);
+
+            setTimeout(function () { FilterNone("#file") }, ms * 4);
+            setTimeout(function () { FilterNone("#character") }, ms * 5);
+            setTimeout(function () { FilterNone("#chair") }, ms * 5);
+
+            setTimeout(function () { FilterNone("#floor") }, 4500);
+            setTimeout(function () { FilterNone("#table") }, 4500);
+            setTimeout(function () { FilterNone("#tableBottom") }, 4500);
+            setTimeout(function () { FilterNone("#tableLegs") }, 4500);
+            setTimeout(function () { FilterNone(".middleRow") }, 4500);
+
         }, 2000);
 
-       
 
-        // setTimeout(DisplayNone(backWallElements[2]), 40000);
 
 
 
