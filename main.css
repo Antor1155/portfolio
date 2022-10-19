@@ -707,7 +707,7 @@ body {
     /* background-color: #92dd213e; */
     bottom: 0;
     left: 12vw;
-    pointer-events: none;
+    pointer-events: auto;
 
 }
 
@@ -751,8 +751,7 @@ body {
     position: absolute;
     width: 9vw;
     left: 54%;
-    pointer-events: none;
-
+    pointer-events: auto;
 }
 
 #sisImg:hover{
@@ -807,6 +806,7 @@ body {
     justify-items: center;
     position: relative;
     /* filter: var(--darkroom); */
+    /* pointer-events: none; */
 }
 
 .certificate{

@@ -13,7 +13,7 @@
     top: 0;
 
     overflow: hidden;
-    animation: backgroundBlack 1s 6s steps(4) forwards, rotateAndDisapear 3s 11.3s ease-in forwards;
+    animation: backgroundBlack 1s 6s steps(4) forwards, rotateAndDisapear 2.5s 11.3s ease-in forwards;
 
 }
 

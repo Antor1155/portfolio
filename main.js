@@ -116,13 +116,20 @@ document.getElementById("codedImg").addEventListener("click", function () {
 })
 
 
+// disabeling all pointer events, so after animation finish, it can be rutned on
+function DisablePointerEvents(e) {
+    document.getElementById(e).style.pointerEvents = "none";
+}
+DisablePointerEvents("file");
+DisablePointerEvents("backgroundWall");
+DisablePointerEvents("momHoveringDiv");
+DisablePointerEvents("sisImg");
+
 // disabelignt the welcome section part when animation is done 
 // and doing animation part of the room section 
-
-
 const timedWelcomeSection = window.setInterval(function () {
     if (getComputedStyle(document.getElementById("welcomeSection")).opacity == 0) {
-        console.log("got inside the if block");
+
         //making that part display none : when animation finished of welcome section
         document.getElementById("welcomeSection").style.display = "none";
 
@@ -130,9 +137,6 @@ const timedWelcomeSection = window.setInterval(function () {
 
         // doing animation part of the room seciton 
         // ********************************************
-        // setTimeout(function () {
-        //     document.getElementById("file").style.filter = "none";
-        // }, 4000);
 
         // manipulating backwall elements 
         function DisplayNone(element) {
@@ -144,7 +148,6 @@ const timedWelcomeSection = window.setInterval(function () {
         }
 
         const ms = 700;
-
         const backWallElements = document.querySelectorAll(".sectionFilter");
 
         setTimeout(function () {
@@ -167,21 +170,19 @@ const timedWelcomeSection = window.setInterval(function () {
             setTimeout(function () { FilterNone("#tableLegs") }, 4500);
             setTimeout(function () { FilterNone(".middleRow") }, 4500);
 
+            // pointer event to auto after animation of room section is done 
+            setTimeout(function () {
+                function EnablePointerEvents(e) {
+                    document.getElementById(e).style.pointerEvents = "auto";
+                }
+                EnablePointerEvents("file");
+                EnablePointerEvents("backgroundWall");
+                EnablePointerEvents("momHoveringDiv");
+                EnablePointerEvents("sisImg");
+
+            }, 4500)
+
         }, 2000);
-
-
-
-
-
-
-
-        // pointer event to auto after animation of room section is done 
-        setTimeout(function () {
-            document.getElementById("momHoveringDiv").style.pointerEvents = "auto";
-            document.getElementById("sisImg").style.pointerEvents = "auto";
-        }, 1000)
-
     }
-
 }, 200)
 
