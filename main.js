@@ -31,12 +31,12 @@ fileElement.addEventListener("mouseover", function () {
 
 
 // design on file when clicked on the file 
-fileElement.addEventListener("click", function(){
+fileElement.addEventListener("click", function () {
     fileElement.classList.add("open");
 
     // when file opended, making blur all other section except the file 
-    document.querySelectorAll("div").forEach(element =>{
-        if(!element.closest("#file")){
+    document.querySelectorAll("div").forEach(element => {
+        if (!element.closest("#file")) {
             element.style.filter = "blur(5px)"
         }
     })
@@ -44,13 +44,13 @@ fileElement.addEventListener("click", function(){
 })
 
 // closing the file 
-document.getElementById("closeBtn").addEventListener("click", e=>{
+document.getElementById("closeBtn").addEventListener("click", e => {
     fileElement.classList.remove("open");
     e.stopImmediatePropagation();
-    
+
     // giving focus back to all other elements 
-    document.querySelectorAll("div").forEach(element =>{
-        if(!element.closest("#file")){
+    document.querySelectorAll("div").forEach(element => {
+        if (!element.closest("#file")) {
             element.style.filter = "none"
         }
     })
@@ -61,38 +61,38 @@ document.getElementById("closeBtn").addEventListener("click", e=>{
 })
 
 // changing the file pages from unseen to seen side 
-document.getElementById("nextBtn").addEventListener("click", function(){
+document.getElementById("nextBtn").addEventListener("click", function () {
     filePages = document.querySelectorAll("#filePages > div");
- 
+
     unseenPages = Array.from(filePages).filter(element => !element.matches(".seenPage"));
 
-    if(unseenPages.length > 0){
-        unseenPages[unseenPages.length-1].classList.add("seenPage");
+    if (unseenPages.length > 0) {
+        unseenPages[unseenPages.length - 1].classList.add("seenPage");
     }
 })
 
 // changing the file pages from seen to unseen side 
-document.getElementById("previousBtn").addEventListener("click", function(){
+document.getElementById("previousBtn").addEventListener("click", function () {
     filePages = document.querySelectorAll(".seenPage");
- 
+
     seenPages = Array.from(filePages)
 
-    if(seenPages.length > 0){
+    if (seenPages.length > 0) {
         seenPages[0].classList.remove("seenPage");
     }
 })
 
 
 // eye Animation 
-document.querySelector('body').addEventListener('mousemove', function(){
+document.querySelector('body').addEventListener('mousemove', function () {
     console.log("mouse moving")
     let eye = document.querySelectorAll(".eye");
-    eye.forEach(function(eye){
-        let x = (eye.getBoundingClientRect().left) + (eye.clientWidth/2);
-        let y = (eye.getBoundingClientRect().top) + (eye.clientHeight/2);
+    eye.forEach(function (eye) {
+        let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+        let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
         let radian = Math.atan2(event.pageX - x, event.pageY - y);
-        let rot = (radian * (180/Math.PI)* -1) + 270;
-        eye.style.transform = "rotate(" + rot +"deg)"
+        let rot = (radian * (180 / Math.PI) * -1) + 270;
+        eye.style.transform = "rotate(" + rot + "deg)"
     })
 })
 
@@ -106,31 +106,61 @@ document.querySelector('body').addEventListener('mousemove', function(){
 // from here the welcome section works 
 
 
-document.getElementById("codedImg").addEventListener("click", function(){
+document.getElementById("codedImg").addEventListener("click", function () {
     this.style.transform = "scale(100%)";
-    this.style.boxShadow="none";
+    this.style.boxShadow = "none";
 
-    document.getElementById("codedImgAlert").style.opacity=1;
+    document.getElementById("codedImgAlert").style.opacity = 1;
 
     navigator.clipboard.writeText("MD Antor : Hoop we meet soon !!");
 })
 
 
 // disabelignt the welcome section part when animation is done 
+// and doing animation part of the room section 
 
+function DisplayNone(element){
+    element.style.display = "none";
+}
 
- const timedWelcomeSection= window.setInterval(function(){
-    console.log( "coming form console log:: "+ getComputedStyle(document.getElementById("welcomeSection")).opacity);
-    if(getComputedStyle(document.getElementById("welcomeSection")).opacity == 0){
+const timedWelcomeSection = window.setInterval(function () {
+    if (getComputedStyle(document.getElementById("welcomeSection")).opacity == 0) {
         console.log("got inside the if block");
+        //making that part display none : when animation finished of welcome section
         document.getElementById("welcomeSection").style.display = "none";
 
         clearInterval(timedWelcomeSection);
+
+        // doing animation part of the room seciton 
+        // ********************************************
+        setTimeout(function () {
+            document.getElementById("file").style.filter = "none";
+        }, 1000);
+
+            // manipulating backwall elements 
+        const backWallElements = document.querySelectorAll(".sectionFilter");
+        setTimeout(function () {
+            backWallElements.forEach(e => {
+                e.style.backgroundColor = "black";
+                e.style.width = "105%";
+            })
+        }, 2000);
+
+       
+
+        // setTimeout(DisplayNone(backWallElements[2]), 40000);
+
+
+
+
+
+        // pointer event to auto after animation of room section is done 
+        setTimeout(function () {
+            document.getElementById("momHoveringDiv").style.pointerEvents = "auto";
+            document.getElementById("sisImg").style.pointerEvents = "auto";
+        }, 1000)
+
     }
-},200)
 
+}, 200)
 
-// if(getComputedStyle(document.getElementById("welcomeSection")).opacity == 0){
-//             console.log("got inside the if block");
-//             document.getElementById("welcomeSection").style.display == "none";
-//         }

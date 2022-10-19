@@ -8,9 +8,6 @@
     --fileColor: rgb(231, 183, 121);
     --fileBorder: 2px solid rgb(190, 29, 29);
 
-    /* --backgroundWallColor: url(images/others/bricks.svg);  */
-    /* --backgroundWallColor: linear-gradient(red, blue); */
-    /* --backgroundWallColor: rgba(221, 221, 131, 0.488);  */
     --backgroundWallColor:  linear-gradient(to right,rgb(120, 152, 124), rgb(140, 170, 180), rgb(130, 160, 150));
 
 
@@ -710,7 +707,7 @@ body {
     /* background-color: #92dd213e; */
     bottom: 0;
     left: 12vw;
-    pointer-events: auto;
+    pointer-events: none;
 
 }
 
@@ -754,7 +751,7 @@ body {
     position: absolute;
     width: 9vw;
     left: 54%;
-    pointer-events: auto;
+    pointer-events: none;
 
 }
 
