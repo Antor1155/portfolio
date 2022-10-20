@@ -854,7 +854,7 @@ body {
     border-color:#FE8B98;
 }
 
-.certificate:hover{
+.certificateWithPdf:hover{
     transform: scale(2) translateY(1vh);
     cursor: pointer;
     z-index: 1;
