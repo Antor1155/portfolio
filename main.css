@@ -949,10 +949,10 @@ body {
 }
 
 #hscDegree{
-    transform: translateX(-1vw);
+    right: 15%;
 }
 #sscDegree{
-    transform: translateX(1vw);
+    left: 15%;
 }
 
 #sscDegree::before{
@@ -983,7 +983,11 @@ body {
     perspective: 800px;
 }
 
-#competitiveCertificate div:nth-child(1) img{
+#competitiveCertificate .certificateWithPdf{
+    display: inline-block;
+}
+
+#competitiveCertificate .certificateWithPdf img{
     width: 5.7vw;
     border: .1vw solid rgb(162, 114, 30);
     border-radius: 5px;
