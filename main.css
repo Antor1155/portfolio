@@ -855,7 +855,7 @@ body {
 }
 
 .certificateWithPdf:hover{
-    transform: scale(2) translateY(1vh);
+    transform: scale(2) translateY(2vh);
     cursor: pointer;
     z-index: 1;
 }
@@ -900,6 +900,9 @@ body {
     justify-content: center;
 }
 
+#academicCertificates .certificateWithPdf:hover{
+    transform: scale(1.5);
+}
 
 .glassHolder{
     width: .4vw;
