@@ -981,11 +981,12 @@ body {
 
     /* border:2px solid green; */
     perspective: 800px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: end;
 }
 
-#competitiveCertificate .certificateWithPdf{
-    display: inline-block;
-}
 
 #competitiveCertificate .certificateWithPdf img{
     width: 5.7vw;
