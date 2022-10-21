@@ -636,7 +636,7 @@ body {
     margin-bottom: 2%;
     background-color: #e57c7c;
     transform-origin: top;
-    animation: ventSwing 6s infinite alternate-reverse ;
+    animation: ventSwing 4s infinite alternate-reverse ;
 }
 
 @keyframes ventSwing{
@@ -670,7 +670,6 @@ body {
 
 #acLight{
     position: absolute;
-    color: rgb(6, 6, 136);
     top: 33%;
     left: 19%;
     width: 26%;

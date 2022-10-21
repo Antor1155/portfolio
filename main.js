@@ -107,13 +107,15 @@ document.getElementById("acLight").addEventListener("click", function(){
 
     const hairElement = document.getElementById("hair");
     const woolElement = document.getElementById("wools");
-
-    // console.log(woolElements);
+    const ventPlates =Array.from(document.getElementsByClassName("ventPlate"));
 
     if(acStatus){
         hairElement.classList.add("acOn");
         woolElement.classList.add("acOn");
 
+        ventPlates.forEach(e =>{
+            e.style.animation = "ventSwing 5s infinite alternate-reverse";
+        })
 
         this.style.backgroundColor = 'rgb(0, 255, 0)';
     }
@@ -121,7 +123,10 @@ document.getElementById("acLight").addEventListener("click", function(){
         hairElement.classList.remove("acOn");
         woolElement.classList.remove("acOn");
 
-        
+        ventPlates.forEach(e =>{
+            e.style.animation = "none";
+        })
+
         this.style.backgroundColor = '#ff5252';
     }
 })
