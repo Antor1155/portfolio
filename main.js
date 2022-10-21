@@ -182,7 +182,7 @@ const timedWelcomeSection = window.setInterval(function () {
 
             }, 4500)
 
-        }, 2000);
+        }, 2500);
     }
 }, 200)
 
