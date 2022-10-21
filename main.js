@@ -212,7 +212,7 @@ const timedWelcomeSection = window.setInterval(function () {
             setTimeout(function () { FilterNone("#character") }, ms * 5);
             setTimeout(function () { FilterNone("#chair") }, ms * 5);
 
-            setTimeout(function () { FilterNone("#floor") }, 4500);
+            setTimeout(function () { document.getElementsByTagName("BODY")[0].style.backgroundColor = "rgb(236, 223, 207)" }, 4500);
             setTimeout(function () { FilterNone("#table") }, 4500);
             setTimeout(function () { FilterNone("#tableBottom") }, 4500);
             setTimeout(function () { FilterNone("#tableLegs") }, 4500);

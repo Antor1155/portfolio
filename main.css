@@ -30,27 +30,12 @@ body {
     height: 100vh;
     overflow: hidden;
 
-
-    /* background:repeating-conic-gradient(rgb(119, 52, 52)0deg 100deg, rgb(38, 38, 82) 100deg 200deg);
-    background-size: 10px; */
-    /* position: relative; */
-}
-
-#floor{
-    width: 100vw;
-    height: 40vh;
-    position: absolute;
-    bottom: 0;
-
-    background: rgb(236, 223, 207);
-
-    filter: var(--darkroom);
+    /* background: rgb(236, 223, 207); */
+    background-color: black;
 }
 
 
 /* table section and table animation starts form here  */
-
-
 #tableSection {
     position: fixed;
     margin-left: auto;
