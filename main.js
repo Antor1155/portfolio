@@ -83,6 +83,7 @@ document.getElementById("previousBtn").addEventListener("click", function () {
 })
 
 
+
 // eye Animation 
 document.querySelector('body').addEventListener('mousemove', function () {
     console.log("mouse moving")
@@ -94,6 +95,48 @@ document.querySelector('body').addEventListener('mousemove', function () {
         let rot = (radian * (180 / Math.PI) * -1) + 270;
         eye.style.transform = "rotate(" + rot + "deg)"
     })
+})
+
+
+
+// ac on/off button and character section 
+let acStatus = true;
+document.getElementById("acLight").addEventListener("click", function(){
+    
+    acStatus = !acStatus;
+
+    const hairElement = document.getElementById("hair");
+    const woolElement = document.getElementById("wools");
+
+    // console.log(woolElements);
+
+    if(acStatus){
+        hairElement.classList.add("acOn");
+        woolElement.classList.add("acOn");
+
+
+        this.style.backgroundColor = 'rgb(0, 255, 0)';
+    }
+    else{
+        hairElement.classList.remove("acOn");
+        woolElement.classList.remove("acOn");
+
+        
+        this.style.backgroundColor = '#ff5252';
+    }
+})
+
+document.getElementById("ac").addEventListener("mouseenter", function(){
+    document.getElementById("acLight").style.backgroundColor = "yellow";
+})
+
+document.getElementById("ac").addEventListener("mouseleave", function(){
+    if(acStatus){
+        document.getElementById("acLight").style.backgroundColor = 'rgb(0, 255, 0)';
+    }
+    else{
+        document.getElementById("acLight").style.backgroundColor = '#ff5252';
+    }
 })
 
 

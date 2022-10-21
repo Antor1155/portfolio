@@ -493,8 +493,11 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
-    animation: hairSwing 2s infinite alternate;
     transform-origin: bottom;
+}
+
+#hair.acOn{
+    animation: hairSwing 2s infinite alternate;
 }
 @keyframes hairSwing{
 
@@ -564,8 +567,11 @@ body {
     width: 6%;
     display: block;
     transform-origin: top;
-    animation: woolSwing 6s infinite alternate;
     
+}
+
+#wools.acOn .wool{
+    animation: woolSwing 6s infinite alternate;
 }
 @keyframes woolSwing{
 
@@ -631,7 +637,6 @@ body {
     background-color: #e57c7c;
     transform-origin: top;
     animation: ventSwing 6s infinite alternate-reverse ;
-   
 }
 
 @keyframes ventSwing{
@@ -673,12 +678,10 @@ body {
     border-radius: 50%;
     transform: skewY(5deg);
     cursor: pointer;
+
     background-color: rgb(0, 255, 0);
 }
 
-#ac:hover #acLight{
-    background-color: yellow;
-}
 
 
 /* mom and sister sitting div starts here  */
