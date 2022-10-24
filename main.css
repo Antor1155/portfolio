@@ -416,6 +416,8 @@ body {
     height: 25vh;
     transform: rotateX(0deg);
     background-color: antiquewhite;
+
+    z-index: 1;
 }
 
 
@@ -427,9 +429,11 @@ body {
     bottom: 28vh;
     left: 30vw;
 
-    transform: rotateX(15deg);
+    font-size: 80%;
 
-    box-shadow: 0 2px 5px;
+    transform: rotateX(10deg);
+
+    
 }
 .designation::after{
     content: 'Web developer';
@@ -443,12 +447,14 @@ body {
     width: 8vw;
     height: 5vh;
     background-color: rgb(41, 225, 41);
+
+    box-shadow: 0 1px 5px;
 }
 .designation::before{
     content: '';
     display: block;
     width: 8vw;
-    height: 5vh;
+    height: 4vh;
     transform: skewX(10deg) translateX(3%);
     background-color: rgb(108, 118, 17);
 }
@@ -465,9 +471,7 @@ body {
 }
 #middleDesignation::after{
     content: "Technical support";
-    height: 6vh;
-    text-align: center;
-    box-shadow: 0 2px 5px;
+
 }
 
 
