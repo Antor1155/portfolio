@@ -101,29 +101,29 @@ document.querySelector('body').addEventListener('mousemove', function () {
 
 // ac on/off button and character section 
 let acStatus = true;
-document.getElementById("acLight").addEventListener("click", function(){
-    
+document.getElementById("acLight").addEventListener("click", function () {
+
     acStatus = !acStatus;
 
     const hairElement = document.getElementById("hair");
     const woolElement = document.getElementById("wools");
-    const ventPlates =Array.from(document.getElementsByClassName("ventPlate"));
+    const ventPlates = Array.from(document.getElementsByClassName("ventPlate"));
 
-    if(acStatus){
+    if (acStatus) {
         hairElement.classList.add("acOn");
         woolElement.classList.add("acOn");
 
-        ventPlates.forEach(e =>{
+        ventPlates.forEach(e => {
             e.style.animation = "ventSwing 5s infinite alternate-reverse";
         })
 
         this.style.backgroundColor = 'rgb(0, 255, 0)';
     }
-    else{
+    else {
         hairElement.classList.remove("acOn");
         woolElement.classList.remove("acOn");
 
-        ventPlates.forEach(e =>{
+        ventPlates.forEach(e => {
             e.style.animation = "none";
         })
 
@@ -131,15 +131,15 @@ document.getElementById("acLight").addEventListener("click", function(){
     }
 })
 
-document.getElementById("ac").addEventListener("mouseenter", function(){
+document.getElementById("ac").addEventListener("mouseenter", function () {
     document.getElementById("acLight").style.backgroundColor = "yellow";
 })
 
-document.getElementById("ac").addEventListener("mouseleave", function(){
-    if(acStatus){
+document.getElementById("ac").addEventListener("mouseleave", function () {
+    if (acStatus) {
         document.getElementById("acLight").style.backgroundColor = 'rgb(0, 255, 0)';
     }
-    else{
+    else {
         document.getElementById("acLight").style.backgroundColor = '#ff5252';
     }
 })
@@ -165,72 +165,72 @@ document.getElementById("codedImg").addEventListener("click", function () {
 
 
 // disabeling all pointer events, so after animation finish, it can be rutned on
-function DisablePointerEvents(e) {
-    document.getElementById(e).style.pointerEvents = "none";
-}
-DisablePointerEvents("file");
-DisablePointerEvents("backgroundWall");
-DisablePointerEvents("momHoveringDiv");
-DisablePointerEvents("sisImg");
+// function DisablePointerEvents(e) {
+//     document.getElementById(e).style.pointerEvents = "none";
+// }
+// DisablePointerEvents("file");
+// DisablePointerEvents("backgroundWall");
+// DisablePointerEvents("momHoveringDiv");
+// DisablePointerEvents("sisImg");
 
 // disabelignt the welcome section part when animation is done 
 // and doing animation part of the room section 
-const timedWelcomeSection = window.setInterval(function () {
-    if (getComputedStyle(document.getElementById("welcomeSection")).opacity == 0) {
+// const timedWelcomeSection = window.setInterval(function () {
+//     if (getComputedStyle(document.getElementById("welcomeSection")).opacity == 0) {
 
-        //making that part display none : when animation finished of welcome section
-        document.getElementById("welcomeSection").style.display = "none";
+//         //making that part display none : when animation finished of welcome section
+//         document.getElementById("welcomeSection").style.display = "none";
 
-        clearInterval(timedWelcomeSection);
+//         clearInterval(timedWelcomeSection);
 
-        // doing animation part of the room seciton 
-        // ********************************************
+//         // doing animation part of the room seciton 
+//         // ********************************************
 
-        // manipulating backwall elements 
-        function DisplayNone(element) {
-            element.style.display = "none";
-        }
-        function FilterNone(id) {
-            element = document.querySelector(id);
-            element.style.filter = "none";
-        }
+//         // manipulating backwall elements 
+//         function DisplayNone(element) {
+//             element.style.display = "none";
+//         }
+//         function FilterNone(id) {
+//             element = document.querySelector(id);
+//             element.style.filter = "none";
+//         }
 
-        const ms = 700;
-        const backWallElements = document.querySelectorAll(".sectionFilter");
+//         const ms = 700;
+//         const backWallElements = document.querySelectorAll(".sectionFilter");
 
-        setTimeout(function () {
-            backWallElements.forEach(e => {
-                e.style.backgroundColor = "black";
-                e.style.width = "105%";
-            })
+//         setTimeout(function () {
+//             backWallElements.forEach(e => {
+//                 e.style.backgroundColor = "black";
+//                 e.style.width = "105%";
+//             })
 
-            setTimeout(function () { DisplayNone(backWallElements[2]) }, ms);
-            setTimeout(function () { DisplayNone(backWallElements[1]) }, ms * 2);
-            setTimeout(function () { DisplayNone(backWallElements[0]) }, ms * 3);
+//             setTimeout(function () { DisplayNone(backWallElements[2]) }, ms);
+//             setTimeout(function () { DisplayNone(backWallElements[1]) }, ms * 2);
+//             setTimeout(function () { DisplayNone(backWallElements[0]) }, ms * 3);
 
-            setTimeout(function () { FilterNone("#file") }, ms * 4);
-            setTimeout(function () { FilterNone("#character") }, ms * 5);
-            setTimeout(function () { FilterNone("#chair") }, ms * 5);
+//             setTimeout(function () { FilterNone("#file") }, ms * 4);
+//             setTimeout(function () { FilterNone("#character") }, ms * 5);
+//             setTimeout(function () { FilterNone("#chair") }, ms * 5);
 
-            setTimeout(function () { document.getElementsByTagName("BODY")[0].style.backgroundColor = "rgb(236, 223, 207)" }, 4500);
-            setTimeout(function () { FilterNone("#table") }, 4500);
-            setTimeout(function () { FilterNone("#tableBottom") }, 4500);
-            setTimeout(function () { FilterNone("#tableLegs") }, 4500);
-            setTimeout(function () { FilterNone(".middleRow") }, 4500);
+//             setTimeout(function () { document.getElementsByTagName("BODY")[0].style.backgroundColor = "rgb(236, 223, 207)" }, 4500);
+//             setTimeout(function () { FilterNone("#table") }, 4500);
+//             setTimeout(function () { FilterNone("#tableBottom") }, 4500);
+//             setTimeout(function () { FilterNone("#tableLegs") }, 4500);
+//             setTimeout(function () { FilterNone(".middleRow") }, 4500);
 
-            // pointer event to auto after animation of room section is done 
-            setTimeout(function () {
-                function EnablePointerEvents(e) {
-                    document.getElementById(e).style.pointerEvents = "auto";
-                }
-                EnablePointerEvents("file");
-                EnablePointerEvents("backgroundWall");
-                EnablePointerEvents("momHoveringDiv");
-                EnablePointerEvents("sisImg");
+//             // pointer event to auto after animation of room section is done 
+//             setTimeout(function () {
+//                 function EnablePointerEvents(e) {
+//                     document.getElementById(e).style.pointerEvents = "auto";
+//                 }
+//                 EnablePointerEvents("file");
+//                 EnablePointerEvents("backgroundWall");
+//                 EnablePointerEvents("momHoveringDiv");
+//                 EnablePointerEvents("sisImg");
 
-            }, 4500)
+//             }, 4500)
 
-        }, 2500);
-    }
-}, 200)
+//         }, 2500);
+//     }
+// }, 200)
 

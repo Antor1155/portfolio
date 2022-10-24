@@ -16,7 +16,9 @@
     --certificateFrameColor:rgba(0, 0, 0, 0.677);
 
     --darkroom: brightness(0%);
+    --darkroom: none;
     --darkRoomFilter: rgb(255, 0, 0);
+    --darkRoomFilter: none;
 }
 
 /* *{
@@ -258,6 +260,7 @@ body {
     width: 40vw;
     bottom: 1.5vh;
     transform: rotateX(7deg) translateX(0vw);
+    z-index: 1;
 }
 
 #file.open #upperFile{
@@ -380,6 +383,37 @@ body {
     opacity: 0;
 }
 
+
+    /* mail section starts form here  */
+
+#mail{
+    position: absolute;
+    bottom: 11vh;
+    left: 20vw;
+
+    transform: rotateX(40deg);
+    transform-style: preserve-3d;
+    transform-origin: bottom;
+
+    width: 0px;
+    height: 3vh;
+    background-color: red;
+    box-shadow: 1px 2px 5px ;
+
+    border-top: 4vh solid rgb(138, 175, 238);
+    border-left: 3vw solid antiquewhite;
+    border-right: 3vw solid antiquewhite;
+
+    transition: border 1s, width 1s, height 1s, transform 1s;
+}
+
+#mail:hover{
+    border: 2px solid whitesmoke;
+    width: 15vw;
+    height: 25vh;
+    transform: rotateX(0deg);
+    background-color: antiquewhite;
+}
 
 /* character and chair section starts here  */
 /* character and chair section starts here  */
@@ -621,7 +655,7 @@ body {
     margin-bottom: 2%;
     background-color: #e57c7c;
     transform-origin: top;
-    animation: ventSwing 4s infinite alternate-reverse ;
+    animation: ventSwing 5s infinite alternate-reverse ;
 }
 
 @keyframes ventSwing{

@@ -1,0 +1,8 @@
+@media screen and (max-width: 920px) {
+    #mail:hover{
+        border: 2px solid whitesmoke;
+        width: 63vw;
+        height: 85vh;
+        transform: rotateX(0deg);
+    }
+}
