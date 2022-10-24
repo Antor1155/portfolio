@@ -162,6 +162,8 @@ body {
     width: 10vw;
     height: 25vh;
     cursor: pointer;
+    z-index: 1;
+
     
     /* display: none; */
     transform: rotateX(40deg);
@@ -260,7 +262,6 @@ body {
     width: 40vw;
     bottom: 1.5vh;
     transform: rotateX(7deg) translateX(0vw);
-    z-index: 1;
 }
 
 #file.open #upperFile{
@@ -405,6 +406,8 @@ body {
     border-right: 3vw solid antiquewhite;
 
     transition: border 1s, width 1s, height 1s, transform 1s;
+
+    overflow: hidden;
 }
 
 #mail:hover{
@@ -414,6 +417,73 @@ body {
     transform: rotateX(0deg);
     background-color: antiquewhite;
 }
+
+
+
+
+/* name and designamtion holder  */
+.designation{
+    position: absolute;
+    bottom: 28vh;
+    left: 30vw;
+
+    transform: rotateX(15deg);
+
+    box-shadow: 0 2px 5px;
+}
+.designation::after{
+    content: 'Web developer';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+
+    width: 8vw;
+    height: 5vh;
+    background-color: rgb(41, 225, 41);
+}
+.designation::before{
+    content: '';
+    display: block;
+    width: 8vw;
+    height: 5vh;
+    transform: skewX(10deg) translateX(3%);
+    background-color: rgb(108, 118, 17);
+}
+
+
+/* for middle designation  */
+#middleDesignation{
+    left: 46vw;
+    bottom: 29vh; 
+
+}
+#middleDesignation::before{
+    background-color:transparent;
+}
+#middleDesignation::after{
+    content: "Technical support";
+    height: 6vh;
+    text-align: center;
+    box-shadow: 0 2px 5px;
+}
+
+
+/* for right designation  */
+#rightDesignation{
+    left: 62vw;
+
+}
+#rightDesignation::before{
+    transform: skewX(-10deg) translateX(-3%);
+}
+#rightDesignation::after{
+    content: "Technical";
+}
+
+
 
 /* character and chair section starts here  */
 /* character and chair section starts here  */
