@@ -417,7 +417,6 @@ body {
     transform: rotateX(0deg);
     background-color: antiquewhite;
 
-    z-index: 1;
 }
 
 
@@ -485,6 +484,28 @@ body {
 }
 #rightDesignation::after{
     content: "Technical";
+}
+
+
+#gitPad{
+    position:absolute;
+    background-image:url(images/tableProducts/gitPad.png);
+    background-size: cover;
+    bottom: 11vh;
+    transform: rotateX(40deg);
+    transform-origin: bottom;
+    width: 6vw;
+    height: 16vh;
+    right: 25vw;
+    border:5px solid rgb(220, 214, 214);
+    border-radius: 10%;
+    box-shadow: -2px 2px 4px;
+
+    transition: transform 500ms;
+}
+
+#gitPad:hover{
+    transform: rotateX(40deg) scale(1.15);
 }
 
 
