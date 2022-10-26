@@ -487,6 +487,54 @@ body {
 }
 
 
+/* fb link design here  */
+#fbLink{
+    /* background-color: rgba(115, 182, 182, 0.401); */
+    border-radius: 15%;
+    padding: 1vh 0;
+
+    position: absolute;
+    transform-origin: bottom;
+    transform: rotateX(30deg);
+    bottom: 12vh;
+    right: 34vw;
+
+    transition: background-color 300ms, box-shadow 500ms;
+
+
+    /* box-shadow: -.3vw .7vw ; */
+
+
+}
+
+#fbLink:hover{
+    background-color: rgba(115, 182, 182, 0.401);
+    box-shadow: -.3vw .7vw ;
+
+}
+#pencil{
+    width: 4vw;
+    margin-right: .5vw;
+
+    position: relative;
+    left: -10%;
+}
+#eraser, #sharpner{
+    width: 1vw;
+    position: absolute;
+    top: .5vw;
+    left: 2.5vw;
+
+}
+#sharpner{
+    top: 2vw;
+}
+
+#spectacles{
+    width: 1.7vw;
+    margin-right: .5vw;
+}
+
 
 /* link for git hub in a pad starts here  */
 #gitPad{
