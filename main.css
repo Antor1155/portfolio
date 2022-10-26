@@ -501,7 +501,7 @@ body {
 
     transition: background-color 300ms, box-shadow 500ms;
 
-
+    cursor: pointer;
     /* box-shadow: -.3vw .7vw ; */
 
 
