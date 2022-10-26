@@ -159,8 +159,8 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    width: 10vw;
-    height: 25vh;
+    width: 9vw;
+    height: 23vh;
     cursor: pointer;
     z-index: 1;
 
@@ -487,6 +487,8 @@ body {
 }
 
 
+
+/* link for git hub in a pad starts here  */
 #gitPad{
     position:absolute;
     background-image:url(images/tableProducts/gitPad.png);
@@ -509,6 +511,8 @@ body {
     transform: rotateX(20deg) scale(1.1);
     box-shadow: 0px 10px 15px;
 
+    cursor: pointer;
+
 }
 
 
@@ -526,11 +530,11 @@ body {
     top: -.3vw;
 }
 
-#gitLogo{
+.socialLogo{
     content: "";
     display: block;
-    width: 4vw;
-    height: 4vw;
+    width: 2vw;
+    height: 2vw;
 
     background-image: url(images/tableProducts/github.svg);
     background-size: cover;
@@ -549,14 +553,56 @@ body {
     
 }
 
-#gitPad:hover #gitLogo{
-    transform: translateY(-4vw) rotateY(1440deg);
+#gitPad:hover .socialLogo{
+    transform: translateY(-4vw) scale(2) rotateY(1440deg);
     opacity: 1;
     box-shadow: 0 0 2vw .5vw rgb(228,228,249);
 
-    transition: transform 500ms, opacity 900ms, box-shadow 500ms 400ms;
+    transition: transform 500ms, opacity 500ms, box-shadow 800ms 400ms;
 }
 
+
+/* link for linkedIn in a cup starts here  */
+#linkedInCup{
+    width: 3.5vw;
+    height: 9vh;
+    position: absolute;
+    bottom: 21vh;
+    right: 21.5vw;
+    background-image: url(images/tableProducts/linkedIncup.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: 2px solid red; */
+}
+
+#linkedInCup:hover{
+    transform: translateY(-1vh) scale(1.3);
+    cursor: pointer;
+}
+
+
+#linkedInCup > .socialLogo{
+    background-image: url(images/tableProducts/linkedin.svg);
+}
+
+#linkedInCup:hover .socialLogo{
+    transform: translateY(-3vw) scale(1.3) rotateY(1440deg);
+    opacity: 1;
+    box-shadow: 0 0 2vw .5vw rgb(228,228,249);
+
+    transition: transform 500ms, opacity 500ms, box-shadow 800ms 400ms;
+}
+
+#cupHolder{
+    width: 3vw;
+    height: 3vh;
+    position: absolute;
+    bottom: 20vh;
+    right: 22vw;
+    border-radius: 45%;
+    background:linear-gradient(90deg, rgb(226, 214, 214), rgb(179, 173, 173));
+    box-shadow: 1px 2px 2px;
+}
 
 
 
