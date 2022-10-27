@@ -499,7 +499,7 @@ body {
     bottom: 12vh;
     right: 34vw;
 
-    transition: background-color 300ms, box-shadow 500ms;
+    transition: background-color 500ms, box-shadow 900ms;
 
     cursor: pointer;
     /* box-shadow: -.3vw .7vw ; */
@@ -510,8 +510,21 @@ body {
 #fbLink:hover{
     background-color: rgba(115, 182, 182, 0.401);
     box-shadow: -.3vw .7vw ;
-
 }
+
+#fbLink > .socialLogo{
+    background-image: url(images/tableProducts/fbLogo.svg);
+    padding: 1px;
+}
+
+#fbLink:hover .socialLogo{
+    transform: translateY(-4.5vw)  scale(1.7) rotateY(1440deg);
+    opacity: 1;
+    box-shadow: 0 0 2vw 1vw rgb(228,228,249);
+
+    transition: transform 500ms, opacity 500ms, box-shadow 800ms 400ms;
+}
+
 #pencil{
     width: 4vw;
     margin-right: .5vw;
