@@ -428,7 +428,7 @@ body {
     bottom: 28vh;
     left: 30vw;
 
-    font-size: 80%;
+    font-size: 1vw;
 
     transform: rotateX(10deg);
 
@@ -445,7 +445,7 @@ body {
 
     width: 8vw;
     height: 5vh;
-    background-color: rgb(41, 225, 41);
+    background-color: rgba(193, 240, 193 , .68);
 
     box-shadow: 0 1px 5px;
 }
@@ -483,7 +483,7 @@ body {
     transform: skewX(-10deg) translateX(-3%);
 }
 #rightDesignation::after{
-    content: "Technical";
+    content: "Software Engineer";
 }
 
 
