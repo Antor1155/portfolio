@@ -653,6 +653,36 @@ body {
     transition: transform 500ms, opacity 500ms, box-shadow 800ms 400ms;
 }
 
+
+.coffeeSmoke{
+    width: .8vw;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: -30%;
+    left: 20%;
+    transform-origin: top;
+    pointer-events: none;
+}
+
+.coffeeSmoke:nth-child(1){
+    left: 50%;
+
+    animation: smokeOnOff 5s infinite alternate;
+}
+
+.coffeeSmoke:nth-child(2){
+    left: 20%;
+    animation: smokeOnOff 4s 2s infinite alternate;
+}
+
+@keyframes smokeOnOff {
+    to{
+        opacity: .1;
+        width: 1vw;
+    }
+}
+
+
 #cupHolder{
     width: 3vw;
     height: 3vh;
