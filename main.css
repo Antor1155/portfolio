@@ -667,12 +667,13 @@ body {
 .coffeeSmoke:nth-child(1){
     left: 50%;
 
-    animation: smokeOnOff 5s infinite alternate;
+    animation: smokeOnOff 4s infinite alternate;
 }
 
 .coffeeSmoke:nth-child(2){
     left: 20%;
-    animation: smokeOnOff 4s 2s infinite alternate;
+    animation: smokeOnOff 4s 1.5s infinite alternate;
+    opacity: .8;
 }
 
 @keyframes smokeOnOff {
