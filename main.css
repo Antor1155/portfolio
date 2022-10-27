@@ -514,7 +514,6 @@ body {
 
 #fbLink > .socialLogo{
     background-image: url(images/tableProducts/fbLogo.svg);
-    padding: 1px;
 }
 
 #fbLink:hover .socialLogo{
