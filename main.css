@@ -492,8 +492,6 @@ body {
    
 }
 
-
-
 .project{
     margin-bottom: 1.6vh;
     height: 4vh;
@@ -519,6 +517,9 @@ body {
     font-size: 1vw;
 }
 
+.project figcaption:hover{
+    text-decoration:underline ;
+}
 
 
 
