@@ -438,6 +438,18 @@ body {
     margin: -.5vh auto;
 }
 
+#paperOfClipBoard{
+    width: 6vw;
+    height: 14vh;
+    background: repeating-linear-gradient(antiquewhite, antiquewhite 8%, black 9%);
+
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    right: 5%;
+    margin: auto;
+    z-index: -1;
+}
 
 
 
