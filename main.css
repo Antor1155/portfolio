@@ -72,7 +72,8 @@ body {
     background-image: radial-gradient(circle, var(--tableMainColor), var(--tableSecondColor) 300%);
     border-bottom: 10px solid rgb(94, 88, 88);
 
-    box-shadow: 5vw 29vh 0 -4vw rgba(0, 0, 0, 0.202);
+    /* box-shadow: 5vw 29vh 0 -4vw rgba(0, 0, 0, 0.202); */
+    box-shadow: 1vw 40vh 1vh  rgba(0, 0, 0, 0.202);
 
     overflow: hidden;
 }
