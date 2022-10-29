@@ -1501,5 +1501,6 @@ body {
 
     border-top: .3vh solid rgb(55, 52, 50);
     /* box-shadow: 0 .5vh 7px rgb(0, 0, 0); */
+    border-bottom: 1px solid black;
  
 }
