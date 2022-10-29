@@ -5,4 +5,8 @@
         height: 85vh;
         transform: rotateX(0deg);
     }
+
+    #projects{
+        margin-top: -1.3vh;
+    }
 }

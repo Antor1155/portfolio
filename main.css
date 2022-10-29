@@ -410,7 +410,7 @@ body {
     border-left: 3vw solid antiquewhite;
     border-right: 3vw solid antiquewhite;
 
-    transition: border 1s, width 1s, height 1s, transform 1s;
+    transition: border .8s, width .8s, height .8s, transform .8s;
 
     overflow: hidden;
 }
@@ -439,8 +439,8 @@ body {
     border-radius: 8%;
     
     transform: rotateX(30deg) rotateY(16deg) rotateZ(-30deg);
-    transform: scale(3);
 
+    transition: transform 800ms;
 
     box-shadow: -1px 1px 1px;
 }
@@ -474,8 +474,8 @@ body {
 }
 
 #paperOfClipBoard h2{
-    /* font-family: handWriting; */
-    font-weight: 500;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
     font-size: 2vh;
     margin:1vh 0 0 0 ;
 }
