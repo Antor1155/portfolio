@@ -416,7 +416,28 @@ body {
     height: 25vh;
     transform: rotateX(0deg);
     background-color: antiquewhite;
+    z-index: 1;
 
+}
+
+#projectBoard{
+    position: absolute;
+    transform-origin: bottom;
+    bottom: 10vh;
+    left: 31vw;
+
+    width: 7vw;
+    height: 15vh;
+    background-color: rgba(18, 209, 184, 0.538);
+    border-radius: 8%;
+    
+    transform: rotateX(30deg) rotateY(16deg) rotateZ(-30deg);
+}
+
+#clipOfBoard{
+    width: 3vw;
+    display: block;
+    margin: -.5vh auto;
 }
 
 
@@ -574,8 +595,6 @@ body {
     cursor: pointer;
 
 }
-
-
 
 #gitPad::before{
     content: "";
