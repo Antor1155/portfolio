@@ -416,8 +416,6 @@ body {
     height: 25vh;
     transform: rotateX(0deg);
     background-color: antiquewhite;
-    z-index: 1;
-
 }
 
 #projectBoard{
