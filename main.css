@@ -619,8 +619,9 @@ body {
 
 #allTools{
     position: absolute;
-    top: 1vh;
+    top: 0;
     left: 0;
+    pointer-events: none;
 
     width: 2vw;
     padding: 1vh;
@@ -628,6 +629,7 @@ body {
 
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    align-items: center;
 
     transition: .7s;
 
@@ -643,7 +645,6 @@ body {
 }
 
 #allTools img{
-   
     width: 90%;
 }
 
