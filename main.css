@@ -593,24 +593,60 @@ body {
 /* tools in penholder section here  */
 
 #tools{
-    /* background-color: red; */
     position: absolute;
     bottom: 32vh;
     left: 22vw;
-    border: 4px solid red;
 }
-#tools:hover{
-    border: 4px solid yellow;
-}
+
 
 .penHolder{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; 
     width: 3vw;
-
-   
 }
+
+#allToolsSvg{
+    width: 3vw;
+    transition: opacity .1s .2s linear, top .8s;
+}
+#tools:hover > #allToolsSvg{
+    top: -5vh;
+    opacity: 0;
+    
+}
+
+
+#allTools{
+    position: absolute;
+    top: 1vh;
+    left: 0;
+
+    width: 2vw;
+    padding: 1vh;
+    border-radius: 5%;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    transition: .7s;
+
+}
+#tools:hover > #allTools{
+    top: -43vh;
+    left: -1vw;
+
+    width: 26vw;
+    background-color: rgba(192, 201, 180, 0.687);
+
+    
+}
+
+#allTools img{
+   
+    width: 90%;
+}
+
 
 
 /* fb link design here  */
