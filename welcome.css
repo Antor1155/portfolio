@@ -15,7 +15,7 @@
     overflow: hidden;
     animation: backgroundBlack 1s 6s steps(4) forwards, rotateAndDisapear 2.5s 11.3s ease-in forwards;
 
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 @keyframes backgroundBlack {
