@@ -236,3 +236,19 @@ document.getElementById("codedImg").addEventListener("click", function () {
 //     }
 // }, 200)
 
+
+
+// adding link to fb, git pad and link cup 
+
+document.getElementById("fbLink").addEventListener("click", function(){
+    window.open("https://www.facebook.com/md.antor.16/");
+})
+
+document.getElementById("gitPad").addEventListener("click", function(){
+    window.open("https://github.com/Antor1155");
+})
+
+document.getElementById("linkedInCup").addEventListener("click", function(){
+    window.open("https://www.linkedin.com/in/md-antor/");
+})
+
