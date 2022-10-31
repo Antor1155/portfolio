@@ -239,7 +239,6 @@ document.getElementById("codedImg").addEventListener("click", function () {
 
 
 // adding link to fb, git pad and link cup 
-
 document.getElementById("fbLink").addEventListener("click", function(){
     window.open("https://www.facebook.com/md.antor.16/");
 })
@@ -251,4 +250,15 @@ document.getElementById("gitPad").addEventListener("click", function(){
 document.getElementById("linkedInCup").addEventListener("click", function(){
     window.open("https://www.linkedin.com/in/md-antor/");
 })
+
+
+// when clicking on certificate, will show the pdf of the certificate in full screen 
+
+
+document.querySelectorAll(".certificateWithPdf").forEach(certificate =>{
+    certificate.addEventListener("click", function(){
+        console.log(certificate);
+    });
+})
+
 
