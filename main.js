@@ -254,10 +254,11 @@ document.getElementById("linkedInCup").addEventListener("click", function(){
 
 // when clicking on certificate, will show the pdf of the certificate in full screen 
 
+let allCertificateImg =Array.from(document.querySelectorAll(".certificateWithPdf"));
 
-document.querySelectorAll(".certificateWithPdf").forEach(certificate =>{
+allCertificateImg.forEach(certificate =>{
     certificate.addEventListener("click", function(){
-        console.log(certificate);
+        console.log(allCertificateImg.indexOf(certificate));
     });
 })
 
