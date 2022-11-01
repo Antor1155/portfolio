@@ -258,7 +258,13 @@ let allCertificateImg =Array.from(document.querySelectorAll(".certificateWithPdf
 
 allCertificateImg.forEach(certificate =>{
     certificate.addEventListener("click", function(){
-        console.log(allCertificateImg.indexOf(certificate));
+
+        // plus 2 because one extra certificate in front and here index starts from 0
+        let certificateNumber = allCertificateImg.indexOf(certificate) + 2;
+
+        console.log("clicked certificate is : " + certificateNumber);
+
+        document.getElementById("certificatePdf").innerHTML = `<iframe src="images/certificatesPdf/md-antor's-certificates.pdf#view=fit&page=${certificateNumber}" frameborder="0" width="100%" height="100%"></iframe>`;
     });
 })
 
