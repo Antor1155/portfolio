@@ -1594,12 +1594,16 @@ body {
     top: 5%;
     left: 6.5%;
 
+    box-shadow: 0 0 10vw 5vw rgb(128, 123, 123);
+    background-color: rgba(128, 123, 123, 0.771);
+
     z-index: 1;
 }
 
 #pdfSection.outOfview{
     transform: scale(.5) translateY(200vh) rotate(-30deg);
-    transition:transform 1.5s;
+    transition:transform 1s;
+    box-shadow: none;
 }
 
 /* iframe container  */
