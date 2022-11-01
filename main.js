@@ -266,12 +266,21 @@ allCertificateImg.forEach(certificate =>{
 
         document.getElementById("certificatePdf").innerHTML = `<iframe src="images/certificatesPdf/md-antor's-certificates.pdf#view=fit&page=${certificateNumber}" frameborder="0" width="100%" height="100%"></iframe>`;
 
-        document.getElementById("pdfSection").classList.remove("outOfview")
+
+        // when clicked , remove out of view class form the pdf section
+        let pdfSection = document.getElementById("pdfSection");
+
+        if(pdfSection.classList.contains("outOfview")){
+            pdfSection.classList.remove("outOfview");
+        }
+       
     });
 })
 
 
 // function for when clicked on pdf close button 
+document.getElementById("pdfSection").classList.add("outOfview");
+
 function removePdf(){
     document.getElementById("pdfSection").classList.add("outOfview");
 }
