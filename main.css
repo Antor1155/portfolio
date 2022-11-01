@@ -1588,12 +1588,71 @@ body {
 
 
 /* iframe section with all certificate pdf here  */
-#certificatePdf{
+
+#pdfSection{
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 5%;
+    left: 6.5%;
+}
+
+/* iframe container  */
+#certificatePdf{
     width: 80vw;
     height: 85vh;
-    border: 5px solid red;
     overflow: hidden;
+
+    padding: .2vw;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    border-top: 2.5vh solid;
+    border-right: 4vw solid;
+    border-left: 4vw solid;
+    border-bottom: 2.5vh solid;
+
+    border-color: rgba(52, 81, 107 , 0.942);
+
+    border-radius: 5%;
+
+    /* display: none; */
+}
+
+#certificatePdf iframe{
+    border-radius: 1%;
+}
+
+#pdfCamera{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 1.5vw;
+    box-sizing: border-box;
+
+    width: 1.5vw;
+    height: 1.5vw;
+    background: linear-gradient(29deg, rgb(14, 38, 57), rgb(121, 116, 116));
+    border-radius: 50%;
+    border: .4vw solid rgb(19 33 44);
+}
+
+#pdfCloseButton{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 1vw;
+
+    width: 2vw;
+    height: 6vw;
+    background-color: rgb(14, 38, 57);
+    border-radius: 1vw;
+    border: 2px solid rgb(253, 230, 230);
+
+    cursor: pointer;
+}
+
+#pdfCloseButton:hover{
+    transform: scale(1.1);
+    background-color:rgb(63 78 91) ;
 }
