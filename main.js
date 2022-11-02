@@ -240,15 +240,23 @@ document.getElementById("codedImg").addEventListener("click", function () {
 
 // adding link to fb, git pad and link cup 
 document.getElementById("fbLink").addEventListener("click", function(){
-    window.open("https://www.facebook.com/md.antor.16/");
+    if(confirm("Opening Facebook in new tab ---?")){
+        window.open("https://www.facebook.com/md.antor.16/");
+    }
 })
 
 document.getElementById("gitPad").addEventListener("click", function(){
-    window.open("https://github.com/Antor1155");
+    if(confirm("Opening GitHub in new tab ---?")){
+        window.open("https://github.com/Antor1155");
+    }
+    
 })
 
 document.getElementById("linkedInCup").addEventListener("click", function(){
-    window.open("https://www.linkedin.com/in/md-antor/");
+    if(confirm("Opening Linkedin in new tab ---?")){
+        window.open("https://www.linkedin.com/in/md-antor/");
+    }
+   
 })
 
 
