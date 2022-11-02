@@ -253,6 +253,9 @@ document.getElementById("linkedInCup").addEventListener("click", function(){
 
 
 // when clicking on certificate, will show the pdf of the certificate in full screen 
+const pdfSection = document.getElementById("pdfSection");
+
+const mobileLikeContainer = document.getElementById("certificatePdf");
 
 let allCertificateImg =Array.from(document.querySelectorAll(".certificateWithPdf"));
 
@@ -264,18 +267,56 @@ allCertificateImg.forEach(certificate =>{
 
         console.log("clicked certificate is : " + certificateNumber);
 
-        document.getElementById("certificatePdf").innerHTML = `<iframe src="images/certificatesPdf/md-antor's-certificates.pdf#view=fit&page=${certificateNumber}" frameborder="0" width="100%" height="100%"></iframe>`;
+        mobileLikeContainer.innerHTML = `<iframe src="images/certificatesPdf/md-antor's-certificates.pdf#view=fit&page=${certificateNumber}" frameborder="0" width="100%" height="100%"></iframe>`;
 
 
         // when clicked , remove out of view class form the pdf section
-        let pdfSection = document.getElementById("pdfSection");
-
+       
         if(pdfSection.classList.contains("outOfview")){
             pdfSection.classList.remove("outOfview");
         }
        
     });
 })
+
+
+
+// funciton to show the projects form projectboard into pdf device (mobile) 
+let projects =Array.from(document.querySelectorAll(".project"));
+
+projects.forEach(project =>{
+    project.addEventListener("click", function(){
+
+        // plus 2 because one extra project in front and here index starts from 0
+        let projectNumber = projects.indexOf(project);
+
+        console.log("clicked project is : " + projectNumber);
+
+        switch(projectNumber){
+            case 0:
+                mobileLikeContainer.innerHTML = `<iframe src="http://127.0.0.1:5500/" frameborder="0" width="100%" height="100%"></iframe>`;
+                break;
+            case 1:
+                mobileLikeContainer.innerHTML = `<iframe src="https://finalwarehouse-4650b.web.app/" frameborder="0" width="100%" height="100%"></iframe>`;
+                break;
+            case 2:
+                mobileLikeContainer.innerHTML = `<iframe src="https://independent-photographer-726fa.web.app/" frameborder="0" width="100%" height="100%"></iframe>`;
+                break;
+            case 3:
+                mobileLikeContainer.innerHTML = `<iframe src="https://warehouse-734e0.web.app/" frameborder="0" width="100%" height="100%"></iframe>`;
+                break;
+
+        }
+
+        // when clicked , remove out of view class form the pdf section
+        if(pdfSection.classList.contains("outOfview")){
+            pdfSection.classList.remove("outOfview");
+        }
+       
+    });
+})
+
+
 
 
 // function for when clicked on pdf close button 

@@ -502,6 +502,11 @@ body {
     height: 4vh;
 }
 
+.project:hover{
+    cursor: pointer;
+    text-decoration:underline ;
+}
+
 .project figure{
     margin:0; 
 }
@@ -522,12 +527,11 @@ body {
     font-size: 1vw;
 }
 
-.project figcaption:hover{
-    text-decoration:underline ;
-}
 
 
 
+/* name and designamtion holder  */
+/* name and designamtion holder  */
 /* name and designamtion holder  */
 .designation{
     position: absolute;
