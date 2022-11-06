@@ -345,7 +345,7 @@ subject: ${event.target.subject.value} //
 
 ${event.target.mail.value}`;
 
-    fetch("https://antorprotfolio.herokuapp.com/", {
+    fetch("https://antorprotfolio.herokuapp.com/email", {
         method: "POST",
         headers: {
             "content-type": "application/json"
