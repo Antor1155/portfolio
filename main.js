@@ -345,7 +345,7 @@ subject: ${event.target.subject.value} //
 
 ${event.target.mail.value}`;
 
-    fetch("http://localhost:5000/email", {
+    fetch("https://antorprotfolio.herokuapp.com/", {
         method: "POST",
         headers: {
             "content-type": "application/json"
@@ -353,7 +353,7 @@ ${event.target.mail.value}`;
         body: JSON.stringify({ email, subject: event.target.subject.value })
     }).then(res => res.json())
         .then(data => {
-            console.log(data.result);
+            console.log(data);
 
             // if mail is delivered to me successfully then this portion will work 
             if(data.result.includes("success")){
