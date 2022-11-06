@@ -417,17 +417,25 @@ body {
 
     transition: border .8s, width .8s, height .8s, transform .8s;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-#mail:hover{
+#mail{
     border: 2px solid whitesmoke;
+
     width: 15vw;
+    width: 50vw;
     height: 25vh;
+    height: 30vh;
+
     transform: rotateX(0deg);
     background-color: antiquewhite;
+    z-index: 2;
 }
 
+#mail *{
+    width: 98%;
+}
 
 
 /* clip board showing project design here  */

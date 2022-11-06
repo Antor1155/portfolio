@@ -340,37 +340,37 @@
 
                     <div class="project">
                         <!-- <a href="" target="_blank"> -->
-                            <figure>
-                                <img src="images/tableProducts/projects/protfolio.png" alt="">
-                                <figcaption>Protfolio</figcaption>
-                            </figure>
+                        <figure>
+                            <img src="images/tableProducts/projects/protfolio.png" alt="">
+                            <figcaption>Protfolio</figcaption>
+                        </figure>
                         <!-- </a> -->
                     </div>
 
                     <div class="project">
                         <!-- <a href="https://finalwarehouse-4650b.web.app/" target="_blank"> -->
-                            <figure>
-                                <img src="images/tableProducts/projects/alexTools.png" alt="">
-                                <figcaption>AlexTools</figcaption>
-                            </figure>
+                        <figure>
+                            <img src="images/tableProducts/projects/alexTools.png" alt="">
+                            <figcaption>AlexTools</figcaption>
+                        </figure>
                         <!-- </a> -->
                     </div>
 
                     <div class="project">
                         <!-- <a href="https://independent-photographer-726fa.web.app/" target="_blank"> -->
-                            <figure>
-                                <img src="images/tableProducts/projects/alpha'sPpalace.png" alt="">
-                                <figcaption>alpha'sPpalace</figcaption>
-                            </figure>
+                        <figure>
+                            <img src="images/tableProducts/projects/alpha'sPpalace.png" alt="">
+                            <figcaption>alpha'sPpalace</figcaption>
+                        </figure>
                         <!-- </a> -->
                     </div>
 
                     <div class="project">
                         <!-- <a href="https://warehouse-734e0.web.app/" target="_blank"> -->
-                            <figure>
-                                <img src="images/tableProducts/projects/foodFirst.png" alt="">
-                                <figcaption>Food First</figcaption>
-                            </figure>
+                        <figure>
+                            <img src="images/tableProducts/projects/foodFirst.png" alt="">
+                            <figcaption>Food First</figcaption>
+                        </figure>
                         <!-- </a> -->
                     </div>
 
@@ -384,11 +384,16 @@
 
         <!-- mail box  -->
         <div id="mail">
+            <form onsubmit="sendMail(event)">
+                <!-- <label for="to">To:</label> -->
+                <input type="email" name="from" placeholder="from: " required>
+                <input type="email"  name="to" value="to: md.antor1155@gmail.com" disabled>
+                <input type="text" name="subject" placeholder="subject" id="" required>
+                <textarea name="mail" id="" placeholder="mail" required></textarea>
 
-            <input type="text" name="" placeholder="subject" id="">
-            <input type="text" name="" placeholder="mail" id="">
-            <button>submit</button>
+                <button type="submit">submit</button>
 
+            </form>
         </div>
 
 
@@ -425,7 +430,7 @@
 
     <!-- section showing pdf files of all certificate  -->
     <section id="pdfSection">
-        <div  id="certificatePdf">
+        <div id="certificatePdf">
         </div>
 
         <div id="pdfCamera"></div>

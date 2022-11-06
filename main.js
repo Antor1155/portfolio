@@ -189,36 +189,36 @@ document.getElementById("codedImg").addEventListener("click", function () {
 //         // ********************************************
 
 //         // manipulating backwall elements 
-        // function DisplayNone(element) {
-        //     element.style.display = "none";
-        // }
-        // function FilterNone(id) {
-        //     element = document.querySelector(id);
-        //     element.style.filter = "none";
-        // }
+// function DisplayNone(element) {
+//     element.style.display = "none";
+// }
+// function FilterNone(id) {
+//     element = document.querySelector(id);
+//     element.style.filter = "none";
+// }
 
-        // const ms = 700;
-        // const backWallElements = document.querySelectorAll(".sectionFilter");
+// const ms = 700;
+// const backWallElements = document.querySelectorAll(".sectionFilter");
 
-        // setTimeout(function () {
-        //     backWallElements.forEach(e => {
-        //         e.style.backgroundColor = "black";
-        //         e.style.width = "105%";
-        //     })
+// setTimeout(function () {
+//     backWallElements.forEach(e => {
+//         e.style.backgroundColor = "black";
+//         e.style.width = "105%";
+//     })
 
-        //     setTimeout(function () { DisplayNone(backWallElements[2]) }, ms);
-        //     setTimeout(function () { DisplayNone(backWallElements[1]) }, ms * 2);
-        //     setTimeout(function () { DisplayNone(backWallElements[0]) }, ms * 3);
+//     setTimeout(function () { DisplayNone(backWallElements[2]) }, ms);
+//     setTimeout(function () { DisplayNone(backWallElements[1]) }, ms * 2);
+//     setTimeout(function () { DisplayNone(backWallElements[0]) }, ms * 3);
 
-        //     setTimeout(function () { FilterNone("#file") }, ms * 4);
-        //     setTimeout(function () { FilterNone("#character") }, ms * 5);
-        //     setTimeout(function () { FilterNone("#chair") }, ms * 5);
+//     setTimeout(function () { FilterNone("#file") }, ms * 4);
+//     setTimeout(function () { FilterNone("#character") }, ms * 5);
+//     setTimeout(function () { FilterNone("#chair") }, ms * 5);
 
-        //     setTimeout(function () { document.getElementsByTagName("BODY")[0].style.backgroundColor = "rgb(201 211 175)" }, 4500);
-        //     setTimeout(function () { FilterNone("#table") }, 4500);
-        //     setTimeout(function () { FilterNone("#tableBottom") }, 4500);
-        //     setTimeout(function () { FilterNone("#tableLegs") }, 4500);
-        //     setTimeout(function () { FilterNone(".middleRow") }, 4500);
+//     setTimeout(function () { document.getElementsByTagName("BODY")[0].style.backgroundColor = "rgb(201 211 175)" }, 4500);
+//     setTimeout(function () { FilterNone("#table") }, 4500);
+//     setTimeout(function () { FilterNone("#tableBottom") }, 4500);
+//     setTimeout(function () { FilterNone("#tableLegs") }, 4500);
+//     setTimeout(function () { FilterNone(".middleRow") }, 4500);
 
 //             // pointer event to auto after animation of room section is done 
 //             setTimeout(function () {
@@ -239,24 +239,24 @@ document.getElementById("codedImg").addEventListener("click", function () {
 
 
 // adding link to fb, git pad and link cup 
-document.getElementById("fbLink").addEventListener("click", function(){
-    if(confirm("Opening Facebook in new tab ---?")){
+document.getElementById("fbLink").addEventListener("click", function () {
+    if (confirm("Opening Facebook in new tab ---?")) {
         window.open("https://www.facebook.com/md.antor.16/");
     }
 })
 
-document.getElementById("gitPad").addEventListener("click", function(){
-    if(confirm("Opening GitHub in new tab ---?")){
+document.getElementById("gitPad").addEventListener("click", function () {
+    if (confirm("Opening GitHub in new tab ---?")) {
         window.open("https://github.com/Antor1155");
     }
-    
+
 })
 
-document.getElementById("linkedInCup").addEventListener("click", function(){
-    if(confirm("Opening Linkedin in new tab ---?")){
+document.getElementById("linkedInCup").addEventListener("click", function () {
+    if (confirm("Opening Linkedin in new tab ---?")) {
         window.open("https://www.linkedin.com/in/md-antor/");
     }
-   
+
 })
 
 
@@ -265,10 +265,10 @@ const pdfSection = document.getElementById("pdfSection");
 
 const mobileLikeContainer = document.getElementById("certificatePdf");
 
-let allCertificateImg =Array.from(document.querySelectorAll(".certificateWithPdf"));
+let allCertificateImg = Array.from(document.querySelectorAll(".certificateWithPdf"));
 
-allCertificateImg.forEach(certificate =>{
-    certificate.addEventListener("click", function(){
+allCertificateImg.forEach(certificate => {
+    certificate.addEventListener("click", function () {
 
         // plus 2 because one extra certificate in front and here index starts from 0
         let certificateNumber = allCertificateImg.indexOf(certificate) + 2;
@@ -279,28 +279,28 @@ allCertificateImg.forEach(certificate =>{
 
 
         // when clicked , remove out of view class form the pdf section
-       
-        if(pdfSection.classList.contains("outOfview")){
+
+        if (pdfSection.classList.contains("outOfview")) {
             pdfSection.classList.remove("outOfview");
         }
-       
+
     });
 })
 
 
 
 // funciton to show the projects form projectboard into pdf device (mobile) 
-let projects =Array.from(document.querySelectorAll(".project"));
+let projects = Array.from(document.querySelectorAll(".project"));
 
-projects.forEach(project =>{
-    project.addEventListener("click", function(){
+projects.forEach(project => {
+    project.addEventListener("click", function () {
 
         // plus 2 because one extra project in front and here index starts from 0
         let projectNumber = projects.indexOf(project);
 
         console.log("clicked project is : " + projectNumber);
 
-        switch(projectNumber){
+        switch (projectNumber) {
             case 0:
                 mobileLikeContainer.innerHTML = `<iframe src="http://127.0.0.1:5500/" frameborder="0" width="100%" height="100%"></iframe>`;
                 break;
@@ -317,10 +317,10 @@ projects.forEach(project =>{
         }
 
         // when clicked , remove out of view class form the pdf section
-        if(pdfSection.classList.contains("outOfview")){
+        if (pdfSection.classList.contains("outOfview")) {
             pdfSection.classList.remove("outOfview");
         }
-       
+
     });
 })
 
@@ -330,7 +330,7 @@ projects.forEach(project =>{
 // function for when clicked on pdf close button 
 document.getElementById("pdfSection").classList.add("outOfview");
 
-function removePdf(){
+function removePdf() {
     document.getElementById("pdfSection").classList.add("outOfview");
 }
 
@@ -339,12 +339,32 @@ function removePdf(){
 function sendMail(event) {
     event.preventDefault();
 
+    let email = `from: ${event.target.from.value}  //
+
+subject: ${event.target.subject.value} //
+
+${event.target.mail.value}`;
+
     fetch("http://localhost:5000/email", {
         method: "POST",
         headers: {
             "content-type": "application/json"
         },
-        body: JSON.stringify({obj:"email is send here "})
+        body: JSON.stringify({ email, subject: event.target.subject.value })
     }).then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => {
+            console.log(data.result);
+
+            // if mail is delivered to me successfully then this portion will work 
+            if(data.result.includes("success")){
+                alert("Mailed successfully  (^_^)")
+            }
+            else{
+                alert("mail failed but saved in database, Antor will notice soon !!")
+            }
+
+        });
+
+    // event.target.reset();
+
 };
