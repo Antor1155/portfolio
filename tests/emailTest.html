@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>58F243B98D9ED7350B26119981405B674AB555C14E794607CDBC1D1BDDB3C5BB73E50BA3B867E40E286837F31199FA67</p>
+    <form onsubmit="sendMail(event)">
+        <button type="submit"> send mail from here </button>
+    </form>
+
+
+
+    <script>
+        function sendMail(event) {
+            event.preventDefault();
+
+            fetch("http://localhost:5000/email", {
+                method: "POST",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify({obj:"email is send here "})
+            }).then(res => res.json())
+                .then(data => console.log(data))
+        };
+    </script>
+</body>
+
+</html>

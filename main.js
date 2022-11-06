@@ -333,3 +333,18 @@ document.getElementById("pdfSection").classList.add("outOfview");
 function removePdf(){
     document.getElementById("pdfSection").classList.add("outOfview");
 }
+
+
+// function to send mail to backend without reloading the page 
+function sendMail(event) {
+    event.preventDefault();
+
+    fetch("http://localhost:5000/email", {
+        method: "POST",
+        headers: {
+            "content-type": "application/json"
+        },
+        body: JSON.stringify({obj:"email is send here "})
+    }).then(res => res.json())
+        .then(data => console.log(data))
+};
