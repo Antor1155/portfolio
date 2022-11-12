@@ -365,6 +365,6 @@ ${event.target.mail.value}`;
 
         });
 
-    // event.target.reset();
+    event.target.reset();
 
 };
