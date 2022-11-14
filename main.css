@@ -429,6 +429,8 @@ body {
     transform: rotateX(0deg);
     background-color: antiquewhite;
     z-index: 2;
+
+    overflow: visible;
 }
 
 #mail > form{
