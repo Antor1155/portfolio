@@ -26,6 +26,10 @@
     src: url(textFonts/HelloKetta-d99oX.ttf);
 }
 
+@font-face {
+    font-family: Kalam;
+    src: url(textFonts/Kalam/Kalam-Regular.ttf);
+}
 /* *{
     transition: filter 400ms;
 } */
@@ -394,6 +398,14 @@ body {
     opacity: 0;
 }
 
+#aboutMe img{
+    width: 40%;
+    transform:translateX(2vw) rotate(5deg);
+}
+
+#aboutMe{
+    font-family: kalam;
+}
 
     /* mail section starts form here  */
 
