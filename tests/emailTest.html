@@ -6,33 +6,191 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body>div {
+            height: 96vh;
+            width: 40vw;
+            border: 2px solid red;
+            margin: auto;
+            background-color: antiquewhite;
+
+            font-size:1.08vw;
+        }
+
+        #skills h3 {
+            width: 100%;
+            text-align: center;
+        }
+
+        #skillsTop {
+            display: grid;
+            grid-template-columns: auto auto;
+
+            /* background-color: yellow; */
+        }
+
+        #schools * {
+            margin: 0 1vw;
+        }
+
+        #indicator {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        #indicator li {
+            list-style-type: square;
+        }
+
+        #indicator li:first-child {
+            color: blue;
+        }
+
+        #indicator li:nth-child(2) {
+            color: green;
+        }
+
+
+        #skillsBottom {
+            background-color: rgb(35, 125, 230);
+            width: 94%;
+            margin:2vh auto;
+            padding: 2vh;
+        }
+
+        #skillsBottom label{
+            display: block;
+            margin: 1vh;
+            text-align: center;
+        }
+
+        #skillsBottom li{
+            border-left: 2px solid green;
+            padding-left: 1.1vw;
+            margin-left: -1vw;
+        }
+
+
+        #mathAndOthers{
+            background-color: rgb(110, 165, 230);
+            padding: 1vh 0;
+            width: 95%;
+            margin: auto;
+            border: 1px solid;
+        }
+
+        #gITsupport {
+            display: grid;
+            grid-template-columns: auto auto;
+
+            align-items: center;
+            background-color: rgb(140, 195, 230);
+            width: 85%;
+            margin: auto;
+
+            padding: 2vh;
+            padding-bottom: 0;
+            border: 1px solid rgb(50, 50, 50);
+        }
+
+        #gITsupport>label {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        #webdevByPh {
+            background-color: rgb(170, 225, 230);
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            padding-right: 1vw;
+            border: 1px solid  rgb(100, 100, 100);
+        }
+
+      
+    </style>
 </head>
 
 <body>
-    <p>58F243B98D9ED7350B26119981405B674AB555C14E794607CDBC1D1BDDB3C5BB73E50BA3B867E40E286837F31199FA67</p>
-    <form onsubmit="sendMail(event)">
-        <input type="text" name="" id="">
-        <input type="text">
-        <input type="text">
-        <button type="submit"> send mail from here </button>
-    </form>
+    <div>
+        <div id="skills" class="pageContent">
+            <h3>Education and Skills</h3>
+
+            <div id="skillsTop">
+
+                <div id="schools">
+                    <label for="">bachalor degree: </label>
+                    <p>weifang Weifang University of science and technologies, China</p>
+                    <label for="">college and middle school degree: </label>
+                    <p>Military Collegiate school Khulna, Bangladesh</p>
+                </div>
+
+                <div id="indicator">
+                    <li>Skills</li>
+                    <li>Courses</li>
+                    <li>Academic</li>
+                </div>
+            </div>
 
 
+            <div id="skillsBottom">
 
-    <script>
-        function sendMail(event) {
-            event.preventDefault();
+                <div id="mathAndOthers">
+                    <label> Computational Thinking for Problem Solving by Penn</label>
 
-            fetch("http://localhost:5000/email", {
-                method: "POST",
-                headers: {
-                    "content-type": "application/json"
-                },
-                body: JSON.stringify({obj:"email is send here "})
-            }).then(res => res.json())
-                .then(data => console.log(data))
-        };
-    </script>
+                    <div id="gITsupport">
+
+                        <div id="webdevByPh">
+                            <label for="">Complete Web-Development <br>
+                                by Programmign Hero</label>
+
+                            <ul>
+                                <li>Html</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                                <li>Tailwind</li>
+                                <li>Javascript</li>
+                                <li>photoshop</li>
+                                <li>React</li>
+                                <li>Firebase</li>
+                                <li>Heroku</li>
+                                <li>node js</li>
+                                <li>Express</li>
+                                <li>mongoDb</li>
+                                <li>Git</li>
+                                <li>Figma</li>
+                                <li>python</li>
+                            </ul>
+                        </div>
+
+                        
+                            <ul>
+                                <li>Hashing</li>
+                                <li>Encrypting</li>
+                                <li>Networking</li>
+                                <li>Operating System</li>
+                                <li>Trouble shoothing</li>
+                                <li>Technical Support</li>
+                                <li>Remote connection</li>
+                                <li>Computer structure</li>
+                            </ul>
+                        
+
+                        <label for=""> Google IT support Specialist</label>
+                    </div>
+
+                    <label> Data Science Math Skills by Duke University</label>
+                    <label> Neural Networks and Deep Learning by DeepLearnig.AI</label>
+                </div>
+
+                <label for=""> Key technologies for Business by IBM</label>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
