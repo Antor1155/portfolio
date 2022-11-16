@@ -392,7 +392,7 @@ body {
 
 .pageContent{
     transition: opacity 1ms 300ms;
-    padding: 1vw;
+    padding:0 1vw;
 }
 
 .seenPage .pageContent{
@@ -403,6 +403,14 @@ body {
     font-family: kalam;
     font-size: 1.1vw;
     display: grid;
+}
+
+#tape{
+    position: absolute;
+    top: 6vh;
+    left: 0;
+    width: 10vw;
+    transform: rotate(-10deg);
 }
 
 #aboutMeTop{
@@ -419,26 +427,32 @@ body {
  }
 
  #aboutMeTop p{
-    background-color: #a1a599;
     margin-left: -.5vw;
     padding: .5vw 0 .5vw .5vw;
-
  }
 
- #aboutMeBottom{
-    
+ #aboutMeTop span{
+    text-decoration: underline;
+    font-weight: bolder;
+
+    /* font-size: 1.2vw; */
  }
 
  #aboutMeBottom>div{
     display: flex;
     gap: 1vw;
-
+    margin-top: -1vh;
+ }
+ 
+ #aboutMeBottom q{
+    color: rgb(46, 46, 168);
+    font-weight: 700;
  }
  
 .smImg{
     width: 30%;
     border-radius: 5%;
-    border: 2px solid yellow;
+    border: 1px solid white;
     height: fit-content;
     margin: auto;
     /* display: inline; */
