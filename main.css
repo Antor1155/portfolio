@@ -462,6 +462,122 @@ body {
  }
 
 
+ /* education and skills page  */
+         
+ #skills{
+    font-size:1.08vw;
+}
+#skills h3 {
+    width: 100%;
+    text-align: center;
+}
+
+#skillsTop {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    /* background-color: yellow; */
+}
+
+#schools * {
+    margin: 0 1vw;
+}
+
+#schools>label{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(41, 112, 41);
+}
+
+#indicator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#indicator li {
+    list-style-type: square;  
+}
+
+#indicator li:first-child {
+    color: rgb(29, 29, 216);
+}
+#indicator li:nth-child(2) {
+    font-weight: bold;
+    font-style: oblique;
+}
+#indicator li:nth-child(3) {
+    color: rgb(41, 112, 41);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+
+#skillsBottom {
+    background-color: #43A6C6;
+    width: 94%;
+    margin:2vh auto;
+    padding: 1vh;
+}
+
+#skillsBottom label{
+    display: block;
+    margin: 1vh;
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+#skillsBottom li{
+    border-left: 2px solid rgb(29, 29, 216);;
+    padding-left: 1.1vw;
+    margin-left: -1vw;
+    list-style-type: circle; 
+
+}
+
+
+#mathAndOthers{
+    background-color: #67B7D1;
+    padding: 1vh 0;
+    width: 95%;
+    margin: auto;
+    border: 1px solid white;
+}
+
+#gITsupport {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    align-items: center;
+    background-color: #8AC7DB;
+    width: 85%;
+    margin: auto;
+
+    padding: 2vh;
+    padding-bottom: 0;
+    border: 1px solid white;
+}
+
+#gITsupport>label {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#webdevByPh {
+    background-color: #ADD8E6;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding-right: 1vw;
+    border: 1px solid white;
+}
+
+
+
+/* mail section starts form here  */
+/* mail section starts form here  */
 /* mail section starts form here  */
 
 #mail{
