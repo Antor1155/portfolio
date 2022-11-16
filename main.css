@@ -375,7 +375,7 @@ body {
     background-color: #f0e1d4;
     border-left: 1vw solid rgba(88, 209, 66, 0.806);
     left: 0;
-    
+    overflow: hidden;
     transition: left 500ms, transform 800ms;
 }
 
@@ -393,6 +393,7 @@ body {
 .pageContent{
     transition: opacity 1ms 300ms;
     padding:0 1vw;
+
 }
 
 .seenPage .pageContent{
@@ -494,7 +495,6 @@ body {
 
     transform: rotateX(0deg);
     background-color: antiquewhite;
-    /* z-index: 2; */
 
     overflow: visible;
 }
