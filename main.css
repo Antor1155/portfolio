@@ -590,6 +590,81 @@ body {
     border: 1px solid white;
 }
 
+/* projects page decoration here  */
+
+#projectsPage {
+    width: 100%;
+    height: 100%;
+    padding-top: 1px;
+    background-image:
+        repeating-linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .25) 9px, red 10px),
+        repeating-linear-gradient(.25turn, rgba(255, 255, 255, .5), rgba(255, 255, 255, .25) 9px, red 10px);
+
+}
+
+
+.projectOnPage {
+    background-color: rgb(239 211 174 / 68%);
+
+    width: 75%;
+    margin-left: 15%;
+    margin-top: 1vh;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    font-size: 1.1vw;
+
+}
+
+.projectOnPage img {
+    background-color: rgba(45, 26, 26, 0.571);
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+
+    margin-left: -5vw;
+    padding: 1vh;
+}
+
+.projectOnPage:hover img {
+    background-color: white;
+    transform: scale(1.1);
+}
+.projectOnPage img:hover{
+    background-color: aqua;
+    box-shadow: 2px 2px 20px 2px aqua;
+}
+
+.projectOnPage>ul {
+    /* background-color: red; */
+    margin: auto;
+    margin-left: -6vw;
+    font-weight: bold;
+}
+
+.projectOnPage>ul>li {
+    margin-bottom: .5vh;
+}
+
+
+.projectOnPage:nth-child(2n-1) {
+    grid-template-columns: 5fr 1fr;
+    background-color: rgba(203, 179, 174, .68);
+    margin-left: 10%;
+}
+
+.projectOnPage:nth-child(2n-1) img {
+    margin-left: 0;
+    margin-right: -5vw;
+}
+
+.projectOnPage:nth-child(2n-1)>ul {
+    margin-left: 0;
+    margin-right: -5vw;
+    margin-left: 0;
+}
 
 
 /* mail section starts form here  */
