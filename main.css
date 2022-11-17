@@ -220,6 +220,10 @@ body {
     transform-origin: left;
     transition: background-color 20ms 400ms, transform 1500ms;
 
+    text-align: center;
+    font-family:cursive ;
+    color: #2f3946;
+
 }
 
 #joiningPart {
@@ -228,13 +232,20 @@ body {
     transform-origin: left;
     height: 100%;
     width: 2vw;
-    background-color: rgb(71, 185, 223);
+    background-color: #2f3946;
     z-index: 1;
     position: absolute;
     left: 0;
     top: 0;
 
     transition: transform 1.5s;
+}
+#joiningPart >div{
+    border-left: 2px dashed white;
+    width: 0;
+    height: 100%;
+    background-color: rgb(150, 196, 157);
+    margin: auto;
 }
 
 
@@ -281,6 +292,10 @@ body {
 #file.open #upperFile{
     background-color: rgb(201, 165, 119);
     transform: rotateY(-150deg) translateX(2vw);
+}
+
+#file.open #upperFile h2{
+    display: none;
 }
 
 #file.open #joiningPart{
@@ -373,7 +388,7 @@ body {
     /* transform: rotateY(0deg) ; */
     transform-origin: left;
     background-color: #f0e1d4;
-    border-left: 1vw solid rgba(88, 209, 66, 0.806);
+    border-left: 1vw solid #8d7a50;
     left: 0;
     overflow: hidden;
     transition: left 500ms, transform 800ms;
@@ -502,7 +517,7 @@ body {
 }
 
 #indicator li:first-child {
-    color: rgb(29, 29, 216);
+    color: rgb(46, 46, 168);
 }
 #indicator li:nth-child(2) {
     font-weight: bold;
@@ -531,7 +546,7 @@ body {
 }
 
 #skillsBottom li{
-    border-left: 2px solid rgb(29, 29, 216);;
+    border-left: 2px solid rgb(46, 46, 168);
     padding-left: 1.1vw;
     margin-left: -1vw;
     list-style-type: circle; 
