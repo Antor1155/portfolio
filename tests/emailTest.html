@@ -27,12 +27,13 @@
         }
 
 
-        #projectOne {
+        .projectOnPage {
             background-color: rgb(108, 168, 168);
             background-color: antiquewhite;
 
             width: 70%;
             margin-left: 20%;
+            margin-top: 2vh;
             border-radius: 10px;
 
             display: grid;
@@ -42,36 +43,52 @@
 
         }
 
-        #projectOne>img {
+        .projectOnPage>img {
             background-color: rgba(45, 26, 26, 0.571);
-            width: 10vw;
-            height: 10vw;
+            width: 8vw;
+            height: 8vw;
             border-radius: 50%;
 
             margin-left: -5vw;
             padding: 1vh;
         }
 
-        #projectOne>ul {
+        .projectOnPage>ul {
             /* background-color: red; */
             margin: auto;
-            margin-left: -4vw;
+            margin-left: -6vw;
             font-weight: bold;
         }
 
-        #projectOne>ul>li{
-            border-bottom: 1px solid black;
+        .projectOnPage>ul>li{
             margin-bottom: .5vh;
         }
+
+        
+        .projectOnPage:nth-child(2n-1){
+           grid-template-columns: 5fr 1fr;
+           background-color: rgb(84, 172, 84);
+           margin-left: 10%;
+        }
+        .projectOnPage:nth-child(2n-1)>img{
+            margin-left: 0;
+            margin-right: -5vw;
+        }
+        .projectOnPage:nth-child(2n-1)>ul{
+            margin-left: 0;
+            margin-right: -5vw;
+            margin-left: 0;
+        }
+
     </style>
 </head>
 
 <body>
     <div>
         <div id="projectsPage" class="pageContent">
-            <h3 style="text-align: center;">projects</h3>
+            <h2 style="text-align: center;">Projects</h2>
 
-            <div id="projectOne">
+            <div class="projectOnPage">
                 <img src="../images/tableProducts/projects/protfolio.png" alt="">
 
                 <ul>
@@ -80,8 +97,51 @@
                     <li>hello world hello world hello world</li>
                     <li>hello world hello world hello world</li>
                     <li>hello world hello world hello world</li>
-                    <li>hello world hello world hello world</li>
+                    
                 </ul>
+            </div>
+
+            <div class="projectOnPage">
+                
+
+                <ul>
+                    
+                    <li>hello world hello world hello worldworld</li>
+                    <li>hello world hello world hello world</li>
+                    <li>hello world hello world hello world</li>
+                    <li>hello world hello world hello world</li>
+                    
+                </ul>
+
+                <img src="../images/tableProducts/projects/alexTools.png" alt="">
+            </div>
+
+            <div class="projectOnPage">
+                <img src="../images/tableProducts/projects/foodFirst.png" alt="">
+
+                <ul>
+                    
+                    <li>hello world hello world hello worldworld</li>
+                    <li>hello world hello world hello world</li>
+                    <li>hello world hello world hello world</li>
+                    <li>hello world hello world hello world</li>
+                    
+                </ul>
+            </div>
+
+            <div class="projectOnPage">
+                
+
+                <ul>
+                    
+                    <li>hello world hello world hello worldworld</li>
+                    <li>hello world hello world hello world</li>
+                    <li>hello world hello world hello world</li>
+                    <li>hello world hello world hello world</li>
+                    
+                </ul>
+
+                <img src="../images/tableProducts/projects/alpha'sPpalace.png" alt="">
             </div>
 
 
