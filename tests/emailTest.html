@@ -11,201 +11,81 @@
         body>div {
             height: 96vh;
             width: 40vw;
-            border: 2px solid red;
+            border: 2px solid black;
             margin: auto;
             background-color: antiquewhite;
+        }
 
-           
-        }
-        
-        #skills{
-            font-size:1.08vw;
-        }
-        #skills h3 {
+        #projectsPage {
             width: 100%;
-            text-align: center;
+            height: 100%;
+            padding-top: 1px;
+            background-image:
+                repeating-linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .25) 9px, red 10px),
+                repeating-linear-gradient(.25turn, rgba(255, 255, 255, .5), rgba(255, 255, 255, .25) 9px, red 10px);
+
         }
 
-        #skillsTop {
+
+        #projectOne {
+            background-color: rgb(108, 168, 168);
+            background-color: antiquewhite;
+
+            width: 70%;
+            margin-left: 20%;
+            border-radius: 10px;
+
             display: grid;
-            grid-template-columns: auto auto;
+            grid-template-columns: 1fr 2fr;
 
-            /* background-color: yellow; */
-        }
-
-        #schools * {
-            margin: 0 1vw;
-        }
-
-        #schools>label{
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: bold;
-            color: rgb(41, 112, 41);
-        }
-
-        #indicator {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            width: 100%;
-        }
-
-        #indicator li {
-            list-style-type: square;  
-        }
-
-        #indicator li:first-child {
-            color: rgb(29, 29, 216);
-        }
-        #indicator li:nth-child(2) {
-            font-weight: bold;
-            font-style: oblique;
-        }
-        #indicator li:nth-child(3) {
-            color: rgb(41, 112, 41);
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: bold;
-        }
-
-
-        #skillsBottom {
-            background-color: #43A6C6;
-            width: 94%;
-            margin:2vh auto;
-            padding: 2vh;
-        }
-
-        #skillsBottom label{
-            display: block;
-            margin: 1vh;
-            text-align: center;
-            font-weight: bold;
-            font-style: oblique;
-        }
-
-        #skillsBottom li{
-            border-left: 2px solid rgb(29, 29, 216);;
-            padding-left: 1.1vw;
-            margin-left: -1vw;
-            list-style-type: circle; 
+            font-size: 1.1vw;
 
         }
 
+        #projectOne>img {
+            background-color: rgba(45, 26, 26, 0.571);
+            width: 10vw;
+            height: 10vw;
+            border-radius: 50%;
 
-        #mathAndOthers{
-            background-color: #67B7D1;
-            padding: 1vh 0;
-            width: 95%;
+            margin-left: -5vw;
+            padding: 1vh;
+        }
+
+        #projectOne>ul {
+            /* background-color: red; */
             margin: auto;
-            border: 1px solid white;
+            margin-left: -4vw;
+            font-weight: bold;
         }
 
-        #gITsupport {
-            display: grid;
-            grid-template-columns: auto auto;
-
-            align-items: center;
-            background-color: #8AC7DB;
-            width: 85%;
-            margin: auto;
-
-            padding: 2vh;
-            padding-bottom: 0;
-            border: 1px solid white;
+        #projectOne>ul>li{
+            border-bottom: 1px solid black;
+            margin-bottom: .5vh;
         }
-
-        #gITsupport>label {
-            grid-column-start: 1;
-            grid-column-end: 3;
-        }
-
-        #webdevByPh {
-            background-color: #ADD8E6;
-            display: grid;
-            grid-template-columns: auto auto;
-            align-items: center;
-            padding-right: 1vw;
-            border: 1px solid white;
-        }
-
-      
     </style>
 </head>
 
 <body>
     <div>
-        <div id="skills" class="pageContent">
-            <h3>Education and Skills</h3>
+        <div id="projectsPage" class="pageContent">
+            <h3 style="text-align: center;">projects</h3>
 
-            <div id="skillsTop">
+            <div id="projectOne">
+                <img src="../images/tableProducts/projects/protfolio.png" alt="">
 
-                <div id="schools">
-                    <label   >Bachalor's Degree: </label>
-                    <p>Weifang University of science and technologies, China</p>
-                    <label   >College and Middle-school Degree: </label>
-                    <p>Military Collegiate school Khulna, Bangladesh</p>
-                </div>
-
-                <div id="indicator">
-                    <li>Skills</li>
-                    <li>Courses</li>
-                    <li>Academic</li>
-                </div>
+                <ul>
+                    
+                    <li>hello world hello world hello worldworld</li>
+                    <li>hello world hello world hello world</li>
+                    <li>hello world hello world hello world</li>
+                    <li>hello world hello world hello world</li>
+                    <li>hello world hello world hello world</li>
+                </ul>
             </div>
 
 
-            <div id="skillsBottom">
 
-                <div id="mathAndOthers">
-                    <label> Computational Thinking for Problem Solving by Penn</label>
-
-                    <div id="gITsupport">
-
-                        <div id="webdevByPh">
-                            <label   >Complete Web-Development <br>
-                                by Programmign Hero</label>
-
-                            <ul>
-                                <li>Html</li>
-                                <li>CSS</li>
-                                <li>Bootstrap</li>
-                                <li>Tailwind</li>
-                                <li>Javascript</li>
-                                <li>photoshop</li>
-                                <li>React</li>
-                                <li>Firebase</li>
-                                <li>Heroku</li>
-                                <li>node js</li>
-                                <li>Express</li>
-                                <li>mongoDb</li>
-                                <li>Git</li>
-                                <li>Figma</li>
-                                <li>python</li>
-                            </ul>
-                        </div>
-
-                        
-                            <ul>
-                                <li>Hashing</li>
-                                <li>Encrypting</li>
-                                <li>Networking</li>
-                                <li>Operating System</li>
-                                <li>Trouble shoothing</li>
-                                <li>Technical Support</li>
-                                <li>Remote connection</li>
-                                <li>Computer structure</li>
-                            </ul>
-                        
-
-                        <label   > Google IT support Specialist</label>
-                    </div>
-
-                    <label> Data Science Math Skills by Duke University</label>
-                    <label> Neural Networks and Deep Learning by DeepLearnig.AI</label>
-                </div>
-
-                <label   > Key technologies for Business by IBM</label>
-            </div>
 
         </div>
     </div>
