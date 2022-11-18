@@ -16,35 +16,51 @@
             background-color: antiquewhite;
         }
 
-        #heading{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-
+        #resumePage{
+            padding: 1vw;
         }
 
-        #heading button{
+        #resumePage h2 {
+            display: inline;
+        }
+
+        #resumePage>button {
             height: 100%;
             padding: 4px;
+            float: right;
         }
 
-        #resume{
-            width: 100%;
-            height: 80;
+        #resumePage>button:hover + #resume {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px;
+        }
+
+        #resume {
             background-color: red;
+            height: 86vh;
+
+            margin: auto;
+            margin-top: 2vh;
+
+            transition: 500ms;
+            border: 1px solid black;
+        }
+
+        #resume img {
+            width: 100%;
+            height: 100%; 
         }
     </style>
 </head>
 
 <body>
     <div>
-        <div id="projectsPage" class="pageContent">
-            <div id="heading">
-                <h2>resume </h2>
-                <button>Download \=/</button>
-            </div>
-            <div id="resume">
+        <div id="resumePage" class="pageContent">
+            <h2>resume </h2>
+            <button>Download \=/</button>
 
+            <div id="resume">
+                <img src="../images/imagesForFile/resume.jpg" alt="">
             </div>
 
         </div>
