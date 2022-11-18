@@ -703,6 +703,75 @@ body {
     height: 100%; 
 }
 
+/* memories page starts here  */
+
+#memories {
+    text-align: center;
+    font-family: kalam;
+}
+
+#memories p{
+    font-weight: bolder;
+}
+
+#memories h2{
+    background-color: rgba(190, 190, 53, 0.819);
+    width: 100%;
+    /* padding: 2px; */
+    margin: 0;
+
+    border-bottom-left-radius: 10%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 30%;
+
+    transform: rotate(270deg);
+    transform-origin: left;
+    position: absolute;
+    bottom: -1vw;
+    left: 50%;
+
+}
+
+#memoriesImg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#memoriesImg figure {
+    background-color: white;
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.286);
+    padding: 5px;
+    border-radius: 2px;
+
+    width: 15vw;
+    height: 20vh;
+}
+
+#memoriesImg img {
+    width: 100%;
+    height: 87%;
+}
+#memoriesImg figcaption {
+   font-size: 12px;
+}
+
+#memoriesImg figure:nth-of-type(2){
+    transform: rotate(3deg);
+}
+#memoriesImg figure:nth-of-type(4){
+    margin-left: -1vw;
+    transform: rotate(7deg);
+}
+#memoriesImg figure:nth-of-type(5){
+    transform: rotate(3deg);
+}
+#memoriesImg figure:nth-of-type(8){
+    margin-right: 1vw;
+    transform: rotate(-3deg);
+}
+
 /* mail section starts form here  */
 /* mail section starts form here  */
 /* mail section starts form here  */
