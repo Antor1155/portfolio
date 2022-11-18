@@ -16,147 +16,36 @@
             background-color: antiquewhite;
         }
 
-        #projectsPage {
-            width: 100%;
+        #heading{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        #heading button{
             height: 100%;
-            padding-top: 1px;
-            background-image:
-                repeating-linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .25) 9px, red 10px),
-                repeating-linear-gradient(.25turn, rgba(255, 255, 255, .5), rgba(255, 255, 255, .25) 9px, red 10px);
-
+            padding: 4px;
         }
 
-
-        .projectOnPage {
-            background-color: rgb(108, 168, 168);
-            background-color: antiquewhite;
-
-            width: 70%;
-            margin-left: 20%;
-            margin-top: 2vh;
-            border-radius: 10px;
-
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-
-            font-size: 1.1vw;
-
+        #resume{
+            width: 100%;
+            height: 80;
+            background-color: red;
         }
-
-        .projectOnPage img {
-            background-color: rgba(45, 26, 26, 0.571);
-            width: 8vw;
-            height: 8vw;
-            border-radius: 50%;
-
-            margin-left: -5vw;
-            padding: 1vh;
-        }
-
-        .projectOnPage:hover img {
-            background-color: white;
-            transform: scale(1.1);
-        }
-        .projectOnPage img:hover{
-            background-color: aqua;
-            box-shadow: 2px 2px 20px 2px aqua;
-        }
-
-        .projectOnPage>ul {
-            /* background-color: red; */
-            margin: auto;
-            margin-left: -6vw;
-            font-weight: bold;
-        }
-
-        .projectOnPage>ul>li {
-            margin-bottom: .5vh;
-        }
-
-
-        .projectOnPage:nth-child(2n-1) {
-            grid-template-columns: 5fr 1fr;
-            background-color: rgb(157 175 198);
-            margin-left: 10%;
-        }
-
-        .projectOnPage:nth-child(2n-1) img {
-            margin-left: 0;
-            margin-right: -5vw;
-        }
-
-        .projectOnPage:nth-child(2n-1)>ul {
-            margin-left: 0;
-            margin-right: -5vw;
-            margin-left: 0;
-        }
-
-
     </style>
 </head>
 
 <body>
     <div>
         <div id="projectsPage" class="pageContent">
-            <h2 style="text-align: center;">Projects</h2>
-
-            <div class="projectOnPage">
-                <a href="" target="_blank">
-                    <img src="../images/tableProducts/projects/protfolio.png" alt="">
-                </a>
-
-                <ul>
-                    <li>hello world hello world hello worldworld</li>
-                    <li>hello world hello world hello world</li>
-                    <li>hello world hello world hello world</li>
-                    <li>hello world hello world hello world</li>
-
-                </ul>
+            <div id="heading">
+                <h2>resume </h2>
+                <button>Download \=/</button>
             </div>
+            <div id="resume">
 
-            <div class="projectOnPage">
-                <ul>
-                    <li>hello world hello world hello worldworld</li>
-                    <li>hello world hello world hello world</li>
-                    <li>hello world hello world hello world</li>
-                    <li>hello world hello world hello world</li>
-
-                </ul>
-
-                <a href="https://finalwarehouse-4650b.web.app/" target="_blank">
-                    <img src="../images/tableProducts/projects/alexTools.png" alt="">
-                </a>
             </div>
-
-            <div class="projectOnPage">
-                <a href="https://warehouse-734e0.web.app/" target="_blank">
-                    <img src="../images/tableProducts/projects/foodFirst.png" alt="">
-                </a>
-
-                <ul>
-                    <li>hello world hello world hello worldworld</li>
-                    <li>hello world hello world hello world</li>
-                    <li>hello world hello world hello world</li>
-                    <li>hello world hello world hello world</li>
-
-                </ul>
-            </div>
-
-            <div class="projectOnPage">
-                <ul>
-                    <li>hello world hello world hello worldworld</li>
-                    <li>hello world hello world hello world</li>
-                    <li>hello world hello world hello world</li>
-                    <li>hello world hello world hello world</li>
-
-                </ul>
-                <a href="https://independent-photographer-726fa.web.app/" target="_blank">
-                    <img src="../images/tableProducts/projects/alpha'sPpalace.png" alt="">
-                </a>
-            </div>
-
-
-
 
         </div>
     </div>
