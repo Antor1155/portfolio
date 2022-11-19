@@ -9,4 +9,9 @@
     #projects{
         margin-top: -1.3vh;
     }
+
+    #memories p{
+        margin: 0;
+    }
+
 }

@@ -712,13 +712,17 @@ body {
 
 #memories p{
     font-weight: bolder;
+    font-size: 3vh;
+
+    color:rgb(46, 46, 168);
 }
 
 #memories h2{
     background-color: rgba(190, 190, 53, 0.819);
     width: 100%;
-    /* padding: 2px; */
     margin: 0;
+
+    font-size: 3vh;
 
     border-bottom-left-radius: 10%;
     border-top-left-radius: 20%;
