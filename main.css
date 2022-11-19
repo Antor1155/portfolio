@@ -736,6 +736,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    position: absolute;
+    bottom: 1vh;
 }
 
 #memoriesImg figure {
@@ -746,7 +749,7 @@ body {
     border-radius: 2px;
 
     width: 15vw;
-    height: 20vh;
+    height: 19vh;
 }
 
 #memoriesImg img {
