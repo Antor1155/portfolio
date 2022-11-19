@@ -757,7 +757,8 @@ body {
     height: 87%;
 }
 #memoriesImg figcaption {
-   font-size: 12px;
+   position: relative;
+   bottom: 1vh;
 }
 
 #memoriesImg figure:nth-of-type(2){
@@ -765,7 +766,6 @@ body {
 }
 #memoriesImg figure:nth-of-type(4){
     margin-left: -1vw;
-    transform: rotate(7deg);
 }
 #memoriesImg figure:nth-of-type(5){
     transform: rotate(3deg);
