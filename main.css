@@ -290,9 +290,9 @@ body {
 
 /* animation for opening the file  */
 #file.open {
-    height: 96vh;
+    height: 97vh;
     width: 40vw;
-    bottom: 1.5vh;
+    bottom: 4.5vh;
     transform: rotateX(7deg) translateX(0vw);
 }
 
