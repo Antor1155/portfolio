@@ -708,6 +708,8 @@ body {
 #memories {
     text-align: center;
     font-family: kalam;
+
+    pointer-events: none;
 }
 
 #memories p{
