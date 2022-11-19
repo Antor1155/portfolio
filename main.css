@@ -292,7 +292,7 @@ body {
 #file.open {
     height: 97vh;
     width: 40vw;
-    bottom: 4.5vh;
+    bottom: 3.5vh;
     transform: rotateX(7deg) translateX(0vw);
 }
 
@@ -840,6 +840,7 @@ body {
     font-weight: bolder;
 
     opacity: 0;
+    pointer-events: none;
 }
 
 #file.open #lastPageMsg{
