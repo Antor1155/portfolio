@@ -8,134 +8,76 @@
     <title>Document</title>
 
     <style>
-        body>div {
-            height: 96vh;
-            width: 40vw;
-            border: 2px solid black;
-            margin: auto;
-            background-color: antiquewhite;
+        body{
+            background-color: rgb(221, 213, 213);
         }
-
-        #memories {
-            text-align: center;
-            font-size: 1.1vw;
-            font-family: kalam;
-        }
-
-        #memories p{
-            font-weight: bolder;
-        }
-
-        #memories h2{
-            background-color: rgba(190, 190, 53, 0.819);
-            /* display: block; */
-            width: 85vh;
-            padding: 2px;
-            margin: 0;
-
-            border-bottom-left-radius: 10%;
-            border-top-left-radius: 20%;
-            border-bottom-right-radius: 30%;
-
-            transform: rotate(270deg);
-            transform-origin: left;
+        #loader{
+            background-color: red;
             position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
             bottom: 0;
-            left: 50%;
+        }
+
+        #road{
+            position: absolute;
+            left: 10%;
+            right: 10%;
+            top: 30%;
+            bottom: 0;
+            margin: auto;
+
+            /* transform: rotate(90deg); */
+
+            height: 3vh;
+            background-color: rgb(166, 67, 67);
+
+            border-top: 15vh solid rgb(221, 213, 213);
+            border-bottom: 15vh solid rgb(221, 213, 213);
+
+            border-right: 5vw solid rgb(168, 168, 81);
+            border-left: 5vw solid rgb(168, 168, 81); 
+            border-radius: 5%;
 
         }
 
-        #memoriesImg{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        #memoriesImg figure {
-            background-color: white;
-            margin: 0;
-            border: 1px solid rgba(0, 0, 0, 0.286);
-            padding: 5px;
-            border-radius: 2px;
+        /* #road::after, #road::before{
+            content: " ";
 
-            width: 15vw;
-            height: 20vh;
-        }
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            bottom: 700%;
+           
 
-        #memoriesImg img {
-            width: 100%;
-            height: 87%;
-        }
+            border-radius: 50%;
+        } */
 
-        #memoriesImg figure:nth-of-type(2){
-            transform: rotate(3deg);
-        }
-        #memoriesImg figure:nth-of-type(4){
-            margin-left: -1vw;
-            transform: rotate(7deg);
-        }
-        #memoriesImg figure:nth-of-type(5){
-            transform: rotate(3deg);
-        }
-        #memoriesImg figure:nth-of-type(8){
-            margin-right: 1vw;
-            transform: rotate(-3deg);
-        }
+        /* #road::before{
+            right: 0;
+        } */
     </style>
 </head>
 
 <body>
-    <div>
-        <div id="memories" class="pageContent">
 
-            <p>"Friendship, team-work and coordination are learned from life, not books."</p>
-           
-            <div id="memoriesImg">
-                <figure>
-                    <img src="../images/imagesForFile/coOpPic/ai project.jpg" alt="">
-                    <figcaption>Computer-vison club</figcaption>
-                </figure>
+    <div id="road">
 
-                <figure>
-                    <img src="../images/imagesForFile/coOpPic/chinese festival.jpg 2.jpg" alt="">
-                    <figcaption>Chinese Dragon-boat festival</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="../images/imagesForFile/coOpPic/cultural program img.jpg" alt="">
-                    <figcaption>Performing in festival</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="../images/imagesForFile/coOpPic/football competition.jpg" alt="">
-                    <figcaption>International soccer team</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="../images/imagesForFile/coOpPic/graduationCeremony.jpg" alt="">
-                    <figcaption>Graduation moment with leader</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="../images/imagesForFile/coOpPic/with foreigners.jpg" alt="">
-                    <figcaption>Handsome friends from Africa</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="../images/imagesForFile/coOpPic/msck.jpg" alt="">
-                    <figcaption>Military school drill</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="../images/imagesForFile/coOpPic/voleyball competition.jpg" alt="">
-                    <figcaption>International volleyball team</figcaption>
-                </figure>
-            </div>
-
-            <h2>Memories</h2>
-
-        </div>
     </div>
+
+
+
+
+
+    <div id="loader">  hello wrere r u</div>
+
+    <script>
+        window.addEventListener("load", function(){
+            document.getElementById("loader").style.display="none";
+        })
+    </script>
 </body>
 
 </html>
