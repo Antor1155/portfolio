@@ -8,76 +8,112 @@
     <title>Document</title>
 
     <style>
-        body{
+        body {
             background-color: rgb(221, 213, 213);
+
+            overflow: hidden;
         }
+
         #loader{
-            background-color: red;
+            background-color: black;
             position: absolute;
             top: 0;
+            bottom: 0;
             left: 0;
             right: 0;
-            bottom: 0;
         }
 
-        #road{
+
+        #loadFigure {
             position: absolute;
-            left: 10%;
-            right: 10%;
-            top: 30%;
-            bottom: 0;
+            top: 0;
+            bottom: 8%;
+            left: 0;
+            right: 0;
+
+            width: 80vw;
             margin: auto;
 
-            /* transform: rotate(90deg); */
-
-            height: 3vh;
-            background-color: rgb(166, 67, 67);
-
-            border-top: 15vh solid rgb(221, 213, 213);
-            border-bottom: 15vh solid rgb(221, 213, 213);
-
-            border-right: 5vw solid rgb(168, 168, 81);
-            border-left: 5vw solid rgb(168, 168, 81); 
-            border-radius: 5%;
-
-        }
-
-        /* #road::after, #road::before{
-            content: " ";
-
-            width: 200px;
-            height: 200px;
-            background-color: blue;
-            position: absolute;
-            bottom: 700%;
-           
+            border-bottom: 1vh solid #d1a432;
+            /* border-left: 1vh solid #d1a43281; */
+            /* border-right: 1vh solid #d1a43281; */
 
             border-radius: 50%;
-        } */
 
-        /* #road::before{
+            animation: 1s smile forwards;
+        }
+
+        @keyframes smile {
+            to {
+                border-bottom: 15vh solid #d1a432;
+            }
+        }
+
+        #loadEyes {
+            position: absolute;
+            /* background-color: red; */
+            width: 60%;
+            top: 5%;
+            bottom: 0;
+            left: 0;
             right: 0;
-        } */
+            margin: auto;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #loadEyes>div {
+            box-sizing: border-box;
+            border-top: 3vh solid black;
+
+            width: 25vh;
+            height: 25vh;
+            border-radius: 45%;
+            background-color: antiquewhite;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #loadEyes>div::before {
+            content: "";
+            display: block;
+            width: 7vh;
+            height: 7vh;
+            border-radius: 50%;
+
+            background: black;
+            transform: translateX(50%);
+
+            animation: 1s eyeRoll alternate ease-in-out infinite;
+        }
+
+        @keyframes eyeRoll {
+            to {
+                transform: translateX(-50%);
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <div id="road">
+    <section id="loader">
+        <div id="loadFigure"></div>
 
+        <div id="loadEyes">
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
-
-
-
-
-    <div id="loader">  hello wrere r u</div>
-
-    <script>
+    <!-- <script>
         window.addEventListener("load", function(){
             document.getElementById("loader").style.display="none";
         })
-    </script>
+    </script> -->
 </body>
 
 </html>
