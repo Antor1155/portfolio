@@ -11,16 +11,23 @@
         body {
             background-color: rgb(221, 213, 213);
 
-            overflow: hidden;
+            
         }
 
-        #loader{
+        #loader {
             background-color: black;
             position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
+
+        }
+
+        @keyframes offScreenLoad {
+            to{
+                transform: translateY(-100vh);
+            }
         }
 
 
@@ -30,17 +37,12 @@
             bottom: 8%;
             left: 0;
             right: 0;
-
-            width: 80vw;
             margin: auto;
 
+            width: 80vw;
             border-bottom: 1vh solid #d1a432;
-            /* border-left: 1vh solid #d1a43281; */
-            /* border-right: 1vh solid #d1a43281; */
-
             border-radius: 50%;
 
-            animation: 1s smile forwards;
         }
 
         @keyframes smile {
@@ -51,14 +53,14 @@
 
         #loadEyes {
             position: absolute;
-            /* background-color: red; */
-            width: 60%;
             top: 5%;
-            bottom: 0;
+            
             left: 0;
             right: 0;
             margin: auto;
-
+            
+            width: 60%;
+            
             display: flex;
             justify-content: space-between;
         }
@@ -66,6 +68,7 @@
         #loadEyes>div {
             box-sizing: border-box;
             border-top: 3vh solid black;
+            position: relative;
 
             width: 25vh;
             height: 25vh;
@@ -77,22 +80,24 @@
             align-items: center;
         }
 
-        #loadEyes>div::before {
-            content: "";
-            display: block;
+        #loadEyes>div>div {
             width: 7vh;
             height: 7vh;
             border-radius: 50%;
 
             background: black;
-            transform: translateX(50%);
 
-            animation: 1s eyeRoll alternate ease-in-out infinite;
+
+            animation: 1s eyeRoll ease-in-out infinite;
         }
 
         @keyframes eyeRoll {
-            to {
+            25% {
                 transform: translateX(-50%);
+            }
+
+            75% {
+                transform: translateX(50%);
             }
         }
     </style>
@@ -101,19 +106,32 @@
 <body>
 
     <section id="loader">
+        
         <div id="loadFigure"></div>
 
         <div id="loadEyes">
-            <div></div>
-            <div></div>
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- <script>
-        window.addEventListener("load", function(){
-            document.getElementById("loader").style.display="none";
-        })
-    </script> -->
+        <script>
+            window.addEventListener("load", function () {
+                // document.getElementById("loader").style.display="none";
+
+                Array.from(document.querySelectorAll("#loadEyes>div>div")).forEach(element => {
+                    element.style.animation = "none";
+                });
+
+                document.getElementById("loadFigure").style.animation = "1s smile forwards";
+
+                document.getElementById("loader").style.animation = "offScreenLoad 1s 1.5s forwards"
+            })
+        </script>
 </body>
 
 </html>
