@@ -11,7 +11,7 @@
         body {
             background-color: rgb(221, 213, 213);
 
-            
+
         }
 
         #loader {
@@ -22,10 +22,11 @@
             left: 0;
             right: 0;
 
+            pointer-events: none;
         }
 
         @keyframes offScreenLoad {
-            to{
+            to {
                 transform: translateY(-100vh);
             }
         }
@@ -54,13 +55,13 @@
         #loadEyes {
             position: absolute;
             top: 5%;
-            
+
             left: 0;
             right: 0;
             margin: auto;
-            
+
             width: 60%;
-            
+
             display: flex;
             justify-content: space-between;
         }
@@ -100,13 +101,51 @@
                 transform: translateX(50%);
             }
         }
+
+        #loadingText {
+            color: wheat;
+
+            position: absolute;
+            font-size: 3vh;
+            /* background-color: red; */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #loadingText p {
+            /* background-color: red; */
+            overflow: hidden;
+            animation: loadingText 2s linear infinite;
+        }
+
+        @keyframes loadingText {
+            to {
+                width: 0;
+            }
+
+        }
+
+        #loadingText button {
+            font-size: 3vh;
+            border: none;
+            background-color: aqua;
+            border-radius: 30%;
+            box-shadow: 0 5px 30px 10px aqua;
+
+            display: none;
+        }
+
+        #loadingText button:hover {
+            font-size: 5vh;
+        }
     </style>
 </head>
 
 <body>
 
     <section id="loader">
-        
+
         <div id="loadFigure"></div>
 
         <div id="loadEyes">
@@ -117,20 +156,35 @@
                 <div></div>
             </div>
         </div>
+
+        <div id="loadingText">
+            <p>loading...</p>
+            <button >Start</button>
+        </div>
     </section>
 
-        <script>
-            window.addEventListener("load", function () {
+    <script>
+        window.addEventListener("load", function () {
 
-                Array.from(document.querySelectorAll("#loadEyes>div>div")).forEach(element => {
-                    element.style.animation = "none";
-                });
+            Array.from(document.querySelectorAll("#loadEyes>div>div")).forEach(element => {
+                element.style.animation = "none";
+            });
 
-                document.getElementById("loadFigure").style.animation = "1s smile forwards";
+            document.getElementById("loader").style.pointerEvents = "auto";
 
-                document.getElementById("loader").style.animation = "offScreenLoad 1s 1.5s forwards"
-            })
-        </script>
+            document.getElementById("loadFigure").style.animation = "1s smile forwards";
+
+            document.querySelector("#loadingText p").style.display = "none";
+            document.querySelector("#loadingText button").style.display = "block";
+        })
+
+
+        document.getElementById("loader").addEventListener("click", function(){
+            document.getElementById("loader").style.animation = "offScreenLoad 1s  forwards";
+
+            console.log("clicked");
+        })
+    </script>
 </body>
 
 </html>

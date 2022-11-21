@@ -289,8 +289,9 @@
 }
 
 
-/* coading for loading page  */
 
+/* coading for loading page  */
+/* coading for loading page  */
 #loader {
     background-color: black;
     position: absolute;
@@ -300,10 +301,11 @@
     right: 0;
     z-index: 1;
 
+    pointer-events: none;
 }
 
 @keyframes offScreenLoad {
-    to{
+    to {
         transform: translateY(-100vh);
     }
 }
@@ -332,13 +334,13 @@
 #loadEyes {
     position: absolute;
     top: 5%;
-    
+
     left: 0;
     right: 0;
     margin: auto;
-    
+
     width: 60%;
-    
+
     display: flex;
     justify-content: space-between;
 }
@@ -377,4 +379,42 @@
     75% {
         transform: translateX(50%);
     }
+}
+
+#loadingText {
+    color: wheat;
+
+    position: absolute;
+    font-size: 3vh;
+    /* background-color: red; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loadingText p {
+    /* background-color: red; */
+    overflow: hidden;
+    animation: loadingText 2s linear infinite;
+}
+
+@keyframes loadingText {
+    to {
+        width: 0;
+    }
+
+}
+
+#loadingText button {
+    font-size: 3vh;
+    border: none;
+    background-color: aqua;
+    border-radius: 30%;
+    box-shadow: 0 5px 30px 10px aqua;
+
+    display: none;
+}
+
+#loadingText button:hover {
+    font-size: 5vh;
 }

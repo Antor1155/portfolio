@@ -377,7 +377,17 @@ window.addEventListener("load", function () {
         element.style.animation = "none";
     });
 
+    document.getElementById("loader").style.pointerEvents = "auto";
+
     document.getElementById("loadFigure").style.animation = "1s smile forwards";
 
-    document.getElementById("loader").style.animation = "offScreenLoad 1s 1.5s forwards"
+    document.querySelector("#loadingText p").style.display = "none";
+    document.querySelector("#loadingText button").style.display = "block";
+})
+
+
+document.getElementById("loader").addEventListener("click", function(){
+    document.getElementById("loader").style.animation = "offScreenLoad 1s  forwards";
+
+    console.log("clicked");
 })
