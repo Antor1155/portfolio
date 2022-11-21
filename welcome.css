@@ -287,3 +287,93 @@
         opacity: 1;
     }    
 }
+
+
+/* coading for loading page  */
+
+#loader {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+@keyframes offScreenLoad {
+    to{
+        transform: translateY(-100vh);
+    }
+}
+
+
+#loadFigure {
+    position: absolute;
+    top: 0;
+    bottom: 8%;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    width: 80vw;
+    border-bottom: 1vh solid #d1a432;
+    border-radius: 50%;
+
+}
+
+@keyframes smile {
+    to {
+        border-bottom: 15vh solid #d1a432;
+    }
+}
+
+#loadEyes {
+    position: absolute;
+    top: 5%;
+    
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    width: 60%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+#loadEyes>div {
+    box-sizing: border-box;
+    border-top: 3vh solid black;
+    position: relative;
+
+    width: 25vh;
+    height: 25vh;
+    border-radius: 45%;
+    background-color: antiquewhite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadEyes>div>div {
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+
+    background: black;
+
+
+    animation: 1s eyeRoll ease-in-out infinite;
+}
+
+@keyframes eyeRoll {
+    25% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(50%);
+    }
+}

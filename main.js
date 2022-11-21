@@ -368,3 +368,16 @@ ${event.target.mail.value}`;
     event.target.reset();
 
 };
+
+
+// for laoding page 
+window.addEventListener("load", function () {
+
+    Array.from(document.querySelectorAll("#loadEyes>div>div")).forEach(element => {
+        element.style.animation = "none";
+    });
+
+    document.getElementById("loadFigure").style.animation = "1s smile forwards";
+
+    document.getElementById("loader").style.animation = "offScreenLoad 1s 1.5s forwards"
+})
