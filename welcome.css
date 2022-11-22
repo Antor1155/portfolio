@@ -7,15 +7,19 @@
     height: 100vh;
     background: var(--welcomeSectionBg);
     /* background: black; */
-    display: none;
+    /* display: none; */
 
     position: absolute;
     top: 0;
 
     overflow: hidden;
-    animation: backgroundBlack 1s 6s steps(4) forwards, rotateAndDisapear 2.5s 11.3s ease-in forwards;
+   
 
     /* opacity: 0; */
+}
+
+#welcomeSection.loaded{
+    animation: backgroundBlack 1s 6s steps(4) forwards, rotateAndDisapear 2.5s 11.3s ease-in forwards;
 }
 
 @keyframes backgroundBlack {
@@ -35,7 +39,7 @@
 }
 
 
-.maskedContainer {
+#welcomeSection.loaded .maskedContainer {
     -webkit-mask-image: url(images/welcomeSectionImages/welcome1.svg);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: contain;
@@ -92,7 +96,7 @@
 }
 
 
-.rtl>div {
+#welcomeSection.loaded .rtl>div {
     height: 100%;
     background-color: rgb(20, 207, 201);
     background-size: contain;
@@ -101,12 +105,12 @@
     animation: fullWidth 1.5s 1 linear forwards, colorAnimation 10s 2.8s 1 linear forwards;
 }
 
-#leftToRightFirst {
+#welcomeSection.loaded #leftToRightFirst {
     background-color: azure;
     animation: fullWidth 1.5s 1 linear forwards, colorAnimation 10s 2s 1 linear forwards;
 }
 
-#leftToRightSecond {
+#welcomeSection.loaded #leftToRightSecond {
     background-color: black;
 
     animation: fullWidth 1.5s 1 linear forwards, colorAnimation 10s 2.5s 1 linear forwards;
@@ -247,14 +251,14 @@
 
 }
 
-#context > :first-child{
+#welcomeSection.loaded #context > :first-child{
     animation:inVisible steps(1) 10s forwards;
 }
-#context > :nth-child(2){
+#welcomeSection.loaded #context > :nth-child(2){
     animation:inVisible steps(1) 10.5s forwards;
 
 }
-#context > :nth-child(3){
+#welcomeSection.loaded #context > :nth-child(3){
     animation:inVisible steps(1) 11s forwards;
 }
 
@@ -269,15 +273,15 @@
     color: black;
 }
 
-#contextSecond > :first-child{
+#welcomeSection.loaded #contextSecond > :first-child{
     opacity: 0;
     animation: visible 4.5s 2s step-start;
 }
-#contextSecond > :nth-child(2){
+#welcomeSection.loaded #contextSecond > :nth-child(2){
     opacity: 0;
     animation: visible 4s 2.5s step-start;
 }
-#contextSecond > :nth-child(3){
+#welcomeSection.loaded #contextSecond > :nth-child(3){
     opacity: 0;
     animation: visible 3.5s 3s step-start;
 }

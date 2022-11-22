@@ -389,5 +389,5 @@ window.addEventListener("load", function () {
 document.getElementById("loader").addEventListener("click", function(){
     document.getElementById("loader").style.animation = "offScreenLoad 1s  forwards";
 
-    console.log("clicked");
+    document.getElementById("welcomeSection").classList.add("loaded");
 })
