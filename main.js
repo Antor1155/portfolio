@@ -164,12 +164,12 @@ document.getElementById("codedImg").addEventListener("click", function () {
 })
 
 
-// disabeling all pointer events, so after animation finish, it can be rutned on
+// disabeling all pointer events, so after animation finish, it can be rutned on and doesn't interfare the animation 
 
 function DisablePointerEvents(e) {
     document.getElementById(e).style.pointerEvents = "none";
 }
-DisablePointerEvents("file");
+DisablePointerEvents("tableSection");
 DisablePointerEvents("backgroundWall");
 DisablePointerEvents("momHoveringDiv");
 DisablePointerEvents("sisImg");
@@ -220,12 +220,22 @@ setTimeout(function () {
     setTimeout(function () { FilterNone("#tableLegs") }, 4500);
     setTimeout(function () { FilterNone(".middleRow") }, 4500);
 
+    setTimeout(function () { FilterNone("#mail") }, 4500);
+    setTimeout(function () { FilterNone("#projectBoard") }, 4500);
+    setTimeout(function () { FilterNone(".designation") }, 4500);
+    setTimeout(function () { FilterNone("#tools") }, 4500);
+    setTimeout(function () { FilterNone("#fbLink") }, 4500);
+    setTimeout(function () { FilterNone("#gitPad") }, 4500);
+    setTimeout(function () { FilterNone("#linkedInCup") }, 4500);
+    setTimeout(function () { FilterNone("#cupHolder") }, 4500);
+
+
             // pointer event to auto after animation of room section is done 
             setTimeout(function () {
                 function EnablePointerEvents(e) {
                     document.getElementById(e).style.pointerEvents = "auto";
                 }
-                EnablePointerEvents("file");
+                EnablePointerEvents("tableSection");
                 EnablePointerEvents("backgroundWall");
                 EnablePointerEvents("momHoveringDiv");
                 EnablePointerEvents("sisImg");

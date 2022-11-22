@@ -884,6 +884,8 @@ body {
     transition: border .8s, width .8s, height .8s, transform .8s;
 
     overflow: hidden;
+
+    filter: var(--darkroom);
 }
 
 #mail:hover {
@@ -937,6 +939,8 @@ textarea {
     transition: transform 800ms;
 
     box-shadow: -1px 1px 1px;
+
+    filter: var(--darkroom);
 }
 
 #projectBoard:hover {
@@ -1031,7 +1035,7 @@ textarea {
 
     transform: rotateX(10deg);
 
-
+    filter: var(--darkroom);
 }
 
 .designation::after {
@@ -1093,11 +1097,15 @@ textarea {
 
 
 /* tools in penholder section here  */
+/* tools in penholder section here  */
+/* tools in penholder section here  */
 
 #tools {
     position: absolute;
     bottom: 32vh;
     left: 22vw;
+
+    filter: var(--darkroom);
 }
 
 
@@ -1157,7 +1165,6 @@ textarea {
 /* fb link design here  */
 /* fb link design here  */
 #fbLink {
-    /* background-color: rgba(115, 182, 182, 0.401); */
     border-radius: 15%;
     padding: 1vh 0;
 
@@ -1170,9 +1177,8 @@ textarea {
     transition: background-color 500ms, box-shadow 900ms;
 
     cursor: pointer;
-    /* box-shadow: -.3vw .7vw ; */
 
-
+    filter: var(--darkroom);
 }
 
 #fbLink:hover {
@@ -1235,6 +1241,8 @@ textarea {
     box-shadow: -2px 4px 4px;
 
     transition: transform 500ms, box-shadow 500ms;
+
+    filter: var(--darkroom);
 }
 
 
@@ -1301,8 +1309,11 @@ textarea {
     background-image: url(images/tableProducts/linkedIncup.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    /* border: 2px solid red; */
+
+    filter: var(--darkroom);
 }
+
+
 
 #linkedInCup:hover {
     transform: translateY(-1vh) scale(1.3);
@@ -1362,6 +1373,8 @@ textarea {
     border-radius: 45%;
     background: linear-gradient(90deg, rgb(226, 214, 214), rgb(179, 173, 173));
     box-shadow: 1px 2px 2px;
+
+    filter: var(--darkroom);
 }
 
 
