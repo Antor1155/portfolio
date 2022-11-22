@@ -26,10 +26,6 @@
     src: url(textFonts/HelloKetta-d99oX.ttf);
 }
 
-@font-face {
-    font-family: Kalam;
-    src: url(textFonts/Kalam/Kalam-Regular.ttf);
-}
 
 /* *{
     transition: filter 400ms;
@@ -431,8 +427,9 @@ body {
 
 /* about me page of the file  */
 #aboutMe {
-    font-family: kalam;
-    font-size: 1.1vw;
+    font-family: cursive;
+    font-size: 1vw;
+    line-height: 4vh;
     display: grid;
 }
 
@@ -749,7 +746,8 @@ body {
 
 #memories {
     text-align: center;
-    font-family: kalam;
+    font-family: cursive;
+    font-size: 1vw;
 
     pointer-events: none;
 }
@@ -1862,7 +1860,6 @@ textarea {
 
 #academicPanel {
     width: 85%;
-    /* height: 9%; */
     display: block;
     margin: auto;
     margin-bottom: 1.5vh;
