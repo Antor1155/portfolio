@@ -381,7 +381,7 @@ window.addEventListener("load", function () {
 
     document.getElementById("loadFigure").style.animation = "1s smile forwards";
 
-    document.querySelector("#loadingText p").style.display = "none";
+    document.querySelector("#loadingText>div").style.display = "none";
     document.querySelector("#loadingText button").style.display = "block";
 })
 

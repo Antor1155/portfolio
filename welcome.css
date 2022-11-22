@@ -395,14 +395,38 @@
 #loadingText p {
     /* background-color: red; */
     overflow: hidden;
-    animation: loadingText 2s linear infinite;
+    animation: loadingText 1s steps(2) infinite;
 }
 
 @keyframes loadingText {
     to {
-        width: 0;
+        opacity: 0;
     }
 
+}
+
+#loadingProgress{
+    background-color: gainsboro;
+    width: 200%;
+    height: 2vh;
+    border-radius: 1vh;
+    overflow: hidden;
+
+    transform: translateX(-25%);
+}
+
+#loadingProgress >div{
+    width: 0%;
+    height: 100%;
+    background-color: #d1a432;
+
+    animation: loaderProgress 8s ease-out forwards;
+}
+
+@keyframes loaderProgress {
+    to{
+        width: 97%;
+    }
 }
 
 #loadingText button {
