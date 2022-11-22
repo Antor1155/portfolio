@@ -2106,8 +2106,8 @@ textarea {
     background-color: rgba(54, 54, 203, .2);
 
     border-top: .1vh solid rgb(55, 52, 50);
-    /* box-shadow: 0 .5vh 7px rgb(0, 0, 0); */
-    /* border-bottom: 1px solid black; */
+   
+    display: none;
 
 }
 
