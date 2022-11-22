@@ -102,18 +102,18 @@
     background-size: contain;
     float: right;
             /* in second animation, delay time is being reduced from actual time  */
-    animation: fullWidth 1.5s 1 linear forwards, colorAnimation 10s 2.8s 1 linear forwards;
+    animation: fullWidth 2s 1 linear forwards, colorAnimation 10s 2.8s 1 linear forwards;
 }
 
 #welcomeSection.loaded #leftToRightFirst {
     background-color: azure;
-    animation: fullWidth 1.5s 1 linear forwards, colorAnimation 10s 2s 1 linear forwards;
+    animation: fullWidth 2s 1 linear forwards, colorAnimation 10s 2s 1 linear forwards;
 }
 
 #welcomeSection.loaded #leftToRightSecond {
     background-color: black;
 
-    animation: fullWidth 1.5s 1 linear forwards, colorAnimation 10s 2.5s 1 linear forwards;
+    animation: fullWidth 2s 1 linear forwards, colorAnimation 10s 2.5s 1 linear forwards;
 }
 
 
