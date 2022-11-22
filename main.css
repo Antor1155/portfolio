@@ -16,9 +16,9 @@
     --certificateFrameColor: rgba(0, 0, 0, 0.677);
 
     --darkroom: brightness(0%);
-    --darkroom: none;
+    /* --darkroom: none; */
     --darkRoomFilter: rgb(255, 0, 0);
-    --darkRoomFilter: none;
+    /* --darkRoomFilter: none; */
 }
 
 @font-face {
@@ -40,7 +40,7 @@ body {
 
     /* background: rgb(236, 223, 207); */
     background-color: black;
-    background-color: rgb(201 211 175);
+    /* background-color: rgb(201 211 175); */
 }
 
 
