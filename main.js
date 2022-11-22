@@ -223,12 +223,14 @@ setTimeout(function () {
 
     setTimeout(function () { FilterNone("#mail") }, 5000);
     setTimeout(function () { FilterNone("#projectBoard") }, 5000);
-    setTimeout(function () { FilterNone(".designation") }, 5000);
     setTimeout(function () { FilterNone("#tools") }, 5000);
     setTimeout(function () { FilterNone("#fbLink") }, 5000);
     setTimeout(function () { FilterNone("#gitPad") }, 5000);
     setTimeout(function () { FilterNone("#linkedInCup") }, 5000);
     setTimeout(function () { FilterNone("#cupHolder") }, 5000);
+    setTimeout(function () { FilterNone(".designation") }, 5000);
+    setTimeout(function () { FilterNone("#middleDesignation") }, 5000);
+    setTimeout(function () { FilterNone("#rightDesignation") }, 5000);
 
 
             // pointer event to auto after animation of room section is done 
