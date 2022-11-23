@@ -35,3 +35,15 @@ body>section.ipadRatio{
 #backgroundWall.ipadRatio{
     height: 57vh;
 }
+
+
+body>div{
+    width: 100vw;
+    /* height:10vh; */
+    height: 10vh;
+    background-color: black;
+    position: absolute;
+    bottom: 0%;
+
+    display: none;
+}

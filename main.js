@@ -417,7 +417,9 @@ if(screen.width /4 * 2.5 < screen.height){
     document.querySelector("#tableSection").classList.add("ipadRatio");
     document.querySelector("#backgroundWall").classList.add("ipadRatio");
 
-    document.querySelector("#chair").style.bottom = 0;
+
+    document.querySelector("body>div").style.display="block";
+    document.querySelector("#chair").style.bottom = "-3%";
 
     console.log("if statemetn workd")
 }
