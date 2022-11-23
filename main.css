@@ -1471,7 +1471,7 @@ textarea {
     top: 25%;
     left: 15%;
     width: 45%;
-    height: 1.5vh;
+    aspect-ratio: 1/1;
     background-color: black;
     border-radius: 50%;
 }

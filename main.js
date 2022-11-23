@@ -231,6 +231,7 @@ setTimeout(function () {
     setTimeout(function () { FilterNone(".designation") }, 5000);
     setTimeout(function () { FilterNone("#middleDesignation") }, 5000);
     setTimeout(function () { FilterNone("#rightDesignation") }, 5000);
+    setTimeout(function () { document.querySelector("body>div>p").style.color = "#eaac6c" }, 5000);
 
 
             // pointer event to auto after animation of room section is done 
@@ -414,10 +415,11 @@ console.log(screen.width/4*3);
 
 if(screen.width /4 * 2.7 < screen.height){
     document.querySelector("body>section").classList.add("ipadRatio");
-    document.querySelector("#tableSection").classList.add("ipadRatio");
 
     document.querySelector("body>div").style.display="block";
+    document.querySelector("#tableSection").style.bottom = "10%";
     document.querySelector("#chair").style.bottom = "-3%";
+    document.querySelector("#character").style.bottom = "17vh";
 
     console.log("if statemetn workd")
 }

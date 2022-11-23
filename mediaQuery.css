@@ -28,11 +28,6 @@ body>section.ipadRatio{
     height: 85vh;
 }
 
-#tableSection.ipadRatio{
-    bottom: 10%;
-}
-
-
 body>div{
     width: 100vw;
     /* height:10vh; */
@@ -42,4 +37,8 @@ body>div{
     bottom: 0%;
 
     display: none;
+}
+
+body>div>p{
+    text-align: center;
 }
