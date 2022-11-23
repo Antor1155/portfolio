@@ -185,54 +185,58 @@ const timedWelcomeSection = window.setInterval(function () {
 
         clearInterval(timedWelcomeSection);
 
-//         // doing animation part of the room seciton 
-//         // ********************************************
+        //         // doing animation part of the room seciton 
+        //         // ********************************************
 
-//         // manipulating backwall elements 
-function DisplayNone(element) {
-    element.style.display = "none";
-}
-function FilterNone(id) {
-    element = document.querySelector(id);
-    element.style.filter = "none";
-}
+        //         // manipulating backwall elements 
+        function DisplayNone(element) {
+            element.style.display = "none";
+        }
+        function FilterNone(id) {
+            element = document.querySelector(id);
+            element.style.filter = "none";
+        }
 
-const ms = 700;
-const backWallElements = document.querySelectorAll(".sectionFilter");
+        const ms = 700;
+        const backWallElements = document.querySelectorAll(".sectionFilter");
 
-setTimeout(function () {
-    backWallElements.forEach(e => {
-        e.style.backgroundColor = "black";
-        e.style.width = "105%";
-    })
+        setTimeout(function () {
+            backWallElements.forEach(e => {
+                e.style.backgroundColor = "black";
+                e.style.width = "105%";
+            })
 
-    setTimeout(function () { DisplayNone(backWallElements[2]) }, ms);
-    setTimeout(function () { DisplayNone(backWallElements[1]) }, ms * 2);
-    setTimeout(function () { DisplayNone(backWallElements[0]) }, ms * 3);
+            setTimeout(function () { DisplayNone(backWallElements[2]) }, ms);
+            setTimeout(function () { DisplayNone(backWallElements[1]) }, ms * 2);
+            setTimeout(function () { DisplayNone(backWallElements[0]) }, ms * 3);
+            setTimeout(function () { FilterNone("#file") }, ms * 4);
 
-    setTimeout(function () { FilterNone("#file") }, ms * 4);
-    setTimeout(function () { FilterNone("#character") }, ms * 5);
-    setTimeout(function () { FilterNone("#chair") }, ms * 5);
+            setTimeout(function () {
+                FilterNone("#character");
+                FilterNone("#chair");
+            }, ms * 5);
 
-    setTimeout(function () { document.getElementsByTagName("BODY")[0].style.backgroundColor = "rgb(201 211 175)" }, 5000);
-    setTimeout(function () { document.getElementById("backWallJointPart").style.display = "block" }, 5000);
-    setTimeout(function () { FilterNone("#table") }, 5000);
-    setTimeout(function () { FilterNone("#tableBottom") }, 5000);
-    setTimeout(function () { FilterNone("#tableLegs") }, 5000);
-    setTimeout(function () { FilterNone(".middleRow") }, 5000);
+            setTimeout(function () {
+                document.getElementsByTagName("BODY")[0].style.backgroundColor = "rgb(201 211 175)";
 
-    setTimeout(function () { FilterNone("#mail") }, 5000);
-    setTimeout(function () { FilterNone("#projectBoard") }, 5000);
-    setTimeout(function () { FilterNone("#tools") }, 5000);
-    setTimeout(function () { FilterNone("#fbLink") }, 5000);
-    setTimeout(function () { FilterNone("#gitPad") }, 5000);
-    setTimeout(function () { FilterNone("#linkedInCup") }, 5000);
-    setTimeout(function () { FilterNone("#cupHolder") }, 5000);
-    setTimeout(function () { FilterNone(".designation") }, 5000);
-    setTimeout(function () { FilterNone("#middleDesignation") }, 5000);
-    setTimeout(function () { FilterNone("#rightDesignation") }, 5000);
-    setTimeout(function () { document.querySelector("body>div>p").style.color = "#eaac6c" }, 5000);
+                document.getElementById("backWallJointPart").style.display = "block";
+                document.querySelector("body>div>p").style.color = "#eaac6c";
 
+                FilterNone("#table");
+                FilterNone("#tableBottom");
+                FilterNone("#tableLegs");
+                FilterNone(".middleRow");
+                FilterNone("#mail");
+                FilterNone("#projectBoard");
+                FilterNone("#tools");
+                FilterNone("#fbLink");
+                FilterNone("#gitPad");
+                FilterNone("#linkedInCup");
+                FilterNone("#cupHolder");
+                FilterNone(".designation");
+                FilterNone("#middleDesignation");
+                FilterNone("#rightDesignation");
+            }, 5000);
 
             // pointer event to auto after animation of room section is done 
             setTimeout(function () {
@@ -244,7 +248,7 @@ setTimeout(function () {
                 EnablePointerEvents("momHoveringDiv");
                 EnablePointerEvents("sisImg");
 
-            }, 4500)
+            }, 5000)
 
         }, 2500);
     }
@@ -370,10 +374,10 @@ ${event.target.mail.value}`;
             console.log(data);
 
             // if mail is delivered to me successfully then this portion will work 
-            if(data.result.includes("success")){
+            if (data.result.includes("success")) {
                 alert("Mailed successfully  (^_^)")
             }
-            else{
+            else {
                 alert("mail failed but saved in database, Antor will notice soon !!")
             }
 
@@ -400,7 +404,7 @@ window.addEventListener("load", function () {
 })
 
 
-document.getElementById("loader").addEventListener("click", function(){
+document.getElementById("loader").addEventListener("click", function () {
     document.getElementById("loader").style.animation = "offScreenLoad 1s  forwards";
 
     document.getElementById("welcomeSection").classList.add("loaded");
@@ -411,12 +415,12 @@ document.getElementById("loader").addEventListener("click", function(){
 // modifying some css for 4:3 aspect ratio screen 
 console.log(screen.width, screen.height);
 
-console.log(screen.width/4*3);
+console.log(screen.width / 4 * 3);
 
-if(screen.width /4 * 2.7 < screen.height){
+if (screen.width / 4 * 2.7 < screen.height) {
     document.querySelector("body>section").classList.add("ipadRatio");
 
-    document.querySelector("body>div").style.display="block";
+    document.querySelector("body>div").style.display = "block";
     document.querySelector("#tableSection").style.bottom = "10%";
     document.querySelector("#chair").style.bottom = "-3%";
     document.querySelector("#character").style.bottom = "17vh";
