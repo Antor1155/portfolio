@@ -15,3 +15,19 @@
     }
 
 }
+
+
+
+/* when aspect ratio is 4:3 then changing some css  */
+body>section.ipadRatio{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 90vh;
+}
+
+#tableSection.ipadRatio{
+    bottom: 5%;
+}

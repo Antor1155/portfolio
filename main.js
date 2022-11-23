@@ -404,3 +404,17 @@ document.getElementById("loader").addEventListener("click", function(){
 
     document.getElementById("welcomeSection").classList.add("loaded");
 })
+
+
+
+// modifying some css for 4:3 aspect ratio screen 
+console.log(screen.width, screen.height);
+
+console.log(screen.width/4*3);
+
+if(screen.width /4 * 2.5 < screen.height){
+    document.querySelector("body>section").classList.add("ipadRatio");
+    document.querySelector("#tableSection").classList.add("ipadRatio");
+
+    console.log("if statemetn workd")
+}
