@@ -415,6 +415,9 @@ console.log(screen.width/4*3);
 if(screen.width /4 * 2.5 < screen.height){
     document.querySelector("body>section").classList.add("ipadRatio");
     document.querySelector("#tableSection").classList.add("ipadRatio");
+    document.querySelector("#backgroundWall").classList.add("ipadRatio");
+
+    document.querySelector("#chair").style.bottom = 0;
 
     console.log("if statemetn workd")
 }

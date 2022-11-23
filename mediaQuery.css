@@ -25,9 +25,13 @@ body>section.ipadRatio{
     left: 0;
 
     width: 100vw;
-    height: 90vh;
+    height: 85vh;
 }
 
 #tableSection.ipadRatio{
-    bottom: 5%;
+    bottom: 10%;
+}
+
+#backgroundWall.ipadRatio{
+    height: 57vh;
 }
