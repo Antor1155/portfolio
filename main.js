@@ -425,5 +425,12 @@ if (screen.width / 4 * 2.7 < screen.height) {
     document.querySelector("#chair").style.bottom = "-3%";
     document.querySelector("#character").style.bottom = "17vh";
 
-    console.log("if statemetn workd")
+    
 }
+
+
+// orientation change event listner  and reload the page
+window.addEventListener("orientationchange", function(){
+    location.reload();
+    console.log("orientation detection workd")
+})
