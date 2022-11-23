@@ -41,8 +41,11 @@
 
 #welcomeSection.loaded .maskedContainer {
     -webkit-mask-image: url(images/welcomeSectionImages/welcome1.svg);
+    mask-image: url(images/welcomeSectionImages/welcome1.svg);
     -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
     -webkit-mask-size: contain;
+    mask-size: contain;
 
     position: absolute;
     top: 50%;
