@@ -1,25 +1,53 @@
 @media screen and (max-width: 920px) {
-    #mail:hover{
+    #mail:hover {
         border: 2px solid whitesmoke;
         width: 63vw;
         height: 85vh;
         transform: rotateX(0deg);
     }
 
-    #projects{
+    #projects {
         margin-top: -1.3vh;
     }
 
-    #memories p{
+    #memories p {
         margin: 0;
     }
 
 }
 
+#orientationDetector img {
+    width: 40vw;
+}
+
+/* code for landscape and portrait orientation  */
+@media (orientation: landscape) {
+    #orientationDetector {
+        display: none;
+    }
+}
+
+@media (orientation: portrait) {
+    #orientationDetector {
+        display: block;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
 
 /* when aspect ratio is 4:3 then changing some css  */
-body>section.ipadRatio{
+body>section.ipadRatio {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,7 +56,7 @@ body>section.ipadRatio{
     height: 85vh;
 }
 
-body>div{
+body>div {
     width: 100vw;
     /* height:10vh; */
     height: 10vh;
@@ -39,6 +67,6 @@ body>div{
     display: none;
 }
 
-body>div>p{
+body>div>p {
     text-align: center;
 }
