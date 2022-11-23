@@ -61,25 +61,31 @@
 @keyframes markGlitch {
     10% {
         -webkit-mask-image: url(images/welcomeSectionImages/welcomeGlitch.svg);
+        mask-image: url(images/welcomeSectionImages/welcomeGlitch.svg);
     }
 
     20% {
         -webkit-mask-image: url(images/welcomeSectionImages/welcome1.svg);
+        mask-image: url(images/welcomeSectionImages/welcome1.svg);
     }
 
     35% {
         -webkit-mask-image: url(images/welcomeSectionImages/welcomeGlitch.svg);
+        mask-image: url(images/welcomeSectionImages/welcomeGlitch.svg);
     }
 
     42% {
         -webkit-mask-image: url(images/welcomeSectionImages/welcome1.svg);
+        mask-image: url(images/welcomeSectionImages/welcome1.svg);
     }
 
     95% {
         -webkit-mask-image: url(images/welcomeSectionImages/welcomeGlitch.svg);
+        mask-image: url(images/welcomeSectionImages/welcomeGlitch.svg);
     }
     100%{
         -webkit-mask-image: url(images/welcomeSectionImages/MdANTOR.svg);
+        mask-image: url(images/welcomeSectionImages/MdANTOR.svg);
     }
 
 
@@ -297,6 +303,7 @@
 
 
 
+/* coading for loading page  */
 /* coading for loading page  */
 /* coading for loading page  */
 #loader {
