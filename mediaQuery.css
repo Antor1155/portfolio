@@ -3,6 +3,7 @@
         border: 2px solid whitesmoke;
         width: 63vw;
         height: 65vh;
+        z-index: 2;
         transform: rotateX(0deg);
     }
 
