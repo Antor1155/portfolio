@@ -86,7 +86,7 @@ document.getElementById("previousBtn").addEventListener("click", function () {
 
 // eye Animation 
 document.querySelector('body').addEventListener('mousemove', function () {
-    console.log("mouse moving")
+    // console.log("mouse moving")
     let eye = document.querySelectorAll(".eye");
     eye.forEach(function (eye) {
         let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
@@ -291,7 +291,7 @@ allCertificateImg.forEach(certificate => {
         // plus 2 because one extra certificate in front and here index starts from 0
         let certificateNumber = allCertificateImg.indexOf(certificate) + 2;
 
-        console.log("clicked certificate is : " + certificateNumber);
+        // console.log("clicked certificate is : " + certificateNumber);
 
         mobileLikeContainer.innerHTML = `<iframe src="images/certificatesPdf/md-antor's-certificates.pdf#view=fit&page=${certificateNumber}" frameborder="0" width="100%" height="100%"></iframe>`;
 
@@ -316,7 +316,7 @@ projects.forEach(project => {
         // plus 2 because one extra project in front and here index starts from 0
         let projectNumber = projects.indexOf(project);
 
-        console.log("clicked project is : " + projectNumber);
+        // console.log("clicked project is : " + projectNumber);
 
         switch (projectNumber) {
             case 0:
@@ -371,7 +371,7 @@ ${event.target.mail.value}`;
         body: JSON.stringify({ email, subject: event.target.subject.value })
     }).then(res => res.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
 
             // if mail is delivered to me successfully then this portion will work 
             if (data.result.includes("success")) {
@@ -413,9 +413,9 @@ document.getElementById("loader").addEventListener("click", function () {
 
 
 // modifying some css for 4:3 aspect ratio screen 
-console.log(screen.width, screen.height);
+// console.log(screen.width, screen.height);
 
-console.log(screen.width / 4 * 3);
+// console.log(screen.width / 4 * 3);
 
 if (screen.width / 4 * 2.7 < screen.height) {
     document.querySelector("body>section").classList.add("ipadRatio");
@@ -432,5 +432,8 @@ if (screen.width / 4 * 2.7 < screen.height) {
 // orientation change event listner  and reload the page
 window.addEventListener("orientationchange", function(){
     location.reload();
-    console.log("orientation detection workd")
+    // console.log("orientation detection workd")
 })
+
+// in case someone opens up console in devtools 
+console.log("*****************\n*               *\n   loving your \n    interest \n  in my website \n     (*-*)\n*               *\n*****************\n\n\nmd.antor1155@gmail.com\n----------------------" );
