@@ -1749,16 +1749,14 @@ textarea {
 
 #sisImg {
     position: absolute;
-    width: 9vw;
+    height: 48vh;
     left: 54%;
     pointer-events: auto;
 }
 
 #sisImg:hover {
     content: url(images/sittingWoman/MainImages-sittingOnSofaImages/hoveredSis.svg);
-    width: 13.8vw;
-    bottom: 4%;
-    left: 54%;
+   
 }
 
 #sisImg:hover~.sisD {

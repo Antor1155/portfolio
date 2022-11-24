@@ -422,8 +422,13 @@ if (screen.width / 4 * 2.7 < screen.height) {
 
     document.querySelector("body>div").style.display = "block";
     document.querySelector("#tableSection").style.bottom = "10%";
-    document.querySelector("#chair").style.bottom = "-3%";
-    document.querySelector("#character").style.bottom = "17vh";
+    document.querySelector("#chair").style.bottom = "10%";
+    document.querySelector("#character").style.bottom = "30vh";
+    document.querySelector("#ac").style.bottom = "13%";
+    document.querySelector("#ac").style.width = "15vw";
+    document.querySelector("#momSisDiv").style.bottom = "15%";
+    document.querySelector("#momSisDiv").style.width = "51vw";
+    document.querySelector("#sisImg").style.height = "34vh";
 
     
 }
