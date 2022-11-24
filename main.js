@@ -428,6 +428,7 @@ if (screen.width / 4 * 2.7 < screen.height) {
     document.querySelector("#ac").style.width = "15vw";
     document.querySelector("#momSisDiv").style.bottom = "15%";
     document.querySelector("#momSisDiv").style.width = "51vw";
+    document.querySelector("#momSisDiv").style.right = "60%";
     document.querySelector("#sisImg").style.height = "34vh";
 
     
