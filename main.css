@@ -141,17 +141,17 @@ body {
 
 #circle1.active {
     animation: circleToCenter 1s linear infinite;
-    border-color: red;
+    border-color: rgba(61, 170, 203, 0.552);
 }
 
 #circle2.active {
     animation: circleToCenter 1s 333ms linear infinite;
-    border-color: rgb(178, 56, 56);
+    border-color: rgba(67, 127, 145, 0.552);
 }
 
 #circle3.active {
     animation: circleToCenter 1s 666ms linear infinite;
-    border-color: rgb(127, 90, 90);
+    border-color: rgba(115, 147, 156, 0.552);
 }
 
 
