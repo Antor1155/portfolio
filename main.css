@@ -1484,8 +1484,9 @@ textarea {
     position: absolute;
     top: 25%;
     left: 15%;
-    width: 45%;
-    aspect-ratio: 1/1;
+    width: 1.5vh;
+    height: 1.5vh;
+
     background-color: black;
     border-radius: 50%;
 }

@@ -19,11 +19,6 @@
         height: 67vh;
     }
 
-    .eye::before {
-        width: 1vh;
-        height: 1vh;
-    }
-
 }
 
 #orientationDetector img {
