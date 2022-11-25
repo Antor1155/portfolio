@@ -859,6 +859,19 @@ body {
     left: 20%;
 }
 
+
+#esterEgg{
+    /* background-color: red; */
+    position:absolute ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#esterEgg Img{
+    height: 5vh;
+    margin: 2vh;
+}
+
 /* mail section starts form here  */
 /* mail section starts form here  */
 /* mail section starts form here  */
