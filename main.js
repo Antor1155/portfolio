@@ -363,7 +363,7 @@ subject: ${event.target.subject.value} //
 
 ${event.target.mail.value}`;
 
-    fetch("https://antorprotfolio.herokuapp.com/email", {
+    fetch("https://jade-nutty-hippo.cyclic.app/email", {
         method: "POST",
         headers: {
             "content-type": "application/json"
