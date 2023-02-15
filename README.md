@@ -9,4 +9,4 @@ JavaScript
 Google smtp
 Node.js
 Express.js
-cros
+cors
