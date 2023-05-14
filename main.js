@@ -320,10 +320,10 @@ projects.forEach(project => {
 
         switch (projectNumber) {
             case 0:
-                mobileLikeContainer.innerHTML = `<iframe src="https://md-antor-protfolio.netlify.app/" frameborder="0" width="100%" height="100%"></iframe>`;
+                mobileLikeContainer.innerHTML = `<iframe src="https://md-antor.netlify.app/" frameborder="0" width="100%" height="100%"></iframe>`;
                 break;
             case 1:
-                mobileLikeContainer.innerHTML = `<iframe src="https://finalwarehouse-4650b.web.app/" frameborder="0" width="100%" height="100%"></iframe>`;
+                mobileLikeContainer.innerHTML = `<iframe src="https://newsfromantor.netlify.app/" frameborder="0" width="100%" height="100%"></iframe>`;
                 break;
             case 2:
                 mobileLikeContainer.innerHTML = `<iframe src="https://independent-photographer-726fa.web.app/" frameborder="0" width="100%" height="100%"></iframe>`;
